@@ -1,0 +1,1609 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<joinQuery xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>StockingBreedDailyEntryQuery</name>
+    <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].alias</alias>
+    <description>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].description</description>
+    <userDefined>true</userDefined>
+    <reportDataSource />
+    <bizUnitPK />
+    <connectionProvider />
+    <subObjects>
+        <subEntity>
+            <name>StockingBreedDailyEntry</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[StockingBreedDailyEntry].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntry" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>house</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[house].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmHouseEntry" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>unit</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[unit].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.assistant.app" />
+                <key name="name" value="MeasureUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>parent</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[parent].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDaily" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>material</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[material].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.master.material.app" />
+                <key name="name" value="Material" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>feMaterail</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[feMaterail].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.master.material.app" />
+                <key name="name" value="Material" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>parent1</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[parent1].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDaily" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>company</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[company].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CompanyOrgUnit" />
+            </entityRef>
+        </subEntity>
+    </subObjects>
+    <units>
+        <queryField>
+            <name>id</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>3a7221b5-29f6-437b-864e-d13128c6c02f</key>
+                    <parentUnit>
+                        <key name="name" value="id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>house</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[house].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>2b38f938-b8b1-4bca-bdd8-5ca61ff3f0c1</key>
+                    <parentUnit>
+                        <key name="name" value="house" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="house" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>3caba754-dcfc-45e5-952d-16e4de08349b</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[3caba754-dcfc-45e5-952d-16e4de08349b].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>7de7bc77-30f9-44ab-990e-68324a0fe435</key>
+                    <parentUnit>
+                        <key name="name" value="3caba754-dcfc-45e5-952d-16e4de08349b" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="house" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>37c133ae-31a6-49a9-86f0-d8a9695aed86</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[37c133ae-31a6-49a9-86f0-d8a9695aed86].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>4d3d6ba7-6ca3-4479-9aef-f470a75190c7</key>
+                    <parentUnit>
+                        <key name="name" value="37c133ae-31a6-49a9-86f0-d8a9695aed86" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="house" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>82a01837-50bc-416c-b811-bcf5f8d15ece</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[82a01837-50bc-416c-b811-bcf5f8d15ece].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>541e613b-ae12-4a1d-b822-b50ddb18d5fd</key>
+                    <parentUnit>
+                        <key name="name" value="82a01837-50bc-416c-b811-bcf5f8d15ece" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="unit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>a2c5aed2-da1f-425c-bd44-c58cdb4fa707</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[a2c5aed2-da1f-425c-bd44-c58cdb4fa707].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>ab0c2195-499b-44ec-adea-4b222df2b4b1</key>
+                    <parentUnit>
+                        <key name="name" value="a2c5aed2-da1f-425c-bd44-c58cdb4fa707" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="unit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>fbf0a941-b1ed-40ef-af42-349c86ebd96d</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[fbf0a941-b1ed-40ef-af42-349c86ebd96d].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>9a99a064-2d00-43a9-9de5-9e705117998a</key>
+                    <parentUnit>
+                        <key name="name" value="fbf0a941-b1ed-40ef-af42-349c86ebd96d" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="parent" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>20f0f03f-6c5a-48af-b523-cbf06d59c3e1</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[20f0f03f-6c5a-48af-b523-cbf06d59c3e1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>349c0e1c-262a-4629-84b9-bd8aa7c454c4</key>
+                    <parentUnit>
+                        <key name="name" value="20f0f03f-6c5a-48af-b523-cbf06d59c3e1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="parent" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>f26891cc-1e53-4e2e-9010-4bb611fdbddf</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[f26891cc-1e53-4e2e-9010-4bb611fdbddf].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>9eae38d9-05bf-4fe4-bd22-09419caec699</key>
+                    <parentUnit>
+                        <key name="name" value="f26891cc-1e53-4e2e-9010-4bb611fdbddf" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="material" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>08326175-09e0-4b16-a531-2420ecffd1ea</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[08326175-09e0-4b16-a531-2420ecffd1ea].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>7d842c6f-7eea-4295-9053-5c11f0fbf106</key>
+                    <parentUnit>
+                        <key name="name" value="08326175-09e0-4b16-a531-2420ecffd1ea" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="material" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>eff79534-5381-4cc8-93ca-c9968c0eaaff</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[eff79534-5381-4cc8-93ca-c9968c0eaaff].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>94110d5a-f544-4397-8bb5-fd29d1d88251</key>
+                    <parentUnit>
+                        <key name="name" value="eff79534-5381-4cc8-93ca-c9968c0eaaff" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="feMaterail" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>7e0bc8b4-aeb8-4187-80f6-0b9a7c3e691b</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[7e0bc8b4-aeb8-4187-80f6-0b9a7c3e691b].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>ec85fa57-51a4-4ecd-b48f-d16ae6c888aa</key>
+                    <parentUnit>
+                        <key name="name" value="7e0bc8b4-aeb8-4187-80f6-0b9a7c3e691b" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="feMaterail" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>material</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[material].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>d66e7936-9bba-41c1-a507-83737f75c7fb</key>
+                    <parentUnit>
+                        <key name="name" value="material" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="material" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>materialName</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[materialName].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>b3cdddbc-8a6b-4cf9-9df0-c1473eb027df</key>
+                    <parentUnit>
+                        <key name="name" value="materialName" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="materialName" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>materialModel</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[materialModel].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>168cf1fa-62d4-4201-9eff-b2ac758bb381</key>
+                    <parentUnit>
+                        <key name="name" value="materialModel" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="materialModel" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>unitQty</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[unitQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>b65f7122-b3b4-4249-9d63-347769e75ebe</key>
+                    <parentUnit>
+                        <key name="name" value="unitQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="unitQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>packageQty</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[packageQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f1e08867-da9f-48db-9915-7372c73f9948</key>
+                    <parentUnit>
+                        <key name="name" value="packageQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="packageQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>unit</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[unit].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>07d31b0d-68bc-4e2c-859c-52b9b64eb595</key>
+                    <parentUnit>
+                        <key name="name" value="unit" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="unit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>dailyQtyAll</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[dailyQtyAll].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>87ffad67-ca85-4d06-a967-93ba7a238e7c</key>
+                    <parentUnit>
+                        <key name="name" value="dailyQtyAll" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="dailyQtyAll" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>feMaterail</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[feMaterail].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>33b551a1-1dd5-481c-9126-504afaa35f59</key>
+                    <parentUnit>
+                        <key name="name" value="feMaterail" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="feMaterail" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>mqlbm</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[mqlbm].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>57678f79-a50b-44ab-8d4d-12ff96a4d4fe</key>
+                    <parentUnit>
+                        <key name="name" value="mqlbm" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="mqlbm" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>femaleDailyQty</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[femaleDailyQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>5fafcd32-8606-4290-a317-777f3014d50a</key>
+                    <parentUnit>
+                        <key name="name" value="femaleDailyQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="femaleDailyQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>limitFeedType</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[limitFeedType].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>aaf81165-7efd-46e6-b4b5-d14757618340</key>
+                    <parentUnit>
+                        <key name="name" value="limitFeedType" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="limitFeedType" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>waterQty</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[waterQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>286d448d-2d76-4e8c-b6a4-ec391ecd7c89</key>
+                    <parentUnit>
+                        <key name="name" value="waterQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="waterQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>description</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[description].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>240b1afb-6969-4d9e-85ea-781e8f89c7f4</key>
+                    <parentUnit>
+                        <key name="name" value="description" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="description" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>averageBreed</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[averageBreed].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>118634b2-57ef-452d-8070-397bf5a152a6</key>
+                    <parentUnit>
+                        <key name="name" value="averageBreed" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="averageBreed" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>fbizdate</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[fbizdate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>c66e84da-ee0a-411e-962f-f42cc2dc817d</key>
+                    <parentUnit>
+                        <key name="name" value="fbizdate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="parent" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bizDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>28447da5-276f-457a-a171-3cc4325107c8</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[28447da5-276f-457a-a171-3cc4325107c8].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>b56006ca-e828-4754-8da3-a7093bfda095</key>
+                    <parentUnit>
+                        <key name="name" value="28447da5-276f-457a-a171-3cc4325107c8" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StockingBreedDailyEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="parent" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>8776f2ff-ea36-4bd7-9cbe-2499297e20f1</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[8776f2ff-ea36-4bd7-9cbe-2499297e20f1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>5bc430d1-09b9-411d-9693-9ec6c42c0375</key>
+                    <parentUnit>
+                        <key name="name" value="8776f2ff-ea36-4bd7-9cbe-2499297e20f1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="parent1" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>55ad92ae-8483-4f85-9992-8d65b8d58189</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[55ad92ae-8483-4f85-9992-8d65b8d58189].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>f90cdcd5-d364-4ed0-8b29-feff45387886</key>
+                    <parentUnit>
+                        <key name="name" value="55ad92ae-8483-4f85-9992-8d65b8d58189" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="parent" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="company" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>e81a854c-6117-4e8e-a2f4-ff09546ec79f</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[e81a854c-6117-4e8e-a2f4-ff09546ec79f].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>e73f36d0-9448-4daa-949c-af90e2fb7658</key>
+                    <parentUnit>
+                        <key name="name" value="e81a854c-6117-4e8e-a2f4-ff09546ec79f" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>companyid</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[companyid].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>bd90e5b6-f8da-48fb-9eef-3db3c7043fe9</key>
+                    <parentUnit>
+                        <key name="name" value="companyid" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </queryField>
+    </units>
+    <defaultFilter>
+        <name>defaultFilter</name>
+        <formulaString />
+        <query>
+            <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+            <key name="name" value="StockingBreedDailyEntryQuery" />
+        </query>
+    </defaultFilter>
+    <queryPK>
+        <name>QueryPK</name>
+        <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].queryPK[QueryPK].alias</alias>
+        <description>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].queryPK[QueryPK].description</description>
+        <keyProperties>
+            <queryField>
+                <key name="name" value="id" />
+            </queryField>
+        </keyProperties>
+    </queryPK>
+    <isDistinct>false</isDistinct>
+    <joins>
+        <join>
+            <name>90696b5d-dbe5-4675-86c6-fcc31116bbaf</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="StockingBreedDailyEntry" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="house" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>473d6f83-c960-4e94-b33a-8e45b88ce80f</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="3caba754-dcfc-45e5-952d-16e4de08349b" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="37c133ae-31a6-49a9-86f0-d8a9695aed86" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="90696b5d-dbe5-4675-86c6-fcc31116bbaf" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </join>
+        <join>
+            <name>71357a3e-1f25-443d-82f2-3a475b90fbae</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="StockingBreedDailyEntry" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="unit" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>a288a42e-5385-4df9-a675-daedf8313d0e</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="82a01837-50bc-416c-b811-bcf5f8d15ece" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="a2c5aed2-da1f-425c-bd44-c58cdb4fa707" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="71357a3e-1f25-443d-82f2-3a475b90fbae" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </join>
+        <join>
+            <name>db400f72-e0ef-4811-a60a-ac3b41ed5c46</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="StockingBreedDailyEntry" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="parent" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>7ab22b81-578d-4f4c-ba2c-01420e0b99cc</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="fbf0a941-b1ed-40ef-af42-349c86ebd96d" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="20f0f03f-6c5a-48af-b523-cbf06d59c3e1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="db400f72-e0ef-4811-a60a-ac3b41ed5c46" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </join>
+        <join>
+            <name>f13292c4-7e0a-4763-b5ad-34338287387a</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="StockingBreedDailyEntry" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="material" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>5641a51f-fd3b-4f49-8417-5ff4b0c8bc9f</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="f26891cc-1e53-4e2e-9010-4bb611fdbddf" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="08326175-09e0-4b16-a531-2420ecffd1ea" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="f13292c4-7e0a-4763-b5ad-34338287387a" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </join>
+        <join>
+            <name>a2fc8e37-bcb9-4c18-84fc-5f0ecd47da51</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="StockingBreedDailyEntry" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="feMaterail" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>896afae2-dbce-4515-9676-3b3fdb0f7d6f</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="eff79534-5381-4cc8-93ca-c9968c0eaaff" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="7e0bc8b4-aeb8-4187-80f6-0b9a7c3e691b" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="a2fc8e37-bcb9-4c18-84fc-5f0ecd47da51" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </join>
+        <join>
+            <name>894b2b37-1655-4597-bdd2-35a2173708e8</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="StockingBreedDailyEntry" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="parent1" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>54304d34-3b51-4a67-93c8-22500155356a</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="28447da5-276f-457a-a171-3cc4325107c8" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="8776f2ff-ea36-4bd7-9cbe-2499297e20f1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="894b2b37-1655-4597-bdd2-35a2173708e8" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </join>
+        <join>
+            <name>ab448f7c-44a4-4a68-9227-03ccd339abff</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="parent" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="company" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>4d7342f7-375f-41e7-b890-42e8e85988bf</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="55ad92ae-8483-4f85-9992-8d65b8d58189" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="e81a854c-6117-4e8e-a2f4-ff09546ec79f" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="ab448f7c-44a4-4a68-9227-03ccd339abff" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDailyEntryQuery" />
+            </query>
+        </join>
+    </joins>
+    <resource>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="饲喂信息分录" />
+            <lang locale="zh_HK" value="飼喂信息分錄" />
+            <lang locale="zh_TW" value="飼喂信息分錄" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].queryPK[QueryPK].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].queryPK[QueryPK].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[StockingBreedDailyEntry].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[company].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[feMaterail].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[house].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[material].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[parent1].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[parent].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].subObjects.subEntity[unit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[08326175-09e0-4b16-a531-2420ecffd1ea].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[20f0f03f-6c5a-48af-b523-cbf06d59c3e1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[28447da5-276f-457a-a171-3cc4325107c8].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[37c133ae-31a6-49a9-86f0-d8a9695aed86].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[3caba754-dcfc-45e5-952d-16e4de08349b].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[55ad92ae-8483-4f85-9992-8d65b8d58189].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[7e0bc8b4-aeb8-4187-80f6-0b9a7c3e691b].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[82a01837-50bc-416c-b811-bcf5f8d15ece].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[8776f2ff-ea36-4bd7-9cbe-2499297e20f1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[a2c5aed2-da1f-425c-bd44-c58cdb4fa707].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[e81a854c-6117-4e8e-a2f4-ff09546ec79f].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[eff79534-5381-4cc8-93ca-c9968c0eaaff].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[f26891cc-1e53-4e2e-9010-4bb611fdbddf].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.propertyUnit[fbf0a941-b1ed-40ef-af42-349c86ebd96d].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[averageBreed].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="平均只喂料量" />
+            <lang locale="zh_HK" value="平均只喂料量" />
+            <lang locale="zh_TW" value="平均只喂料量" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[companyid].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="公司ID" />
+            <lang locale="zh_HK" value="公司ID" />
+            <lang locale="zh_TW" value="公司ID" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[dailyQtyAll].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="日喂料量" />
+            <lang locale="zh_HK" value="日喂料量" />
+            <lang locale="zh_TW" value="日喂料量" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[description].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="备注" />
+            <lang locale="zh_HK" value="備註" />
+            <lang locale="zh_TW" value="備註" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[fbizdate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="业务日期" />
+            <lang locale="zh_HK" value="業務日期" />
+            <lang locale="zh_TW" value="業務日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[feMaterail].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="母禽料" />
+            <lang locale="zh_HK" value="母禽料" />
+            <lang locale="zh_TW" value="母禽料" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[femaleDailyQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="母禽日喂料量" />
+            <lang locale="zh_HK" value="母禽日喂料量" />
+            <lang locale="zh_TW" value="母禽日喂料量" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[house].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="棚舍" />
+            <lang locale="zh_HK" value="棚舍" />
+            <lang locale="zh_TW" value="棚舍" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[limitFeedType].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="限饲方式" />
+            <lang locale="zh_HK" value="限飼方式" />
+            <lang locale="zh_TW" value="限飼方式" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[materialModel].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="规格" />
+            <lang locale="zh_HK" value="規格" />
+            <lang locale="zh_TW" value="規格" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[materialName].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="公禽料名称" />
+            <lang locale="zh_HK" value="公禽料名稱" />
+            <lang locale="zh_TW" value="公禽料名稱" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[material].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="公禽料" />
+            <lang locale="zh_HK" value="公禽料" />
+            <lang locale="zh_TW" value="公禽料" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[mqlbm].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="母禽料编码" />
+            <lang locale="zh_HK" value="母禽料編碼" />
+            <lang locale="zh_TW" value="母禽料編碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[packageQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="包数" />
+            <lang locale="zh_HK" value="包數" />
+            <lang locale="zh_TW" value="包數" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[unitQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单包重" />
+            <lang locale="zh_HK" value="單包重" />
+            <lang locale="zh_TW" value="單包重" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[unit].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单位" />
+            <lang locale="zh_HK" value="單位" />
+            <lang locale="zh_TW" value="單位" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEntryQuery].units.queryField[waterQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="饮水量" />
+            <lang locale="zh_HK" value="飲水量" />
+            <lang locale="zh_TW" value="飲水量" />
+        </rs>
+    </resource>
+</joinQuery>
+

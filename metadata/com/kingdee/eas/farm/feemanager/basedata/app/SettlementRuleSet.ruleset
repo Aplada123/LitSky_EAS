@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.feemanager.basedata.app</package>
+    <name>SettlementRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <simpleExpression>
+            <id>d0dd7c05-1f97-45ed-bf62-68d4a0bb3ee5</id>
+            <parentID />
+            <source />
+            <type />
+            <valueType />
+            <value />
+        </simpleExpression>
+        <groupExpression>
+            <id>160ee900-b1fa-4b0e-bb01-b32873daf6ca</id>
+            <parentID />
+            <source>ME.unit=ME.material.baseUnit.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>bdfd1f51-d758-4238-afee-9e205ca2c68f</id>
+            <parentID>160ee900-b1fa-4b0e-bb01-b32873daf6ca</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>bb2bbead-9231-4f91-a523-aa35aefb3824</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bb2bbead-9231-4f91-a523-aa35aefb3824</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtME.getCell(rowIndex,"unit")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>cad77014-bf59-4d4f-9011-0fe0dae93b0a</id>
+            <parentID>160ee900-b1fa-4b0e-bb01-b32873daf6ca</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>5dcff09f-0373-4a45-ab25-2fa4145ae16d</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>c77d7b09-806b-4b2d-8f9c-9589cf6ee883</id>
+                        <expressionID>3c0b1649-0b7c-41d8-a21c-98b33d06b061</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>d46e0339-8062-416f-aa90-768124cdd5e4</id>
+                        <expressionID>5c67aee7-464e-493f-a138-7b1c800101be</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5dcff09f-0373-4a45-ab25-2fa4145ae16d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3c0b1649-0b7c-41d8-a21c-98b33d06b061</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>6efcb6aa-bcaa-4064-9bd9-0cc03fa40e2b</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>6efcb6aa-bcaa-4064-9bd9-0cc03fa40e2b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtME.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5c67aee7-464e-493f-a138-7b1c800101be</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>baseUnit.name</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>79f1288d-d778-49c9-b503-41d3e879b184</id>
+            <parentID />
+            <source>UIRuleUtil.throwException("运程上限不能低于运程下限！")</source>
+            <type>METHODINVOKE</type>
+            <valueType>Unkown</valueType>
+            <value />
+            <method>
+                <ownerID>dcc1555a-3a1a-41dc-b8bd-82c7b1e85042</ownerID>
+                <name>throwException</name>
+                <type>Unkown</type>
+                <parameters>
+                    <parameter>
+                        <id>ced5398d-9772-4288-b1a6-5bb8aeeeec54</id>
+                        <expressionID>c1afca40-b707-4ae4-bd25-a826c9425f32</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>dcc1555a-3a1a-41dc-b8bd-82c7b1e85042</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c1afca40-b707-4ae4-bd25-a826c9425f32</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>运程上限不能低于运程下限！</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1aabc18b-f854-4d56-852b-cc5bfc623114</id>
+            <parentID />
+            <source />
+            <type />
+            <valueType />
+            <value />
+        </simpleExpression>
+        <simpleExpression>
+            <id>2e34a8fc-216a-4011-9265-3dbedb9773b7</id>
+            <parentID />
+            <source />
+            <type />
+            <valueType />
+            <value />
+        </simpleExpression>
+        <simpleExpression>
+            <id>006b42bc-7a5c-43a9-adfb-b1f8be3195b1</id>
+            <parentID />
+            <source />
+            <type />
+            <valueType />
+            <value />
+        </simpleExpression>
+        <groupExpression>
+            <id>077cd929-fe35-45e1-8dfc-e48047168843</id>
+            <parentID />
+            <source>CE.carsizetype=CE.carsize.carriagesize</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>13b60d91-b805-405f-86ca-413abbe018f6</id>
+            <parentID>077cd929-fe35-45e1-8dfc-e48047168843</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>77698029-d311-4305-9c11-158412bb4b01</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>77698029-d311-4305-9c11-158412bb4b01</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtCE.getCell(rowIndex,"carsizetype")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>05f99092-cdea-484f-b31c-f0c49d9870e3</id>
+            <parentID>077cd929-fe35-45e1-8dfc-e48047168843</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>9e7de687-88fb-463f-a730-e5bef0d04633</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>0fc1ff05-5c1e-43ce-a54d-59c2518b1756</id>
+                        <expressionID>9619386b-4498-4777-a1bd-83addd500c4b</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>61325670-81e3-478f-8884-136b907c7f43</id>
+                        <expressionID>e386b086-eb04-4214-a541-c6a36a4511f4</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9e7de687-88fb-463f-a730-e5bef0d04633</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9619386b-4498-4777-a1bd-83addd500c4b</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>1dc98cc9-3f8b-4dea-907b-aa954b2c4515</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1dc98cc9-3f8b-4dea-907b-aa954b2c4515</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtCE.getCell(rowIndex,"carsize")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e386b086-eb04-4214-a541-c6a36a4511f4</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>carriagesize</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>89c4faee-9057-44ba-b630-7b201c4fdf07</id>
+            <parentID />
+            <source>CE.kilamount=CE.carsize.FKilpfreightkil</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>84dc8e24-8ec0-4e6f-a8e2-0c9ad55c16f1</id>
+            <parentID>89c4faee-9057-44ba-b630-7b201c4fdf07</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>76d8fcfc-3577-45de-9640-cac94c1db5ac</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>76d8fcfc-3577-45de-9640-cac94c1db5ac</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtCE.getCell(rowIndex,"kilamount")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>2842d7ab-1560-442e-83a3-2e58ac32e653</id>
+            <parentID>89c4faee-9057-44ba-b630-7b201c4fdf07</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <method>
+                <ownerID>852d02fb-57ec-4278-8085-b036c2f88066</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>0087532b-7719-46f5-8459-f949529af40a</id>
+                        <expressionID>0568a4c9-c475-4275-bace-bdd17b18c041</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>e1be16b4-df71-4a59-b251-07e09749cf9c</id>
+                        <expressionID>2b8b60ab-f549-49ee-ab35-e0a5d076df29</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>852d02fb-57ec-4278-8085-b036c2f88066</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0568a4c9-c475-4275-bace-bdd17b18c041</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>ecb10464-0267-40d7-9293-61a3621e2c67</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ecb10464-0267-40d7-9293-61a3621e2c67</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtCE.getCell(rowIndex,"carsize")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>2b8b60ab-f549-49ee-ab35-e0a5d076df29</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>FKilpfreightkil</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>d4e1e609-38af-442a-9003-0844eb302bc9</id>
+            <parentID />
+            <source>[DE.kilometertop] &lt; [DE.kilometerend]</source>
+            <operator>&lt;</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>8c286653-20c6-4bd0-8788-f848c5859f33</id>
+            <parentID>d4e1e609-38af-442a-9003-0844eb302bc9</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>7998cf7d-c141-44aa-b629-d542220cb39d</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>7998cf7d-c141-44aa-b629-d542220cb39d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtDE.getCell(rowIndex,"kilometertop")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f4577e25-4029-40c6-8f10-35de92e83461</id>
+            <parentID>d4e1e609-38af-442a-9003-0844eb302bc9</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>d3618a7a-5eb4-414b-8e10-f6bae015d791</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d3618a7a-5eb4-414b-8e10-f6bae015d791</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtDE.getCell(rowIndex,"kilometerend")</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>94adbd7a-dd61-4e15-8c88-3e47750e9cb9</id>
+            <name>D18XWVLQ</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D18XWVLQ].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D18XWVLQ].description</description>
+            <expressionID>d0dd7c05-1f97-45ed-bf62-68d4a0bb3ee5</expressionID>
+        </action>
+        <action>
+            <id>4b1a1381-747b-450f-aac4-a38cc1d09167</id>
+            <name>ME_unit_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[ME_unit_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[ME_unit_ActionInfo].description</description>
+            <expressionID>160ee900-b1fa-4b0e-bb01-b32873daf6ca</expressionID>
+        </action>
+        <action>
+            <id>21d3a54a-3bb3-4775-a447-1883a05cf2b4</id>
+            <name>D1ASGPY7</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1ASGPY7].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1ASGPY7].description</description>
+            <expressionID>79f1288d-d778-49c9-b503-41d3e879b184</expressionID>
+        </action>
+        <action>
+            <id>962fa2f9-5116-47eb-8716-3fbc94c14c11</id>
+            <name>D1BYTQ5G</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1BYTQ5G].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1BYTQ5G].description</description>
+            <expressionID>1aabc18b-f854-4d56-852b-cc5bfc623114</expressionID>
+        </action>
+        <action>
+            <id>fc20c6d9-14cc-4725-8f8c-2bf92597cc17</id>
+            <name>D1GI5YOI</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1GI5YOI].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1GI5YOI].description</description>
+            <expressionID>2e34a8fc-216a-4011-9265-3dbedb9773b7</expressionID>
+        </action>
+        <action>
+            <id>56e12b7c-967d-46d8-93ef-f67aeb13586e</id>
+            <name>D1GJ6QXF</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1GJ6QXF].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1GJ6QXF].description</description>
+            <expressionID>006b42bc-7a5c-43a9-adfb-b1f8be3195b1</expressionID>
+        </action>
+        <action>
+            <id>80178740-52fc-48f3-afbe-b0067b98d4c5</id>
+            <name>CE_carsizetype_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[CE_carsizetype_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[CE_carsizetype_ActionInfo].description</description>
+            <expressionID>077cd929-fe35-45e1-8dfc-e48047168843</expressionID>
+        </action>
+        <action>
+            <id>6b0dac7e-4ec3-422e-b601-3d77442bc77a</id>
+            <name>CE_kilamount_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[CE_kilamount_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[CE_kilamount_ActionInfo].description</description>
+            <expressionID>89c4faee-9057-44ba-b630-7b201c4fdf07</expressionID>
+        </action>
+    </actions>
+    <conditions>
+        <baseCondition>
+            <id>0ff8ea7a-94ee-4f72-88f4-2e90723b0f75</id>
+            <name>D1ASHQP$</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].conditions.baseCondition[D1ASHQP$].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].conditions.baseCondition[D1ASHQP$].description</description>
+            <expressionID>d4e1e609-38af-442a-9003-0844eb302bc9</expressionID>
+        </baseCondition>
+    </conditions>
+    <rules>
+        <conditionRule>
+            <name>ME_unit_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[ME_unit_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[ME_unit_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="4b1a1381-747b-450f-aac4-a38cc1d09167" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>D1ASHQP$</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[D1ASHQP$].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[D1ASHQP$].description</description>
+            <ruleType>validate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="0ff8ea7a-94ee-4f72-88f4-2e90723b0f75" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="21d3a54a-3bb3-4775-a447-1883a05cf2b4" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>CE_carsizetype_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_carsizetype_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_carsizetype_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="80178740-52fc-48f3-afbe-b0067b98d4c5" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>CE_kilamount_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_kilamount_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_kilamount_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="6b0dac7e-4ec3-422e-b601-3d77442bc77a" />
+                </action>
+            </actions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[CE_carsizetype_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_carriagesize" />
+            <lang locale="zh_HK" value="攜帶字段屬性_carriagesize" />
+            <lang locale="zh_TW" value="攜帶字段屬性_carriagesize" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[CE_carsizetype_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[CE_kilamount_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_FKilpfreightkil" />
+            <lang locale="zh_HK" value="攜帶字段屬性_FKilpfreightkil" />
+            <lang locale="zh_TW" value="攜帶字段屬性_FKilpfreightkil" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[CE_kilamount_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D18XWVLQ].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D18XWVLQ].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1ASGPY7].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1ASGPY7].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1BYTQ5G].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1BYTQ5G].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1GI5YOI].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1GI5YOI].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1GJ6QXF].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[D1GJ6QXF].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[ME_unit_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_baseUnit" />
+            <lang locale="zh_HK" value="攜帶字段屬性_baseUnit" />
+            <lang locale="zh_TW" value="攜帶字段屬性_baseUnit" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].actions.action[ME_unit_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].conditions.baseCondition[D1ASHQP$].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].conditions.baseCondition[D1ASHQP$].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_carsizetype_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_carriagesize" />
+            <lang locale="zh_HK" value="攜帶字段屬性_carriagesize" />
+            <lang locale="zh_TW" value="攜帶字段屬性_carriagesize" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_carsizetype_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_carsizetype_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="carsize" />
+            <lang locale="zh_CN" value="carsize" />
+            <lang locale="zh_TW" value="carsize" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_carsizetype_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_kilamount_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_FKilpfreightkil" />
+            <lang locale="zh_HK" value="攜帶字段屬性_FKilpfreightkil" />
+            <lang locale="zh_TW" value="攜帶字段屬性_FKilpfreightkil" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_kilamount_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_kilamount_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="carsize" />
+            <lang locale="zh_CN" value="carsize" />
+            <lang locale="zh_TW" value="carsize" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[CE_kilamount_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[D1ASHQP$].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="SettleVEDistance" />
+            <lang locale="zh_HK" value="SettleVEDistance" />
+            <lang locale="zh_TW" value="SettleVEDistance" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[D1ASHQP$].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[D1ASHQP$].extendedProperty.columnName">
+            <lang locale="en_US" value="kilometertop" />
+            <lang locale="zh_CN" value="kilometertop" />
+            <lang locale="zh_TW" value="kilometertop" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[ME_unit_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_baseUnit" />
+            <lang locale="zh_HK" value="攜帶字段屬性_baseUnit" />
+            <lang locale="zh_TW" value="攜帶字段屬性_baseUnit" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[ME_unit_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[ME_unit_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.SettlementRuleSet].rules.conditionRule[ME_unit_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

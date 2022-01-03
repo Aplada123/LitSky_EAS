@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facade xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.custom.wlhllicensemanager.app</package>
+    <name>DynamicFacade</name>
+    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].alias</alias>
+    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].description</description>
+    <userDefined>false</userDefined>
+    <bosType>FAA341FB</bosType>
+    <stereoType>false</stereoType>
+    <businessImplName>com.kingdee.eas.custom.wlhllicensemanager.DynamicFacade</businessImplName>
+    <businessControllerName>com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacadeController</businessControllerName>
+    <accessLevel>public</accessLevel>
+    <subClassingMode>normal</subClassingMode>
+    <methods>
+        <method>
+            <name>getDataByID</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getDataByID].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getDataByID].description</description>
+            <innerID>7d5c3c0d-90d9-445f-be48-af70d1ce7987</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getDataByID].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getDataByID].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>uploadDataByBosType</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].description</description>
+            <innerID>99de5af2-e567-4185-9bd8-a824d64686a1</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>bosType</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].parameters.parameter[bosType].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].parameters.parameter[bosType].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>downloadBillList</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[downloadBillList].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[downloadBillList].description</description>
+            <innerID>10c60d23-89a9-49b0-997f-d91960169aae</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[downloadBillList].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[downloadBillList].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>getEumInfo</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getEumInfo].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getEumInfo].description</description>
+            <innerID>45dfdf79-954c-4108-8e77-8102ae695b14</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>enumPathJson</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getEumInfo].parameters.parameter[enumPathJson].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getEumInfo].parameters.parameter[enumPathJson].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>uploadData</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].description</description>
+            <innerID>bbb8f13a-697c-4645-baaa-ad2940110fe6</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>bosType</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].parameters.parameter[bosType].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].parameters.parameter[bosType].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>deleteData</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteData].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteData].description</description>
+            <innerID>7d345bf7-074c-40ab-af18-c5c4972868d4</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteData].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteData].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>exeFunciton</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[exeFunciton].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[exeFunciton].description</description>
+            <innerID>e11f94a0-7c58-43d4-a4d9-f3c7bbf9a465</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[exeFunciton].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[exeFunciton].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>getRptData</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getRptData].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getRptData].description</description>
+            <innerID>df0d1c36-0f73-481b-9d3b-164fbe04a446</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getRptData].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getRptData].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>uploadAttachment</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadAttachment].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadAttachment].description</description>
+            <innerID>a9f1f104-354a-46b3-a581-0584b84f615b</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadAttachment].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadAttachment].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>getAttachmentList</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentList].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentList].description</description>
+            <innerID>d1180b8e-ca0b-4368-ac15-6db4068157a1</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentList].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentList].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>getAttachmentData</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentData].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentData].description</description>
+            <innerID>ace48358-a2c9-44cd-81c7-9b1f0b298da6</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentData].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentData].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>deleteAttachment</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteAttachment].alias</alias>
+            <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteAttachment].description</description>
+            <innerID>8ce89d02-ca2d-4e01-b0ef-b4b5f089e695</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>false</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>jsonStr</name>
+                    <alias>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteAttachment].parameters.parameter[jsonStr].alias</alias>
+                    <description>facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteAttachment].parameters.parameter[jsonStr].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>false</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+    </methods>
+    <resource>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="动态单据facade" />
+            <lang locale="zh_HK" value="動態單據facade" />
+            <lang locale="zh_TW" value="動態單據facade" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].extendedProperty.genBusinessImplCode">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteAttachment].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteAttachment].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteAttachment].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteAttachment].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteData].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteData].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteData].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[deleteData].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[downloadBillList].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[downloadBillList].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[downloadBillList].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[downloadBillList].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[exeFunciton].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[exeFunciton].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[exeFunciton].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[exeFunciton].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentData].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentData].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentData].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentData].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentList].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentList].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentList].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getAttachmentList].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getDataByID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getDataByID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getDataByID].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getDataByID].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getEumInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="获取枚举对象" />
+            <lang locale="zh_HK" value="獲取枚舉對象" />
+            <lang locale="zh_TW" value="獲取枚舉對象" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getEumInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getEumInfo].parameters.parameter[enumPathJson].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="路径" />
+            <lang locale="zh_HK" value="路徑" />
+            <lang locale="zh_TW" value="路徑" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getEumInfo].parameters.parameter[enumPathJson].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getRptData].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getRptData].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getRptData].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[getRptData].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadAttachment].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadAttachment].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadAttachment].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadAttachment].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].parameters.parameter[bosType].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].parameters.parameter[bosType].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadDataByBosType].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="上传数据" />
+            <lang locale="zh_HK" value="上傳數據" />
+            <lang locale="zh_TW" value="上傳數據" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].parameters.parameter[bosType].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="bosType" />
+            <lang locale="zh_HK" value="bosType" />
+            <lang locale="zh_TW" value="bosType" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].parameters.parameter[bosType].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].parameters.parameter[jsonStr].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="jsonStr" />
+            <lang locale="zh_HK" value="jsonStr" />
+            <lang locale="zh_TW" value="jsonStr" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.custom.wlhllicensemanager.app.DynamicFacade].methods.method[uploadData].parameters.parameter[jsonStr].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+    </resource>
+</facade>
+

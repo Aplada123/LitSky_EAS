@@ -1,0 +1,3901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<joinQuery xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>BatchContractQuery</name>
+    <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].alias</alias>
+    <description>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].description</description>
+    <userDefined>false</userDefined>
+    <reportDataSource />
+    <bizUnitPK>com.kingdee.eas.farm.stocking.processbizill.BatchContract</bizUnitPK>
+    <connectionProvider />
+    <subObjects>
+        <subEntity>
+            <name>BatchContract</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[BatchContract].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContract" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>auditor</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[auditor].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>creator</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[creator].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>lastUpdateUser</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[lastUpdateUser].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>handler</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[handler].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>company</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[company].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CompanyOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>farmer</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[farmer].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="Farmers" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>person</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[person].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.person.app" />
+                <key name="name" value="Person" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>stockingBatch</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[stockingBatch].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="StockingBatch" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>MarginBill</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[MarginBill].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="MarginBill" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>breedData</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[breedData].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="BreedData" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>settlementPolicy</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[settlementPolicy].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="StatementsPolicy" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>farm</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[farm].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="Farm" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>receiveBill</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[receiveBill].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.fi.cas.app" />
+                <key name="name" value="ReceivingBill" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>firstBreedBillSeel</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[firstBreedBillSeel].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BreedSeedBill" />
+            </entityRef>
+        </subEntity>
+    </subObjects>
+    <units>
+        <propertyUnit>
+            <name>NewUnit0</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit0].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit0" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditor" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit1</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit2</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit2].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit2" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="creator" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit3</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit3].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit3" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit4</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit4].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit4" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateUser" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit5</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit5].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit5" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>id</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>bizDate</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[bizDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="bizDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bizDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>description</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[description].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="description" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="description" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>NewUnit9</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit9].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit9" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="handler" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit8</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit8].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit8" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>billStatus</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[billStatus].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>c536dcd8-5139-42a1-b59b-ae8b1073329c</key>
+                    <parentUnit>
+                        <key name="name" value="billStatus" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="billStatus" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>company.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[company.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0f6ee6df-960f-43fd-ba9a-fd4f848a5a0e</key>
+                    <parentUnit>
+                        <key name="name" value="company.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>company.id</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[company.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>13e86c71-8f12-45b7-84c8-df278e3bdfc6</key>
+                    <parentUnit>
+                        <key name="name" value="company.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>farmer.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farmer.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>ea4b8849-e33e-4a95-aac1-e72cbbd5d77e</key>
+                    <parentUnit>
+                        <key name="name" value="farmer.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farmer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>farm.name</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farm.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>73ff1c29-494a-439b-8781-02a6abf83ecc</key>
+                    <parentUnit>
+                        <key name="name" value="farm.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>2de43493-9762-492f-9381-f7b941e16c22</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[2de43493-9762-492f-9381-f7b941e16c22].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>cb105e88-34b3-4200-9306-dd16fb45db20</key>
+                    <parentUnit>
+                        <key name="name" value="2de43493-9762-492f-9381-f7b941e16c22" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="company" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>fd038beb-5e64-4d57-a56c-e174115ca5b1</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[fd038beb-5e64-4d57-a56c-e174115ca5b1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>8492190f-7d39-4938-949e-6dff67260a37</key>
+                    <parentUnit>
+                        <key name="name" value="fd038beb-5e64-4d57-a56c-e174115ca5b1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>isTemplate</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[isTemplate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>1f0e9408-0a07-4e49-b252-56cf7cadf545</key>
+                    <parentUnit>
+                        <key name="name" value="isTemplate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="isTemplate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>5ba73349-9a08-4729-b9be-c09aa543990b</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[5ba73349-9a08-4729-b9be-c09aa543990b].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0efe7791-490f-429f-a6f4-480be06ea3ac</key>
+                    <parentUnit>
+                        <key name="name" value="5ba73349-9a08-4729-b9be-c09aa543990b" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farmer" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>df004b85-00e6-4939-a8d8-b6c3cbf5a1be</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[df004b85-00e6-4939-a8d8-b6c3cbf5a1be].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>a1aa6aab-4860-4cc3-a048-5b4238699780</key>
+                    <parentUnit>
+                        <key name="name" value="df004b85-00e6-4939-a8d8-b6c3cbf5a1be" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farmer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>mobileTel</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[mobileTel].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>19d8a7dc-ca79-4906-b40e-42434b33e6fd</key>
+                    <parentUnit>
+                        <key name="name" value="mobileTel" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="mobileTel" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>identity</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[identity].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>17ab09b8-949d-44bd-97de-c7e143dc8f90</key>
+                    <parentUnit>
+                        <key name="name" value="identity" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="identity" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>contractDate</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>603d6832-e653-4dba-afe4-fb5679e6dab3</key>
+                    <parentUnit>
+                        <key name="name" value="contractDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="contractDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>breedDate</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>17cdaf3a-ffaa-4400-8a4e-40f34adceb96</key>
+                    <parentUnit>
+                        <key name="name" value="breedDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="breedDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>person.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[person.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>73371185-70e0-4ca3-9aaf-431774720d8f</key>
+                    <parentUnit>
+                        <key name="name" value="person.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="person" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>1445f19d-54ef-46bd-a2dd-70958eeeed53</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[1445f19d-54ef-46bd-a2dd-70958eeeed53].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>77751639-faaa-4ff7-9e56-16b6a6ab7834</key>
+                    <parentUnit>
+                        <key name="name" value="1445f19d-54ef-46bd-a2dd-70958eeeed53" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="person" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>71cc5b69-e4fb-44e8-9040-47bf04a89772</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[71cc5b69-e4fb-44e8-9040-47bf04a89772].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>9c74ede0-ae31-46fe-8ffe-13db789354f4</key>
+                    <parentUnit>
+                        <key name="name" value="71cc5b69-e4fb-44e8-9040-47bf04a89772" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="person" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>breedQty</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>83a31b80-707f-4d94-b802-5a16e0aa4d74</key>
+                    <parentUnit>
+                        <key name="name" value="breedQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="breedQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>breedType</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedType].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>d9b4aab6-e3c6-4e58-a885-0eb4b0dc3087</key>
+                    <parentUnit>
+                        <key name="name" value="breedType" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="breedType" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>settlementPolicy.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[settlementPolicy.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>892fe3bf-1fbb-471c-8877-d140b88e1a25</key>
+                    <parentUnit>
+                        <key name="name" value="settlementPolicy.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="settlementPolicy" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>contractContext</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractContext].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>153c2a07-b328-47e6-ac7c-7f7d56cf538a</key>
+                    <parentUnit>
+                        <key name="name" value="contractContext" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="contractContext" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditTime</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[auditTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f567cc4d-5a8a-41ae-82aa-027f66e1443e</key>
+                    <parentUnit>
+                        <key name="name" value="auditTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>stockingBatch.number</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[stockingBatch.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>077916a8-4813-468a-b7db-8b50d989c930</key>
+                    <parentUnit>
+                        <key name="name" value="stockingBatch.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="stockingBatch" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>937d51a6-3e6e-4dc6-85aa-31be544f29d2</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[937d51a6-3e6e-4dc6-85aa-31be544f29d2].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>208d743b-18df-4399-9183-7e794bd6bf53</key>
+                    <parentUnit>
+                        <key name="name" value="937d51a6-3e6e-4dc6-85aa-31be544f29d2" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="stockingBatch" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>b3e98d21-56ed-4ed8-8322-a204ba2f26b1</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[b3e98d21-56ed-4ed8-8322-a204ba2f26b1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>be5c8854-4c75-450e-b1d5-f414a0581acc</key>
+                    <parentUnit>
+                        <key name="name" value="b3e98d21-56ed-4ed8-8322-a204ba2f26b1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="stockingBatch" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>MarginBill.number</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[MarginBill.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>ee9b69ad-79be-4cd2-accb-492c484faced</key>
+                    <parentUnit>
+                        <key name="name" value="MarginBill.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="MarginBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>b456d17e-695b-44aa-8b00-0584a99c75f6</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[b456d17e-695b-44aa-8b00-0584a99c75f6].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>f527da42-ee85-4bc6-a07c-4f1188000630</key>
+                    <parentUnit>
+                        <key name="name" value="b456d17e-695b-44aa-8b00-0584a99c75f6" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="MarginBill" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>a1ef9b03-85d9-4cad-bba2-013c15b646ac</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[a1ef9b03-85d9-4cad-bba2-013c15b646ac].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>d0a3646e-46fc-480c-a70d-0afa4e08564e</key>
+                    <parentUnit>
+                        <key name="name" value="a1ef9b03-85d9-4cad-bba2-013c15b646ac" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="MarginBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>MarginBillAmount</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[MarginBillAmount].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>a509b73b-2ff5-46fb-b534-44bb25a55c7c</key>
+                    <parentUnit>
+                        <key name="name" value="MarginBillAmount" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="MarginBillAmount" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>breedData.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedData.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>48dbcc15-90e2-40f1-8adf-931c3e9d1f32</key>
+                    <parentUnit>
+                        <key name="name" value="breedData.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="breedData" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>d9c6cbb9-54f7-4895-836e-36f2a16caaef</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[d9c6cbb9-54f7-4895-836e-36f2a16caaef].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>6e687851-0e8e-4df8-bb6f-7cc4d8f000c8</key>
+                    <parentUnit>
+                        <key name="name" value="d9c6cbb9-54f7-4895-836e-36f2a16caaef" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="breedData" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>e35e469c-87f6-45f2-b353-c295ef78f3b8</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[e35e469c-87f6-45f2-b353-c295ef78f3b8].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>7c0a83a1-06c1-4114-8ac3-e8f5b8fd46df</key>
+                    <parentUnit>
+                        <key name="name" value="e35e469c-87f6-45f2-b353-c295ef78f3b8" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="breedData" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>29ccdfaa-a0e9-44d8-97f0-978b880eccf4</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[29ccdfaa-a0e9-44d8-97f0-978b880eccf4].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>58ecc734-9032-4cac-9e14-5fac4ec39e5a</key>
+                    <parentUnit>
+                        <key name="name" value="29ccdfaa-a0e9-44d8-97f0-978b880eccf4" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="settlementPolicy" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>ff8d22b1-94f8-4e79-8e31-697c72d188eb</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[ff8d22b1-94f8-4e79-8e31-697c72d188eb].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>ea505d3b-f4b2-44e7-a7d5-0f252ddc8c3d</key>
+                    <parentUnit>
+                        <key name="name" value="ff8d22b1-94f8-4e79-8e31-697c72d188eb" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="settlementPolicy" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>c5782af9-128b-414f-96b6-d44f2a1cf451</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[c5782af9-128b-414f-96b6-d44f2a1cf451].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>c0b0e03a-7d8e-4353-af33-14ba293a8651</key>
+                    <parentUnit>
+                        <key name="name" value="c5782af9-128b-414f-96b6-d44f2a1cf451" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farm" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>a5d8f3a5-6531-4935-91d4-9107bef22215</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[a5d8f3a5-6531-4935-91d4-9107bef22215].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>fa65e5c5-7639-4498-8b6f-78dc1c078135</key>
+                    <parentUnit>
+                        <key name="name" value="a5d8f3a5-6531-4935-91d4-9107bef22215" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>createTime</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[createTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="createTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="createTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateTime</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[lastUpdateTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditor.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[auditor.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="auditor.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditor.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[auditor.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="auditor.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>creator.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[creator.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="creator.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>creator.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[creator.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="creator.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateUser.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[lastUpdateUser.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateUser.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateUser.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[lastUpdateUser.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateUser.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>handler.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[handler.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="handler.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>handler.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[handler.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="handler.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>Fivouchered</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[Fivouchered].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="Fivouchered" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="Fivouchered" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>femaleBreedQty</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[femaleBreedQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>8cf1393f-34f3-4d44-b44e-09133c4712b5</key>
+                    <parentUnit>
+                        <key name="name" value="femaleBreedQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="femaleBreedQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>farmer.id</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farmer.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>70668885-c4e9-4180-b0b9-0439fd726cde</key>
+                    <parentUnit>
+                        <key name="name" value="farmer.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farmer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>farm.id</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farm.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>6f643f19-b5b4-4044-a7c3-39744a0190d2</key>
+                    <parentUnit>
+                        <key name="name" value="farm.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>isInit</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[isInit].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>9405643d-2d1a-4189-bb82-b64a7b54dc3a</key>
+                    <parentUnit>
+                        <key name="name" value="isInit" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="isInit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>receiveBill.number</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[receiveBill.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>456a0973-3747-4f1c-9837-00bde970fc62</key>
+                    <parentUnit>
+                        <key name="name" value="receiveBill.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="receiveBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>2bb696bd-8a0b-41cc-b60f-2ba85c2ef8aa</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[2bb696bd-8a0b-41cc-b60f-2ba85c2ef8aa].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>e5a3b652-2ccc-40a9-a6cb-2f28831454b2</key>
+                    <parentUnit>
+                        <key name="name" value="2bb696bd-8a0b-41cc-b60f-2ba85c2ef8aa" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="receiveBill" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>14a4f792-44a8-4e1f-81b1-433a16c881a2</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[14a4f792-44a8-4e1f-81b1-433a16c881a2].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>9e2cd03b-2614-4fc5-95f5-24acf72d986c</key>
+                    <parentUnit>
+                        <key name="name" value="14a4f792-44a8-4e1f-81b1-433a16c881a2" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="receiveBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>contractEndDate</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractEndDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>ff618801-b9ad-47e5-8944-65dab2974fc6</key>
+                    <parentUnit>
+                        <key name="name" value="contractEndDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="contractEndDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>firstBreedBillSeel.number</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[firstBreedBillSeel.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>30ffdf60-3052-4fde-bc57-4c225ca456dd</key>
+                    <parentUnit>
+                        <key name="name" value="firstBreedBillSeel.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="firstBreedBillSeel" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>d9d4dd5c-8613-4b9f-a128-3ad9267e1633</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[d9d4dd5c-8613-4b9f-a128-3ad9267e1633].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>9823d68e-a680-492e-9124-e4b0211ba47f</key>
+                    <parentUnit>
+                        <key name="name" value="d9d4dd5c-8613-4b9f-a128-3ad9267e1633" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="firstBreedBillSeel" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>64c74d4b-1e8c-419d-a892-d83d928ea7a2</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[64c74d4b-1e8c-419d-a892-d83d928ea7a2].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>85f80420-633b-42f0-be60-c1503d1c5471</key>
+                    <parentUnit>
+                        <key name="name" value="64c74d4b-1e8c-419d-a892-d83d928ea7a2" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="firstBreedBillSeel" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>actualBreedDate</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualBreedDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>6d6aed80-d8ad-4401-9adb-9a6c7d06d828</key>
+                    <parentUnit>
+                        <key name="name" value="actualBreedDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="actualBreedDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>actualbreedQty</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualbreedQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>a0416b46-2a6f-4d07-8ea1-557be043d38e</key>
+                    <parentUnit>
+                        <key name="name" value="actualbreedQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="actualbreedQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>actualFemaleQty</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualFemaleQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>20cc660b-60b9-468e-b85d-9f8d1888e21a</key>
+                    <parentUnit>
+                        <key name="name" value="actualFemaleQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BatchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="actualFemaleQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </queryField>
+    </units>
+    <defaultFilter>
+        <name>defaultFilter</name>
+        <formulaString />
+        <query>
+            <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+            <key name="name" value="BatchContractQuery" />
+        </query>
+    </defaultFilter>
+    <defaultSorters>
+        <querySorterItem>
+            <propertyName>number</propertyName>
+            <sortType>ASC</sortType>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+            <configured>false</configured>
+        </querySorterItem>
+    </defaultSorters>
+    <queryPK>
+        <name>QueryPK</name>
+        <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].queryPK[QueryPK].alias</alias>
+        <description>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].queryPK[QueryPK].description</description>
+        <keyProperties>
+            <queryField>
+                <key name="name" value="id" />
+            </queryField>
+        </keyProperties>
+    </queryPK>
+    <isDistinct>false</isDistinct>
+    <joins>
+        <join>
+            <name>NewJoin0</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="auditor" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit0" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin0" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin1</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="creator" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit2" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit3" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin1" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin2</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="lastUpdateUser" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit4" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit5" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin2" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin4</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="handler" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit9" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit8" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin4" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>8c3abc37-d7ca-45e9-95c2-4c2898d21dcf</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="company" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>a9637c56-8dd2-482d-b072-9790f95f4f11</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="2de43493-9762-492f-9381-f7b941e16c22" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="fd038beb-5e64-4d57-a56c-e174115ca5b1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="8c3abc37-d7ca-45e9-95c2-4c2898d21dcf" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>2c20e553-9549-40a9-9fda-b869887e3dc5</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="farmer" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>e3aed5d7-84f2-4582-91e6-1dc32fd882ab</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="5ba73349-9a08-4729-b9be-c09aa543990b" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="df004b85-00e6-4939-a8d8-b6c3cbf5a1be" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="2c20e553-9549-40a9-9fda-b869887e3dc5" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>e338829a-3b45-4e34-8d30-a7638ff7590d</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="person" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>71af8e45-7625-437f-b1a3-03f76b018f27</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="1445f19d-54ef-46bd-a2dd-70958eeeed53" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="71cc5b69-e4fb-44e8-9040-47bf04a89772" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="e338829a-3b45-4e34-8d30-a7638ff7590d" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>eafbe12d-b1c7-4df1-8eec-4a64530d5fdc</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="stockingBatch" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>6fd72b37-cab5-4852-8de6-9e79e5b27a34</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="937d51a6-3e6e-4dc6-85aa-31be544f29d2" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="b3e98d21-56ed-4ed8-8322-a204ba2f26b1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="eafbe12d-b1c7-4df1-8eec-4a64530d5fdc" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>2c13a8a1-970b-470f-8821-c03563d00ede</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="MarginBill" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>5ea40020-21de-46a5-959c-f8a0bfac0064</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="b456d17e-695b-44aa-8b00-0584a99c75f6" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="a1ef9b03-85d9-4cad-bba2-013c15b646ac" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="2c13a8a1-970b-470f-8821-c03563d00ede" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>2187bd54-4341-4c55-89c2-f3333f7dad44</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="breedData" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>9cad1bb1-e8d0-4668-9127-29d8ee5b3dcc</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="d9c6cbb9-54f7-4895-836e-36f2a16caaef" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="e35e469c-87f6-45f2-b353-c295ef78f3b8" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="2187bd54-4341-4c55-89c2-f3333f7dad44" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>24901d46-43ad-4e19-8e67-c09196442b99</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="settlementPolicy" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>a43018ef-25ab-412a-a9e7-f35afb38deab</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="29ccdfaa-a0e9-44d8-97f0-978b880eccf4" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="ff8d22b1-94f8-4e79-8e31-697c72d188eb" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="24901d46-43ad-4e19-8e67-c09196442b99" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>7125b43d-7150-4fca-9414-aaf2fab2191c</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="farm" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>c48abbdb-119e-49e3-b739-0603fd5e49f6</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="c5782af9-128b-414f-96b6-d44f2a1cf451" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="a5d8f3a5-6531-4935-91d4-9107bef22215" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="7125b43d-7150-4fca-9414-aaf2fab2191c" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>b2057449-7788-4869-8aed-85f9211a0fce</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="receiveBill" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>f79aca7e-e80c-42a9-b4df-86a78e24628f</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="2bb696bd-8a0b-41cc-b60f-2ba85c2ef8aa" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="14a4f792-44a8-4e1f-81b1-433a16c881a2" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="b2057449-7788-4869-8aed-85f9211a0fce" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+        <join>
+            <name>310e34ed-ff13-4ee6-bb8d-ac121c0f4839</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BatchContract" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="firstBreedBillSeel" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>f1ef6130-8227-4a0f-8734-10b522195e33</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="d9d4dd5c-8613-4b9f-a128-3ad9267e1633" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="64c74d4b-1e8c-419d-a892-d83d928ea7a2" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="310e34ed-ff13-4ee6-bb8d-ac121c0f4839" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContractQuery" />
+            </query>
+        </join>
+    </joins>
+    <resource>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="批次合同" />
+            <lang locale="zh_HK" value="批次合同" />
+            <lang locale="zh_TW" value="批次合同" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].defaultSorters.querySorterItemextendedProperty.f7WindowTitle">
+            <lang locale="en_US" value="多分录基础单据模板" />
+            <lang locale="zh_CN" value="多分录基础单据模板" />
+            <lang locale="zh_TW" value="多分录基础单据模板" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="多分录基础单据查询" />
+            <lang locale="zh_HK" value="多分錄基礎單據查詢" />
+            <lang locale="zh_TW" value="多分錄基礎單據查詢" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].extendedProperty.F7WindowTitle">
+            <lang locale="en_US" value="com.kingdee.eas.farm.stocking.processbizill.client.ProcessbizillResource.BatchContractQueryF7WindowTitle" />
+            <lang locale="zh_CN" value="com.kingdee.eas.farm.stocking.processbizill.client.ProcessbizillResource.BatchContractQueryF7WindowTitle" />
+            <lang locale="zh_TW" value="com.kingdee.eas.farm.stocking.processbizill.client.ProcessbizillResource.BatchContractQueryF7WindowTitle" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].extendedProperty.f7WindowTitle">
+            <lang locale="en_US" value="批次合同" />
+            <lang locale="zh_CN" value="批次合同" />
+            <lang locale="zh_TW" value="批次合同" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].queryPK[QueryPK].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].queryPK[QueryPK].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[BatchContract].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[MarginBill].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[auditor].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[breedData].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[company].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[creator].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[farm].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[farmer].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[firstBreedBillSeel].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[handler].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[lastUpdateUser].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[person].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[receiveBill].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[settlementPolicy].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].subObjects.subEntity[stockingBatch].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[1445f19d-54ef-46bd-a2dd-70958eeeed53].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[14a4f792-44a8-4e1f-81b1-433a16c881a2].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[29ccdfaa-a0e9-44d8-97f0-978b880eccf4].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[2bb696bd-8a0b-41cc-b60f-2ba85c2ef8aa].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[2de43493-9762-492f-9381-f7b941e16c22].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[5ba73349-9a08-4729-b9be-c09aa543990b].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[64c74d4b-1e8c-419d-a892-d83d928ea7a2].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[71cc5b69-e4fb-44e8-9040-47bf04a89772].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[937d51a6-3e6e-4dc6-85aa-31be544f29d2].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit0].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit2].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit3].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit4].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit5].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit8].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[NewUnit9].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[a1ef9b03-85d9-4cad-bba2-013c15b646ac].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[a5d8f3a5-6531-4935-91d4-9107bef22215].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[b3e98d21-56ed-4ed8-8322-a204ba2f26b1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[b456d17e-695b-44aa-8b00-0584a99c75f6].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[c5782af9-128b-414f-96b6-d44f2a1cf451].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[d9c6cbb9-54f7-4895-836e-36f2a16caaef].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[d9d4dd5c-8613-4b9f-a128-3ad9267e1633].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[df004b85-00e6-4939-a8d8-b6c3cbf5a1be].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[e35e469c-87f6-45f2-b353-c295ef78f3b8].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[fd038beb-5e64-4d57-a56c-e174115ca5b1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.propertyUnit[ff8d22b1-94f8-4e79-8e31-697c72d188eb].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[Fivouchered].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否生成凭证" />
+            <lang locale="zh_HK" value="是否生成憑證" />
+            <lang locale="zh_TW" value="是否生成憑證" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[Fivouchered].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[Fivouchered].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[MarginBill.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="保证金" />
+            <lang locale="zh_HK" value="保證金" />
+            <lang locale="zh_TW" value="保證金" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[MarginBill.number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[MarginBill.number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[MarginBill.number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[MarginBillAmount].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="保证金金额" />
+            <lang locale="zh_HK" value="保證金金額" />
+            <lang locale="zh_TW" value="保證金金額" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[MarginBillAmount].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[MarginBillAmount].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualBreedDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="实际上苗日期" />
+            <lang locale="zh_HK" value="實際上苗日期" />
+            <lang locale="zh_TW" value="實際上苗日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualBreedDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualBreedDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualFemaleQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="实际母禽数量" />
+            <lang locale="zh_HK" value="實際母禽數量" />
+            <lang locale="zh_TW" value="實際母禽數量" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualFemaleQty].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualFemaleQty].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualbreedQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="实际公禽数量" />
+            <lang locale="zh_HK" value="實際公禽數量" />
+            <lang locale="zh_TW" value="實際公禽數量" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualbreedQty].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[actualbreedQty].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[auditTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核时间" />
+            <lang locale="zh_HK" value="審核時間" />
+            <lang locale="zh_TW" value="審核時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[auditTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[auditTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[auditor.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[auditor.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[billStatus].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据状态" />
+            <lang locale="zh_HK" value="單據狀態" />
+            <lang locale="zh_TW" value="單據狀態" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[billStatus].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[billStatus].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[bizDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="业务日期" />
+            <lang locale="zh_HK" value="業務日期" />
+            <lang locale="zh_TW" value="業務日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[bizDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[bizDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedData.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="品种" />
+            <lang locale="zh_HK" value="品種" />
+            <lang locale="zh_TW" value="品種" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedData.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedData.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedData.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="上苗日期" />
+            <lang locale="zh_HK" value="上苗日期" />
+            <lang locale="zh_TW" value="上苗日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="上苗数量" />
+            <lang locale="zh_HK" value="上苗數量" />
+            <lang locale="zh_TW" value="上苗數量" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedQty].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedQty].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedType].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖类型" />
+            <lang locale="zh_HK" value="養殖類型" />
+            <lang locale="zh_TW" value="養殖類型" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedType].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[breedType].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[company.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="ID" />
+            <lang locale="zh_HK" value="ID" />
+            <lang locale="zh_TW" value="ID" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[company.id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[company.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="财务组织" />
+            <lang locale="zh_HK" value="財務組織" />
+            <lang locale="zh_TW" value="財務組織" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[company.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[company.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[company.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractContext].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="合同内容" />
+            <lang locale="zh_HK" value="合同內容" />
+            <lang locale="zh_TW" value="合同內容" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractContext].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractContext].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="合同日期" />
+            <lang locale="zh_HK" value="合同日期" />
+            <lang locale="zh_TW" value="合同日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractEndDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="合同结束日期" />
+            <lang locale="zh_HK" value="合同結束日期" />
+            <lang locale="zh_TW" value="合同結束日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractEndDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[contractEndDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[createTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="创建时间" />
+            <lang locale="zh_HK" value="創建時間" />
+            <lang locale="zh_TW" value="創建時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[createTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[createTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[creator.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[creator.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[description].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="参考信息" />
+            <lang locale="zh_HK" value="參考信息" />
+            <lang locale="zh_TW" value="參考信息" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[description].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[description].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farm.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="ID" />
+            <lang locale="zh_HK" value="ID" />
+            <lang locale="zh_TW" value="ID" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farm.id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farm.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖场" />
+            <lang locale="zh_HK" value="養殖場" />
+            <lang locale="zh_TW" value="養殖場" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farm.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farm.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farm.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farmer.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="ID" />
+            <lang locale="zh_HK" value="ID" />
+            <lang locale="zh_TW" value="ID" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farmer.id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farmer.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户名称" />
+            <lang locale="zh_HK" value="養戶名稱" />
+            <lang locale="zh_TW" value="養戶名稱" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farmer.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farmer.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[farmer.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[femaleBreedQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="母禽数量" />
+            <lang locale="zh_HK" value="母禽數量" />
+            <lang locale="zh_TW" value="母禽數量" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[femaleBreedQty].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[femaleBreedQty].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[firstBreedBillSeel.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="初次种苗领用单" />
+            <lang locale="zh_HK" value="初次種苗領用單" />
+            <lang locale="zh_TW" value="初次種苗領用單" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[firstBreedBillSeel.number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[firstBreedBillSeel.number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[firstBreedBillSeel.number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[handler.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[handler.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[identity].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="身份证号" />
+            <lang locale="zh_HK" value="身份證號" />
+            <lang locale="zh_TW" value="身份證號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[identity].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[identity].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[isInit].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="初始化单据" />
+            <lang locale="zh_HK" value="初始化單據" />
+            <lang locale="zh_TW" value="初始化單據" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[isInit].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[isInit].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[isTemplate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否模板" />
+            <lang locale="zh_HK" value="是否範本" />
+            <lang locale="zh_TW" value="是否範本" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[isTemplate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[isTemplate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[isTemplate].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[lastUpdateTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="最后修改时间" />
+            <lang locale="zh_HK" value="最後修改時間" />
+            <lang locale="zh_TW" value="最後修改時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[lastUpdateUser.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[lastUpdateUser.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[mobileTel].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="手机号" />
+            <lang locale="zh_HK" value="手機號" />
+            <lang locale="zh_TW" value="手機號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[mobileTel].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[mobileTel].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据编号" />
+            <lang locale="zh_HK" value="單據編號" />
+            <lang locale="zh_TW" value="單據編號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[person.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="业务员" />
+            <lang locale="zh_HK" value="業務員" />
+            <lang locale="zh_TW" value="業務員" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[person.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[person.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[person.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[receiveBill.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="保证金" />
+            <lang locale="zh_HK" value="保證金" />
+            <lang locale="zh_TW" value="保證金" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[receiveBill.number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[receiveBill.number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[receiveBill.number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[settlementPolicy.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="结算政策" />
+            <lang locale="zh_HK" value="結算政策" />
+            <lang locale="zh_TW" value="結算政策" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[settlementPolicy.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[settlementPolicy.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[settlementPolicy.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[stockingBatch.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="批次" />
+            <lang locale="zh_HK" value="批次" />
+            <lang locale="zh_TW" value="批次" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[stockingBatch.number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[stockingBatch.number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractQuery].units.queryField[stockingBatch.number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+    </resource>
+</joinQuery>
+

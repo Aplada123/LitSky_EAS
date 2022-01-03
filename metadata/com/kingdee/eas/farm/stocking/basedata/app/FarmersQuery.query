@@ -1,0 +1,3640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<joinQuery xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.basedata.app</package>
+    <name>FarmersQuery</name>
+    <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].alias</alias>
+    <description>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].description</description>
+    <userDefined>false</userDefined>
+    <reportDataSource />
+    <bizUnitPK>com.kingdee.eas.farm.stocking.basedata.Farmers</bizUnitPK>
+    <connectionProvider />
+    <subObjects>
+        <subEntity>
+            <name>Farmers</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[Farmers].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="Farmers" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>creator</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[creator].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>lastUpdateUser</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[lastUpdateUser].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>treeid</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[treeid].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersTree" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>auditor</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[auditor].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>customer</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[customer].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.master.cssp.app" />
+                <key name="name" value="Customer" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>FarmEntry</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[FarmEntry].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersFarmEntry" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>FarmEntry_farm</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[FarmEntry_farm].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="Farm" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>supplier</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[supplier].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.master.cssp.app" />
+                <key name="name" value="Supplier" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>costCenter</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[costCenter].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CostCenterOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>company</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[company].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CompanyOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>BEBank</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[BEBank].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.fm.be.app" />
+                <key name="name" value="BEBank" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>generalAsstActType</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[generalAsstActType].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.master.auxacct.app" />
+                <key name="name" value="AsstAccount" />
+            </entityRef>
+        </subEntity>
+    </subObjects>
+    <units>
+        <propertyUnit>
+            <name>NewUnit0</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit0].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit0" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="creator" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit1</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit2</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit2].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit2" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateUser" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit3</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit3].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit3" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit4</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit4].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit4" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="treeid" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit5</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit5].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit5" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="treeid" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>id</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>description</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[description].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="description" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="description" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>simpleName</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[simpleName].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="simpleName" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="simpleName" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>createTime</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[createTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="createTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="createTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>creator.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[creator.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="creator.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateTime</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateUser.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateUser.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateUser.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>treeid.id</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[treeid.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="treeid.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="treeid" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>address</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[address].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>81366096-42d2-4757-bccb-e6fcc2b81e6e</key>
+                    <parentUnit>
+                        <key name="name" value="address" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="address" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>identity</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[identity].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f5a13b24-d31a-4067-9192-22027ce9e501</key>
+                    <parentUnit>
+                        <key name="name" value="identity" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="identity" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>tel</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[tel].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>2b4d2a72-8eef-4541-b213-77026a764e08</key>
+                    <parentUnit>
+                        <key name="name" value="tel" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="tel" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>mobileTel</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[mobileTel].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>62597b36-cd5f-48f4-9143-da2140f3f613</key>
+                    <parentUnit>
+                        <key name="name" value="mobileTel" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="mobileTel" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditor.number</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[auditor.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>85481c8f-0e96-4fe8-8b37-0b21e520d3d3</key>
+                    <parentUnit>
+                        <key name="name" value="auditor.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>beaa56d7-4585-4ae1-b9f4-077c48fc0308</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[beaa56d7-4585-4ae1-b9f4-077c48fc0308].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>1c996502-b826-414b-b96d-89fbeadf7114</key>
+                    <parentUnit>
+                        <key name="name" value="beaa56d7-4585-4ae1-b9f4-077c48fc0308" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditor" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>9ea30a1a-c7fb-4b24-922e-9b84930843e7</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[9ea30a1a-c7fb-4b24-922e-9b84930843e7].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>24797abd-fdd4-465c-8e2a-93b362525611</key>
+                    <parentUnit>
+                        <key name="name" value="9ea30a1a-c7fb-4b24-922e-9b84930843e7" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>auditTime</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[auditTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>d795b867-a666-4fd6-baef-d0bc83bdec3c</key>
+                    <parentUnit>
+                        <key name="name" value="auditTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>sex</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[sex].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>836948dd-0fbf-45fc-9ee5-ab15a06d556f</key>
+                    <parentUnit>
+                        <key name="name" value="sex" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="sex" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>baseStatus</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[baseStatus].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>b9b7b077-9c02-4b82-be04-1d0590a842d4</key>
+                    <parentUnit>
+                        <key name="name" value="baseStatus" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="baseStatus" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>customer.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[customer.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>cdfaa917-22e4-4503-b6ff-787cca24ffea</key>
+                    <parentUnit>
+                        <key name="name" value="customer.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="customer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>0a3ec673-1374-456e-9866-0eeb79555eee</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[0a3ec673-1374-456e-9866-0eeb79555eee].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>f32de8e4-1c21-4738-8e2f-5eea62c0ec80</key>
+                    <parentUnit>
+                        <key name="name" value="0a3ec673-1374-456e-9866-0eeb79555eee" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="customer" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>f42ac33e-e28e-4840-82ae-76b3eb6ff928</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[f42ac33e-e28e-4840-82ae-76b3eb6ff928].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>8c48c8f2-de4d-4436-91e6-ff8ca4b5f554</key>
+                    <parentUnit>
+                        <key name="name" value="f42ac33e-e28e-4840-82ae-76b3eb6ff928" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="customer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>FarmEntry.seq</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry.seq].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>2f069522-7ad8-415d-94cf-c8678bbcc3a9</key>
+                    <parentUnit>
+                        <key name="name" value="FarmEntry.seq" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="seq" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>902773ab-f74d-4e3a-ad8f-10950129a133</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[902773ab-f74d-4e3a-ad8f-10950129a133].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>3f6ff56f-efa8-48eb-803e-0847eb0ff009</key>
+                    <parentUnit>
+                        <key name="name" value="902773ab-f74d-4e3a-ad8f-10950129a133" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>65a8f5c0-982e-4d7f-8fc3-2ad855f502a9</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[65a8f5c0-982e-4d7f-8fc3-2ad855f502a9].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>f6351cee-8979-4cea-8bc8-ff57b1606b14</key>
+                    <parentUnit>
+                        <key name="name" value="65a8f5c0-982e-4d7f-8fc3-2ad855f502a9" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="parent" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>FarmEntry.farm.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry.farm.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>2c4ab9dd-f85e-4404-824c-6384c2e6e333</key>
+                    <parentUnit>
+                        <key name="name" value="FarmEntry.farm.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>aa16fbd5-0c82-410d-8589-847e11b14db0</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[aa16fbd5-0c82-410d-8589-847e11b14db0].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>d6786fdd-1694-4fe7-b878-9464d9faaec7</key>
+                    <parentUnit>
+                        <key name="name" value="aa16fbd5-0c82-410d-8589-847e11b14db0" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farm" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>3b81c771-fb17-47e5-933c-6a0b56d773ac</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[3b81c771-fb17-47e5-933c-6a0b56d773ac].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>07458aa0-bff5-4a07-8c15-1470eeef2964</key>
+                    <parentUnit>
+                        <key name="name" value="3b81c771-fb17-47e5-933c-6a0b56d773ac" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>bank</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[bank].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>6fc01bc5-3b87-44d9-a18f-c30caf25979b</key>
+                    <parentUnit>
+                        <key name="name" value="bank" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bank" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>bankNo</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[bankNo].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>6a1ad8c1-487c-4a74-bc9f-b7489c557c0f</key>
+                    <parentUnit>
+                        <key name="name" value="bankNo" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bankNo" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>supplier.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[supplier.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>982f6e5a-8ab3-4c91-9388-d71ac0bef14c</key>
+                    <parentUnit>
+                        <key name="name" value="supplier.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="supplier" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>f0c7ad08-a176-4e85-9cbf-5e42dd5e92a8</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[f0c7ad08-a176-4e85-9cbf-5e42dd5e92a8].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>ee6c6aef-e6a7-44a5-baa0-bd7e6a77b06e</key>
+                    <parentUnit>
+                        <key name="name" value="f0c7ad08-a176-4e85-9cbf-5e42dd5e92a8" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="supplier" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>a76c51b5-0753-422b-a6a7-8223365a3c69</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[a76c51b5-0753-422b-a6a7-8223365a3c69].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>69dbfc9a-644f-47b7-9123-3fa1094ee2e6</key>
+                    <parentUnit>
+                        <key name="name" value="a76c51b5-0753-422b-a6a7-8223365a3c69" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="supplier" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>costCenter.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[costCenter.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>57d4a678-bd24-4572-a7a6-4696a9032e7c</key>
+                    <parentUnit>
+                        <key name="name" value="costCenter.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="costCenter" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>14e4ff06-82c6-4f44-b6cc-008c692725de</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[14e4ff06-82c6-4f44-b6cc-008c692725de].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>902831dd-71d3-4f32-aee1-6bb03b032ab6</key>
+                    <parentUnit>
+                        <key name="name" value="14e4ff06-82c6-4f44-b6cc-008c692725de" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="costCenter" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>c301e430-b30b-42a4-96d3-b4dff592bafc</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[c301e430-b30b-42a4-96d3-b4dff592bafc].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>e86ab326-b6ed-4491-9c59-25190243eae8</key>
+                    <parentUnit>
+                        <key name="name" value="c301e430-b30b-42a4-96d3-b4dff592bafc" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="costCenter" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>company.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[company.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>11c6d51b-7a86-46b8-802f-86cc1ca9fc72</key>
+                    <parentUnit>
+                        <key name="name" value="company.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>6fcd958c-ee59-4f2d-90a2-285b51d457b0</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[6fcd958c-ee59-4f2d-90a2-285b51d457b0].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>bd9ccebe-9e68-44dc-9deb-a118b466d105</key>
+                    <parentUnit>
+                        <key name="name" value="6fcd958c-ee59-4f2d-90a2-285b51d457b0" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="company" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>635f773a-620c-4cda-a7ba-15c3ec63f83b</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[635f773a-620c-4cda-a7ba-15c3ec63f83b].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>d6d84caf-5781-4385-92b7-fccd64e049ab</key>
+                    <parentUnit>
+                        <key name="name" value="635f773a-620c-4cda-a7ba-15c3ec63f83b" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>company.id</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[company.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>c5e8bb70-2d21-4009-b07b-3e2f4617c6f1</key>
+                    <parentUnit>
+                        <key name="name" value="company.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>age</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[age].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>d0f6a1d8-714f-476f-80bf-ec3d359337a2</key>
+                    <parentUnit>
+                        <key name="name" value="age" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="age" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>nation</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[nation].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>059ae87f-b935-4b38-8c48-07b88187c71d</key>
+                    <parentUnit>
+                        <key name="name" value="nation" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="nation" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>eduLvl</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[eduLvl].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>fbe3cb25-d3ef-4884-ad8a-eb320296fa92</key>
+                    <parentUnit>
+                        <key name="name" value="eduLvl" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="eduLvl" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>familyPersonCount</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[familyPersonCount].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>56df90d1-b676-4329-b4f2-b9bcede5c300</key>
+                    <parentUnit>
+                        <key name="name" value="familyPersonCount" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="familyPersonCount" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>BEBank.name</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[BEBank.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>82b00ed6-c94f-42e4-b5bf-59ed745291ff</key>
+                    <parentUnit>
+                        <key name="name" value="BEBank.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BEBank" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>a40ca97a-2e0f-472f-914d-16e0ea9cdcdf</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[a40ca97a-2e0f-472f-914d-16e0ea9cdcdf].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>c9a38878-a813-4ed4-8739-257ced83f123</key>
+                    <parentUnit>
+                        <key name="name" value="a40ca97a-2e0f-472f-914d-16e0ea9cdcdf" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="BEBank" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>8a63f8d9-0e6a-4e56-b0e1-86827d0dd3a4</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[8a63f8d9-0e6a-4e56-b0e1-86827d0dd3a4].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>d526b399-572a-4fa7-ae9e-cf5ef4a8cb6b</key>
+                    <parentUnit>
+                        <key name="name" value="8a63f8d9-0e6a-4e56-b0e1-86827d0dd3a4" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BEBank" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>farmerActName</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[farmerActName].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>49066265-4ff8-4897-8948-990886198556</key>
+                    <parentUnit>
+                        <key name="name" value="farmerActName" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farmerActName" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>generalAsstActType.name</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[generalAsstActType.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>e7416841-ac7c-41fa-878c-7eb50a1b1cf5</key>
+                    <parentUnit>
+                        <key name="name" value="generalAsstActType.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="generalAsstActType" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>ba6f0bd6-5af5-4cd6-913b-fefe6ea2217e</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[ba6f0bd6-5af5-4cd6-913b-fefe6ea2217e].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>77f5b6f0-82cb-4d0d-be23-1abfbeb6d8e9</key>
+                    <parentUnit>
+                        <key name="name" value="ba6f0bd6-5af5-4cd6-913b-fefe6ea2217e" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="Farmers" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="generalAsstActType" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>c47f0a87-a2b1-491e-a275-97fe90f6b880</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[c47f0a87-a2b1-491e-a275-97fe90f6b880].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>3d733298-d7b9-452f-b06b-a8a84e04f66c</key>
+                    <parentUnit>
+                        <key name="name" value="c47f0a87-a2b1-491e-a275-97fe90f6b880" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="generalAsstActType" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>treeid.name</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[treeid.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>9658b838-6ade-49e2-9a84-5dc6e61209e2</key>
+                    <parentUnit>
+                        <key name="name" value="treeid.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="treeid" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>FarmEntry_farm.gm</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.gm].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>98506201-09a7-4a21-83b4-049d07945756</key>
+                    <parentUnit>
+                        <key name="name" value="FarmEntry_farm.gm" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="gm" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>FarmEntry_farm.name</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>9fcc0e70-deec-43ee-ac37-1b90f9cde149</key>
+                    <parentUnit>
+                        <key name="name" value="FarmEntry_farm.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>FarmEntry_farm.number</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>fd5c73a8-327e-421d-8d2c-11dcfe0ef9c0</key>
+                    <parentUnit>
+                        <key name="name" value="FarmEntry_farm.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>FarmEntry_farm.address</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.address].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>47af6f98-17f1-41ac-a902-55a304761e2f</key>
+                    <parentUnit>
+                        <key name="name" value="FarmEntry_farm.address" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="address" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>FarmEntry_farm.fodderTransIns</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.fodderTransIns].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>40b1183a-b34a-4ab2-84bc-dba982061a02</key>
+                    <parentUnit>
+                        <key name="name" value="FarmEntry_farm.fodderTransIns" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="fodderTransIns" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>FarmEntry_farm.area</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.area].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>937be8f1-afc6-4756-8008-d107b64b30b3</key>
+                    <parentUnit>
+                        <key name="name" value="FarmEntry_farm.area" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmEntry_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="area" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </queryField>
+    </units>
+    <defaultFilter>
+        <name>defaultFilter</name>
+        <formulaString />
+        <query>
+            <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+            <key name="name" value="FarmersQuery" />
+        </query>
+    </defaultFilter>
+    <queryPK>
+        <name>QueryPK</name>
+        <alias>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].queryPK[QueryPK].alias</alias>
+        <description>joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].queryPK[QueryPK].description</description>
+        <keyProperties>
+            <queryField>
+                <key name="name" value="id" />
+            </queryField>
+        </keyProperties>
+    </queryPK>
+    <isDistinct>false</isDistinct>
+    <joins>
+        <join>
+            <name>NewJoin0</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="creator" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit0" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin0" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin1</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="lastUpdateUser" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit2" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit3" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin0" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin2</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="treeid" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit4" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit5" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin0" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>3660730b-35cb-43d6-909d-066ae00d7e75</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="auditor" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>c32ce991-0e1b-450d-94fd-00727205578b</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="beaa56d7-4585-4ae1-b9f4-077c48fc0308" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="9ea30a1a-c7fb-4b24-922e-9b84930843e7" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="3660730b-35cb-43d6-909d-066ae00d7e75" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>50a8927f-a38b-4220-ae57-b1bea98a2b84</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="customer" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>69ba38f2-0277-4aa5-9f27-fa519ccfdc6f</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="0a3ec673-1374-456e-9866-0eeb79555eee" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="f42ac33e-e28e-4840-82ae-76b3eb6ff928" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="50a8927f-a38b-4220-ae57-b1bea98a2b84" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>40db8820-55f9-43c9-a6a3-3702460350c9</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="FarmEntry" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>e8df03fb-bd82-4d4f-bb5c-5d753551ad2f</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="902773ab-f74d-4e3a-ad8f-10950129a133" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="65a8f5c0-982e-4d7f-8fc3-2ad855f502a9" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="40db8820-55f9-43c9-a6a3-3702460350c9" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>c66d88f1-27c1-483a-b204-90957ed29470</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmEntry" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="FarmEntry_farm" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>7f516505-90de-4067-be4d-0bf990438fb9</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="aa16fbd5-0c82-410d-8589-847e11b14db0" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="3b81c771-fb17-47e5-933c-6a0b56d773ac" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="c66d88f1-27c1-483a-b204-90957ed29470" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>f874bbcc-fbfd-4a05-8e28-f30cd07d9ea2</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="supplier" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>25fa9fb3-20be-4a00-89a2-4cc1ff1c81f6</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="f0c7ad08-a176-4e85-9cbf-5e42dd5e92a8" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="a76c51b5-0753-422b-a6a7-8223365a3c69" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="f874bbcc-fbfd-4a05-8e28-f30cd07d9ea2" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>7c2d383d-8bb1-43df-af46-3e9e47e62456</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="costCenter" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>8e1cfcb4-03a4-4ec7-b553-a280b2d1deec</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="14e4ff06-82c6-4f44-b6cc-008c692725de" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="c301e430-b30b-42a4-96d3-b4dff592bafc" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="7c2d383d-8bb1-43df-af46-3e9e47e62456" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>cb440f48-1b1e-44b7-a964-45cc1d2615c5</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="company" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>c8275158-2374-4f0a-9ad7-9c66196f0806</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="6fcd958c-ee59-4f2d-90a2-285b51d457b0" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="635f773a-620c-4cda-a7ba-15c3ec63f83b" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="cb440f48-1b1e-44b7-a964-45cc1d2615c5" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>2b3cf5ad-1da7-49bd-b730-2bd236d3d2f9</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="BEBank" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>f33a9da5-5f93-4a9e-8431-cf6590633cbd</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="a40ca97a-2e0f-472f-914d-16e0ea9cdcdf" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="8a63f8d9-0e6a-4e56-b0e1-86827d0dd3a4" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="2b3cf5ad-1da7-49bd-b730-2bd236d3d2f9" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+        <join>
+            <name>1d836e19-c4c6-462d-886e-665aae7a27fd</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="Farmers" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="generalAsstActType" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>d56a7df0-5c02-423f-9887-8791700f2540</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="ba6f0bd6-5af5-4cd6-913b-fefe6ea2217e" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="c47f0a87-a2b1-491e-a275-97fe90f6b880" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="1d836e19-c4c6-462d-886e-665aae7a27fd" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FarmersQuery" />
+            </query>
+        </join>
+    </joins>
+    <resource>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖户" />
+            <lang locale="zh_HK" value="養殖戶" />
+            <lang locale="zh_TW" value="養殖戶" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="分组基础资料查询" />
+            <lang locale="zh_HK" value="分組基礎資料查詢" />
+            <lang locale="zh_TW" value="分組基礎資料查詢" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].extendedProperty.ColWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].extendedProperty.F7WindowTitle">
+            <lang locale="en_US" value="com.kingdee.eas.farm.stocking.basedata.client.BasedataResource.FarmersQueryF7WindowTitle" />
+            <lang locale="zh_CN" value="com.kingdee.eas.farm.stocking.basedata.client.BasedataResource.FarmersQueryF7WindowTitle" />
+            <lang locale="zh_TW" value="com.kingdee.eas.farm.stocking.basedata.client.BasedataResource.FarmersQueryF7WindowTitle" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].extendedProperty.f7WindowTitle">
+            <lang locale="en_US" value="养殖户" />
+            <lang locale="zh_CN" value="养殖户" />
+            <lang locale="zh_TW" value="养殖户" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].queryPK[QueryPK].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].queryPK[QueryPK].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[BEBank].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[FarmEntry].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[FarmEntry_farm].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[Farmers].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[auditor].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[company].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[costCenter].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[creator].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[customer].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[generalAsstActType].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[lastUpdateUser].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[supplier].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].subObjects.subEntity[treeid].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[0a3ec673-1374-456e-9866-0eeb79555eee].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[14e4ff06-82c6-4f44-b6cc-008c692725de].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[3b81c771-fb17-47e5-933c-6a0b56d773ac].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[635f773a-620c-4cda-a7ba-15c3ec63f83b].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[65a8f5c0-982e-4d7f-8fc3-2ad855f502a9].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[6fcd958c-ee59-4f2d-90a2-285b51d457b0].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[8a63f8d9-0e6a-4e56-b0e1-86827d0dd3a4].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[902773ab-f74d-4e3a-ad8f-10950129a133].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[9ea30a1a-c7fb-4b24-922e-9b84930843e7].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit0].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit2].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit3].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit4].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[NewUnit5].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[a40ca97a-2e0f-472f-914d-16e0ea9cdcdf].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[a76c51b5-0753-422b-a6a7-8223365a3c69].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[aa16fbd5-0c82-410d-8589-847e11b14db0].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[ba6f0bd6-5af5-4cd6-913b-fefe6ea2217e].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[beaa56d7-4585-4ae1-b9f4-077c48fc0308].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[c301e430-b30b-42a4-96d3-b4dff592bafc].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[c47f0a87-a2b1-491e-a275-97fe90f6b880].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[f0c7ad08-a176-4e85-9cbf-5e42dd5e92a8].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.propertyUnit[f42ac33e-e28e-4840-82ae-76b3eb6ff928].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[BEBank.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="银行" />
+            <lang locale="zh_HK" value="銀行" />
+            <lang locale="zh_TW" value="銀行" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[BEBank.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[BEBank.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[BEBank.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry.farm.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖场" />
+            <lang locale="zh_HK" value="養殖場" />
+            <lang locale="zh_TW" value="養殖場" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry.farm.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry.farm.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry.farm.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry.seq].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据分录序列号" />
+            <lang locale="zh_HK" value="單據分錄序列號" />
+            <lang locale="zh_TW" value="單據分錄序列號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry.seq].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry.seq].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.address].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="地址" />
+            <lang locale="zh_HK" value="地址" />
+            <lang locale="zh_TW" value="地址" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.area].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖面积" />
+            <lang locale="zh_HK" value="養殖面積" />
+            <lang locale="zh_TW" value="養殖面積" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.fodderTransIns].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="饲料运输距离(km)" />
+            <lang locale="zh_HK" value="飼料運輸距離(km)" />
+            <lang locale="zh_TW" value="飼料運輸距離(km)" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.gm].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖规模" />
+            <lang locale="zh_HK" value="養殖規模" />
+            <lang locale="zh_TW" value="養殖規模" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="名称" />
+            <lang locale="zh_HK" value="名稱" />
+            <lang locale="zh_TW" value="名稱" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[FarmEntry_farm.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="编码" />
+            <lang locale="zh_HK" value="編碼" />
+            <lang locale="zh_TW" value="編碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[address].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="地址" />
+            <lang locale="zh_HK" value="地址" />
+            <lang locale="zh_TW" value="地址" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[address].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[address].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[age].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="年龄" />
+            <lang locale="zh_HK" value="年齡" />
+            <lang locale="zh_TW" value="年齡" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[age].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[age].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[auditTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核时间" />
+            <lang locale="zh_HK" value="審核時間" />
+            <lang locale="zh_TW" value="審核時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[auditTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[auditTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[auditor.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核人" />
+            <lang locale="zh_HK" value="審核人" />
+            <lang locale="zh_TW" value="審核人" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[auditor.number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[auditor.number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[auditor.number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[bankNo].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="银行账号" />
+            <lang locale="zh_HK" value="銀行賬號" />
+            <lang locale="zh_TW" value="銀行賬號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[bankNo].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[bankNo].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[bank].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="银行" />
+            <lang locale="zh_HK" value="銀行" />
+            <lang locale="zh_TW" value="銀行" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[bank].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[bank].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[baseStatus].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户状态" />
+            <lang locale="zh_HK" value="養戶狀態" />
+            <lang locale="zh_TW" value="養戶狀態" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[baseStatus].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[baseStatus].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[company.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="ID" />
+            <lang locale="zh_HK" value="ID" />
+            <lang locale="zh_TW" value="ID" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[company.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="财务组织" />
+            <lang locale="zh_HK" value="財務組織" />
+            <lang locale="zh_TW" value="財務組織" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[company.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[company.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[company.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[costCenter.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="系统成本中心" />
+            <lang locale="zh_HK" value="系統成本中心" />
+            <lang locale="zh_TW" value="系統成本中心" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[costCenter.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[costCenter.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[costCenter.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[createTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="创建时间" />
+            <lang locale="zh_HK" value="創建時間" />
+            <lang locale="zh_TW" value="創建時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[createTime].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[createTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[createTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[createTime].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[createTime].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[creator.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="创建人" />
+            <lang locale="zh_HK" value="創建人" />
+            <lang locale="zh_TW" value="創建人" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[creator.name].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[creator.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[creator.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[creator.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[creator.name].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[customer.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="系统客户" />
+            <lang locale="zh_HK" value="系統客戶" />
+            <lang locale="zh_TW" value="系統客戶" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[customer.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[customer.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[customer.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[description].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="描述" />
+            <lang locale="zh_HK" value="描述" />
+            <lang locale="zh_TW" value="描述" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[description].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[description].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[description].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[description].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[description].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[eduLvl].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="文化程度" />
+            <lang locale="zh_HK" value="文化程度" />
+            <lang locale="zh_TW" value="文化程度" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[eduLvl].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[eduLvl].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[familyPersonCount].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="家庭人口数" />
+            <lang locale="zh_HK" value="家庭人口數" />
+            <lang locale="zh_TW" value="家庭人口數" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[familyPersonCount].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[familyPersonCount].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[farmerActName].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖户实名" />
+            <lang locale="zh_HK" value="養殖戶實名" />
+            <lang locale="zh_TW" value="養殖戶實名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[farmerActName].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[farmerActName].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[generalAsstActType.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="对应核算项目" />
+            <lang locale="zh_HK" value="對應核算項目" />
+            <lang locale="zh_TW" value="對應核算項目" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[generalAsstActType.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[generalAsstActType.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[generalAsstActType.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[id].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[id].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[id].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[id].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[identity].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="身份证号码" />
+            <lang locale="zh_HK" value="身份證號碼" />
+            <lang locale="zh_TW" value="身份證號碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[identity].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[identity].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="最后修改时间" />
+            <lang locale="zh_HK" value="最後修改時間" />
+            <lang locale="zh_TW" value="最後修改時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateTime].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateTime].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateTime].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateUser.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="修改人" />
+            <lang locale="zh_HK" value="修改人" />
+            <lang locale="zh_TW" value="修改人" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateUser.name].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateUser.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateUser.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateUser.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[lastUpdateUser.name].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[mobileTel].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="手机号码" />
+            <lang locale="zh_HK" value="手機號碼" />
+            <lang locale="zh_TW" value="手機號碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[mobileTel].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[mobileTel].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="名称" />
+            <lang locale="zh_HK" value="名稱" />
+            <lang locale="zh_TW" value="名稱" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[name].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[name].extendedProperty.isDynCommonQuery">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[name].extendedProperty.isQuickSearchField">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[name].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[nation].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="民族" />
+            <lang locale="zh_HK" value="民族" />
+            <lang locale="zh_TW" value="民族" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[nation].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[nation].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="编码" />
+            <lang locale="zh_HK" value="編碼" />
+            <lang locale="zh_TW" value="編碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[number].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[number].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[sex].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="性别" />
+            <lang locale="zh_HK" value="性別" />
+            <lang locale="zh_TW" value="性別" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[sex].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[sex].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[simpleName].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="简称" />
+            <lang locale="zh_HK" value="簡稱" />
+            <lang locale="zh_TW" value="簡稱" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[simpleName].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[simpleName].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[simpleName].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[simpleName].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[simpleName].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[supplier.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="系统供应商" />
+            <lang locale="zh_HK" value="系統供應商" />
+            <lang locale="zh_TW" value="系統供應商" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[supplier.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[supplier.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[supplier.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[tel].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="电话" />
+            <lang locale="zh_HK" value="電話" />
+            <lang locale="zh_TW" value="電話" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[tel].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[tel].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[treeid.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[treeid.id].extendedProperty.colWidthInKDTable">
+            <lang locale="en_US" value="50" />
+            <lang locale="zh_CN" value="50" />
+            <lang locale="zh_TW" value="50" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[treeid.id].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[treeid.id].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[treeid.id].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[treeid.id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basedata.app.FarmersQuery].units.queryField[treeid.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="名称" />
+            <lang locale="zh_HK" value="名稱" />
+            <lang locale="zh_TW" value="名稱" />
+        </rs>
+    </resource>
+</joinQuery>
+

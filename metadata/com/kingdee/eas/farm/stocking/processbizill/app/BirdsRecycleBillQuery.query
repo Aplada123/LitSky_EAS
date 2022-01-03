@@ -1,0 +1,3763 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<joinQuery xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>BirdsRecycleBillQuery</name>
+    <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].alias</alias>
+    <description>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].description</description>
+    <userDefined>false</userDefined>
+    <reportDataSource />
+    <bizUnitPK>com.kingdee.eas.farm.stocking.processbizill.BirdsRecycleBill</bizUnitPK>
+    <connectionProvider />
+    <subObjects>
+        <subEntity>
+            <name>BirdsRecycleBill</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[BirdsRecycleBill].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBill" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>auditor</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[auditor].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>creator</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[creator].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>lastUpdateUser</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[lastUpdateUser].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>entrys</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[entrys].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillEntry" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>handler</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[handler].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>company</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[company].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CompanyOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>farmer</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[farmer].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="Farmers" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>entrys_material</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[entrys_material].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.master.material.app" />
+                <key name="name" value="Material" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>entrys_unit</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[entrys_unit].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.assistant.app" />
+                <key name="name" value="MeasureUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>entrys_warehouse</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[entrys_warehouse].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.scm.im.inv.app" />
+                <key name="name" value="Warehouse" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>storageOrgUnit</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[storageOrgUnit].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="StorageOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>stockingBatch</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[stockingBatch].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="StockingBatch" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>farm</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[farm].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="Farm" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>person</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[person].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.person.app" />
+                <key name="name" value="Person" />
+            </entityRef>
+        </subEntity>
+    </subObjects>
+    <units>
+        <propertyUnit>
+            <name>NewUnit0</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit0].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit0" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditor" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit1</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit2</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit2].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit2" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="creator" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit3</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit3].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit3" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit4</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit4].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit4" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateUser" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit5</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit5].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit5" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>id</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>bizDate</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[bizDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="bizDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bizDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>description</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[description].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="description" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="description" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>createTime</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[createTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="createTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="createTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateTime</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[lastUpdateTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditor.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[auditor.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="auditor.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditor.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[auditor.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="auditor.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>creator.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[creator.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="creator.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>creator.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[creator.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="creator.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateUser.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[lastUpdateUser.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateUser.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateUser.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[lastUpdateUser.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateUser.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.id</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>handler.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[handler.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="handler.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>handler.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[handler.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="handler.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.seq</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.seq].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.seq" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="seq" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>NewUnit7</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit7].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit7" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit6</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit6].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit6" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="parent" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit9</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit9].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit9" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="handler" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit8</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit8].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit8" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>Fivouchered</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[Fivouchered].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="Fivouchered" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="Fivouchered" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>billStatus</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[billStatus].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>c536dcd8-5139-42a1-b59b-ae8b1073329c</key>
+                    <parentUnit>
+                        <key name="name" value="billStatus" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="billStatus" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>company.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[company.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0f6ee6df-960f-43fd-ba9a-fd4f848a5a0e</key>
+                    <parentUnit>
+                        <key name="name" value="company.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>2de43493-9762-492f-9381-f7b941e16c22</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[2de43493-9762-492f-9381-f7b941e16c22].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>cb105e88-34b3-4200-9306-dd16fb45db20</key>
+                    <parentUnit>
+                        <key name="name" value="2de43493-9762-492f-9381-f7b941e16c22" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="company" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>fd038beb-5e64-4d57-a56c-e174115ca5b1</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[fd038beb-5e64-4d57-a56c-e174115ca5b1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>8492190f-7d39-4938-949e-6dff67260a37</key>
+                    <parentUnit>
+                        <key name="name" value="fd038beb-5e64-4d57-a56c-e174115ca5b1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>auditTime</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[auditTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f567cc4d-5a8a-41ae-82aa-027f66e1443e</key>
+                    <parentUnit>
+                        <key name="name" value="auditTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>farmer.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farmer.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>ea4b8849-e33e-4a95-aac1-e72cbbd5d77e</key>
+                    <parentUnit>
+                        <key name="name" value="farmer.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farmer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>5ba73349-9a08-4729-b9be-c09aa543990b</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[5ba73349-9a08-4729-b9be-c09aa543990b].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0efe7791-490f-429f-a6f4-480be06ea3ac</key>
+                    <parentUnit>
+                        <key name="name" value="5ba73349-9a08-4729-b9be-c09aa543990b" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farmer" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>df004b85-00e6-4939-a8d8-b6c3cbf5a1be</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[df004b85-00e6-4939-a8d8-b6c3cbf5a1be].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>a1aa6aab-4860-4cc3-a048-5b4238699780</key>
+                    <parentUnit>
+                        <key name="name" value="df004b85-00e6-4939-a8d8-b6c3cbf5a1be" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farmer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>entrys.material.number</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.material.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>d1921e57-4e3e-4ad4-9b38-95ed06658188</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.material.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_material" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>e974334e-6bd6-498f-81a6-1f843cd52125</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[e974334e-6bd6-498f-81a6-1f843cd52125].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>9987274d-5377-4e06-88ea-a7d52196683f</key>
+                    <parentUnit>
+                        <key name="name" value="e974334e-6bd6-498f-81a6-1f843cd52125" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="material" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>361a9ef0-7c82-48ca-a5b5-d40cb2f2c1ca</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[361a9ef0-7c82-48ca-a5b5-d40cb2f2c1ca].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>69a1b2a9-e2d2-4b6f-a03e-c649bf87f4a3</key>
+                    <parentUnit>
+                        <key name="name" value="361a9ef0-7c82-48ca-a5b5-d40cb2f2c1ca" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_material" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>entrys.materialName</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.materialName].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>4dcbfe9f-5c2a-44c6-8fe0-6d2bcce5c38e</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.materialName" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="materialName" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.model</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.model].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>d270d25b-5d9d-403e-814c-c861c5f201a6</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.model" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="model" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.unit.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.unit.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>2daae83e-3a4d-46b7-9709-f3fc431e7379</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.unit.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_unit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>bf4ea2e1-0dc0-4eca-8a09-20f158cb2180</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[bf4ea2e1-0dc0-4eca-8a09-20f158cb2180].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>fd90608a-31fc-45df-808a-78a7fd16630f</key>
+                    <parentUnit>
+                        <key name="name" value="bf4ea2e1-0dc0-4eca-8a09-20f158cb2180" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="unit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>f3972d73-b1e1-45a6-995e-21625d12459f</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[f3972d73-b1e1-45a6-995e-21625d12459f].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>c503d969-1d62-4fbb-addf-ca702ac18f2b</key>
+                    <parentUnit>
+                        <key name="name" value="f3972d73-b1e1-45a6-995e-21625d12459f" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_unit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>entrys.qty</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.qty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>609d2b29-2091-405e-b6d5-34fd22ee7aaf</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.qty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="qty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.warehouse.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.warehouse.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>1d175465-8dce-454d-b479-da334b006534</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.warehouse.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_warehouse" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>5d43bbfa-ff1a-44d9-9433-92b2bda80254</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[5d43bbfa-ff1a-44d9-9433-92b2bda80254].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>b5014fec-3f8f-41e8-a3fd-d06a234d92a4</key>
+                    <parentUnit>
+                        <key name="name" value="5d43bbfa-ff1a-44d9-9433-92b2bda80254" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="warehouse" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>ed58cf52-a81e-44b6-9b98-992651719e4a</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[ed58cf52-a81e-44b6-9b98-992651719e4a].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0db30644-2182-411a-8286-bf5c599681e5</key>
+                    <parentUnit>
+                        <key name="name" value="ed58cf52-a81e-44b6-9b98-992651719e4a" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_warehouse" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>entrys.receivePrice</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.receivePrice].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>1aaa5a48-a7bc-459a-8b2d-8aee8e74eb15</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.receivePrice" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="receivePrice" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>storageOrgUnit.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[storageOrgUnit.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>a90287b1-c624-4190-933d-2db2150e4b85</key>
+                    <parentUnit>
+                        <key name="name" value="storageOrgUnit.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="storageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>6bdcda58-e039-4240-b196-76b81e1f163d</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[6bdcda58-e039-4240-b196-76b81e1f163d].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>3e718cb7-0745-4148-95f2-85534adb01e1</key>
+                    <parentUnit>
+                        <key name="name" value="6bdcda58-e039-4240-b196-76b81e1f163d" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="storageOrgUnit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>876abf3f-968d-42cf-89a1-bd44cb7eb286</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[876abf3f-968d-42cf-89a1-bd44cb7eb286].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>3b444c4e-707c-4a18-9806-a98b992ab89c</key>
+                    <parentUnit>
+                        <key name="name" value="876abf3f-968d-42cf-89a1-bd44cb7eb286" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="storageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>stockingBatch.number</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[stockingBatch.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>30b1a0ae-3b8e-41f9-97de-723bb1ce6b31</key>
+                    <parentUnit>
+                        <key name="name" value="stockingBatch.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="stockingBatch" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>52080500-34d2-42c1-b7eb-0392cbfb63be</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[52080500-34d2-42c1-b7eb-0392cbfb63be].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>648797dd-4d8c-440f-96b8-e0039074b976</key>
+                    <parentUnit>
+                        <key name="name" value="52080500-34d2-42c1-b7eb-0392cbfb63be" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="stockingBatch" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>9c76c558-22c5-4959-8099-cc1c1658fe87</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[9c76c558-22c5-4959-8099-cc1c1658fe87].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>ec7a89de-ddc9-458f-87d7-b41d2bf28415</key>
+                    <parentUnit>
+                        <key name="name" value="9c76c558-22c5-4959-8099-cc1c1658fe87" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="stockingBatch" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>farm.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farm.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>76896666-15e1-4c98-a0b6-cf5940f828da</key>
+                    <parentUnit>
+                        <key name="name" value="farm.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>c40bd43f-3565-4b74-8dba-46d56d043ed5</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[c40bd43f-3565-4b74-8dba-46d56d043ed5].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>aff871c3-8b49-474a-94cb-17ac159122d2</key>
+                    <parentUnit>
+                        <key name="name" value="c40bd43f-3565-4b74-8dba-46d56d043ed5" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farm" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>844aed99-5934-4fe3-80cb-ccfacf4c8903</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[844aed99-5934-4fe3-80cb-ccfacf4c8903].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0bd99b14-328d-4956-b598-aaec37cdb035</key>
+                    <parentUnit>
+                        <key name="name" value="844aed99-5934-4fe3-80cb-ccfacf4c8903" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>person.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[person.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>579ac78b-26d8-4905-a403-d5ededd964b5</key>
+                    <parentUnit>
+                        <key name="name" value="person.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="person" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>f59b77dd-6f4b-48a6-94d6-0d169baf9168</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[f59b77dd-6f4b-48a6-94d6-0d169baf9168].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>58820307-530f-4f8f-8081-98aaabe230ec</key>
+                    <parentUnit>
+                        <key name="name" value="f59b77dd-6f4b-48a6-94d6-0d169baf9168" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="person" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>1ce81672-f131-4756-a98a-beccc691c0f3</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[1ce81672-f131-4756-a98a-beccc691c0f3].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>99eb0440-116b-433f-b221-334427316582</key>
+                    <parentUnit>
+                        <key name="name" value="1ce81672-f131-4756-a98a-beccc691c0f3" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="person" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>entrys.weight</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.weight].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>e165180f-7cbc-490f-973a-5af04544c8d7</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.weight" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="weight" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.amount</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.amount].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>edf273ed-9dd8-49c3-a11d-f96964e79290</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.amount" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="amount" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>isWeightSettle</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[isWeightSettle].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>1d299689-612a-4f1c-b5b4-d268a4eb76e3</key>
+                    <parentUnit>
+                        <key name="name" value="isWeightSettle" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="isWeightSettle" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.basePrice</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.basePrice].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>9f44422f-c31c-41d1-b84f-17c20fe34a22</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.basePrice" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="basePrice" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>isInit</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[isInit].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>211cd224-f596-49fb-915c-e1a7ef0b9100</key>
+                    <parentUnit>
+                        <key name="name" value="isInit" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BirdsRecycleBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="isInit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.femaleQty</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>6ed7dc83-a7e4-441f-9eac-a8aa0b7ecc7a</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.femaleQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="femaleQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.femaleWeight</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleWeight].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>63ee4949-ebd4-4c08-b7b3-0a5058a4b114</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.femaleWeight" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="femaleWeight" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.femalePrice</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femalePrice].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>23231dc3-d8cd-4803-b80c-ba61ce853cef</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.femalePrice" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="femalePrice" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.femaleAmount</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleAmount].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>c4d2a7e1-a822-4728-97d4-d36f360d1e52</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.femaleAmount" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="femaleAmount" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.allAmount</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.allAmount].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>6b9de95e-cdc3-4cc8-b167-1f73095c29f5</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.allAmount" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="allAmount" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </queryField>
+    </units>
+    <defaultFilter>
+        <name>defaultFilter</name>
+        <formulaString />
+        <query>
+            <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+            <key name="name" value="BirdsRecycleBillQuery" />
+        </query>
+    </defaultFilter>
+    <defaultSorters>
+        <querySorterItem>
+            <propertyName>number</propertyName>
+            <sortType>ASC</sortType>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <configured>false</configured>
+        </querySorterItem>
+        <querySorterItem>
+            <propertyName>entrys.seq</propertyName>
+            <sortType>ASC</sortType>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+            <configured>false</configured>
+        </querySorterItem>
+    </defaultSorters>
+    <queryPK>
+        <name>QueryPK</name>
+        <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].queryPK[QueryPK].alias</alias>
+        <description>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].queryPK[QueryPK].description</description>
+        <keyProperties>
+            <queryField>
+                <key name="name" value="id" />
+            </queryField>
+            <queryField>
+                <key name="name" value="entrys.id" />
+            </queryField>
+        </keyProperties>
+    </queryPK>
+    <isDistinct>false</isDistinct>
+    <joins>
+        <join>
+            <name>NewJoin0</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="auditor" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit0" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin0" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin1</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="creator" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit2" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit3" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin1" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin2</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="lastUpdateUser" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit4" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit5" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin2" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin3</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="entrys" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit7" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit6" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin3" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin4</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="handler" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit9" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit8" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin4" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>8c3abc37-d7ca-45e9-95c2-4c2898d21dcf</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="company" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>a9637c56-8dd2-482d-b072-9790f95f4f11</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="2de43493-9762-492f-9381-f7b941e16c22" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="fd038beb-5e64-4d57-a56c-e174115ca5b1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="8c3abc37-d7ca-45e9-95c2-4c2898d21dcf" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>2c20e553-9549-40a9-9fda-b869887e3dc5</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="farmer" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>e3aed5d7-84f2-4582-91e6-1dc32fd882ab</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="5ba73349-9a08-4729-b9be-c09aa543990b" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="df004b85-00e6-4939-a8d8-b6c3cbf5a1be" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="2c20e553-9549-40a9-9fda-b869887e3dc5" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>87ff7734-2b1c-4f4f-8337-ac69a0a02b5d</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="entrys" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="entrys_material" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>421471aa-47d1-4190-874b-1501be18542b</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="e974334e-6bd6-498f-81a6-1f843cd52125" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="361a9ef0-7c82-48ca-a5b5-d40cb2f2c1ca" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="87ff7734-2b1c-4f4f-8337-ac69a0a02b5d" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>0638113e-976f-4f39-a34e-3651ea129892</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="entrys" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="entrys_unit" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>9d435e37-10ee-4573-8305-f16e5f3a60ab</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="bf4ea2e1-0dc0-4eca-8a09-20f158cb2180" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="f3972d73-b1e1-45a6-995e-21625d12459f" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="0638113e-976f-4f39-a34e-3651ea129892" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>5cdb5397-be49-4f83-aabd-5e9e4650c5af</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="entrys" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="entrys_warehouse" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>15cd4177-2c54-4d8f-8b15-669f039e247e</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="5d43bbfa-ff1a-44d9-9433-92b2bda80254" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="ed58cf52-a81e-44b6-9b98-992651719e4a" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="5cdb5397-be49-4f83-aabd-5e9e4650c5af" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>7ce72754-5564-4445-9303-6738cb6084fd</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="storageOrgUnit" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>5125b119-9f83-48c7-8ab3-9e5eb83d3be0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="6bdcda58-e039-4240-b196-76b81e1f163d" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="876abf3f-968d-42cf-89a1-bd44cb7eb286" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="7ce72754-5564-4445-9303-6738cb6084fd" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>1c0e6d68-9034-42a1-97e5-1bdad2d9b2c3</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="stockingBatch" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>8de57fa4-1ab4-4e45-af3c-1aa5bcd04e19</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="52080500-34d2-42c1-b7eb-0392cbfb63be" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="9c76c558-22c5-4959-8099-cc1c1658fe87" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="1c0e6d68-9034-42a1-97e5-1bdad2d9b2c3" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>afab2aa3-806f-464d-9a2d-24ee17207514</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="farm" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>64d36c3d-b5c6-45a7-9820-50a428d88a6c</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="c40bd43f-3565-4b74-8dba-46d56d043ed5" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="844aed99-5934-4fe3-80cb-ccfacf4c8903" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="afab2aa3-806f-464d-9a2d-24ee17207514" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>e53e7924-bf04-441f-859c-e6edc020b5d2</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="BirdsRecycleBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="person" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>3f56493a-5b7d-4423-8990-faf4e703228c</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="f59b77dd-6f4b-48a6-94d6-0d169baf9168" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="1ce81672-f131-4756-a98a-beccc691c0f3" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="e53e7924-bf04-441f-859c-e6edc020b5d2" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BirdsRecycleBillQuery" />
+            </query>
+        </join>
+    </joins>
+    <resource>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="活禽回收单" />
+            <lang locale="zh_HK" value="活禽回收單" />
+            <lang locale="zh_TW" value="活禽回收單" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].defaultSorters.querySorterItemextendedProperty.f7WindowTitle">
+            <lang locale="en_US" value="多分录基础单据模板" />
+            <lang locale="zh_CN" value="多分录基础单据模板" />
+            <lang locale="zh_TW" value="多分录基础单据模板" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="多分录基础单据查询" />
+            <lang locale="zh_HK" value="多分錄基礎單據查詢" />
+            <lang locale="zh_TW" value="多分錄基礎單據查詢" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].extendedProperty.F7WindowTitle">
+            <lang locale="en_US" value="com.kingdee.eas.farm.stocking.processbizill.client.ProcessbizillResource.BirdsRecycleBillQueryF7WindowTitle" />
+            <lang locale="zh_CN" value="com.kingdee.eas.farm.stocking.processbizill.client.ProcessbizillResource.BirdsRecycleBillQueryF7WindowTitle" />
+            <lang locale="zh_TW" value="com.kingdee.eas.farm.stocking.processbizill.client.ProcessbizillResource.BirdsRecycleBillQueryF7WindowTitle" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].extendedProperty.f7WindowTitle">
+            <lang locale="en_US" value="活禽回收单" />
+            <lang locale="zh_CN" value="活禽回收单" />
+            <lang locale="zh_TW" value="活禽回收单" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].queryPK[QueryPK].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].queryPK[QueryPK].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[BirdsRecycleBill].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[auditor].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[company].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[creator].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[entrys].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[entrys_material].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[entrys_unit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[entrys_warehouse].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[farm].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[farmer].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[handler].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[lastUpdateUser].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[person].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[stockingBatch].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].subObjects.subEntity[storageOrgUnit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[1ce81672-f131-4756-a98a-beccc691c0f3].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[2de43493-9762-492f-9381-f7b941e16c22].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[361a9ef0-7c82-48ca-a5b5-d40cb2f2c1ca].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[52080500-34d2-42c1-b7eb-0392cbfb63be].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[5ba73349-9a08-4729-b9be-c09aa543990b].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[5d43bbfa-ff1a-44d9-9433-92b2bda80254].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[6bdcda58-e039-4240-b196-76b81e1f163d].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[844aed99-5934-4fe3-80cb-ccfacf4c8903].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[876abf3f-968d-42cf-89a1-bd44cb7eb286].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[9c76c558-22c5-4959-8099-cc1c1658fe87].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit0].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit2].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit3].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit4].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit5].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit6].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit7].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit8].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[NewUnit9].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[bf4ea2e1-0dc0-4eca-8a09-20f158cb2180].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[c40bd43f-3565-4b74-8dba-46d56d043ed5].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[df004b85-00e6-4939-a8d8-b6c3cbf5a1be].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[e974334e-6bd6-498f-81a6-1f843cd52125].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[ed58cf52-a81e-44b6-9b98-992651719e4a].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[f3972d73-b1e1-45a6-995e-21625d12459f].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[f59b77dd-6f4b-48a6-94d6-0d169baf9168].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.propertyUnit[fd038beb-5e64-4d57-a56c-e174115ca5b1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[Fivouchered].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否生成凭证" />
+            <lang locale="zh_HK" value="是否生成憑證" />
+            <lang locale="zh_TW" value="是否生成憑證" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[Fivouchered].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[Fivouchered].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[auditTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核时间" />
+            <lang locale="zh_HK" value="審核時間" />
+            <lang locale="zh_TW" value="審核時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[auditTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[auditTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[auditor.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[auditor.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[billStatus].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据状态" />
+            <lang locale="zh_HK" value="單據狀態" />
+            <lang locale="zh_TW" value="單據狀態" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[billStatus].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[billStatus].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[bizDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="业务日期" />
+            <lang locale="zh_HK" value="業務日期" />
+            <lang locale="zh_TW" value="業務日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[bizDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[bizDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[company.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="财务组织" />
+            <lang locale="zh_HK" value="財務組織" />
+            <lang locale="zh_TW" value="財務組織" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[company.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[company.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[company.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[createTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="创建时间" />
+            <lang locale="zh_HK" value="創建時間" />
+            <lang locale="zh_TW" value="創建時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[createTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[createTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[creator.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[creator.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[description].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="参考信息" />
+            <lang locale="zh_HK" value="參考信息" />
+            <lang locale="zh_TW" value="參考信息" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[description].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[description].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.allAmount].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="总金额" />
+            <lang locale="zh_HK" value="總金額" />
+            <lang locale="zh_TW" value="總金額" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.allAmount].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.allAmount].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.amount].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="金额" />
+            <lang locale="zh_HK" value="金額" />
+            <lang locale="zh_TW" value="金額" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.amount].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.amount].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.basePrice].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="基础价格" />
+            <lang locale="zh_HK" value="基礎價格" />
+            <lang locale="zh_TW" value="基礎價格" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.basePrice].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.basePrice].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleAmount].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="母禽金额" />
+            <lang locale="zh_HK" value="母禽金額" />
+            <lang locale="zh_TW" value="母禽金額" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleAmount].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleAmount].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femalePrice].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="母禽价格" />
+            <lang locale="zh_HK" value="母禽價格" />
+            <lang locale="zh_TW" value="母禽價格" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femalePrice].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femalePrice].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="母禽只数" />
+            <lang locale="zh_HK" value="母禽只數" />
+            <lang locale="zh_TW" value="母禽只數" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleQty].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleQty].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleWeight].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="母禽重量" />
+            <lang locale="zh_HK" value="母禽重量" />
+            <lang locale="zh_TW" value="母禽重量" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleWeight].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.femaleWeight].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.material.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="副产品编码" />
+            <lang locale="zh_HK" value="副產品編碼" />
+            <lang locale="zh_TW" value="副產品編碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.material.number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.material.number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.material.number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.materialName].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="副产品名称" />
+            <lang locale="zh_HK" value="副產品名稱" />
+            <lang locale="zh_TW" value="副產品名稱" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.materialName].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.materialName].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.model].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="规格" />
+            <lang locale="zh_HK" value="規格" />
+            <lang locale="zh_TW" value="規格" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.model].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.model].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.qty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="数量" />
+            <lang locale="zh_HK" value="數量" />
+            <lang locale="zh_TW" value="數量" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.qty].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.qty].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.receivePrice].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="回收价格" />
+            <lang locale="zh_HK" value="回收價格" />
+            <lang locale="zh_TW" value="回收價格" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.receivePrice].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.receivePrice].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.seq].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据分录序列号" />
+            <lang locale="zh_HK" value="單據分錄序列號" />
+            <lang locale="zh_TW" value="單據分錄序列號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.seq].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.seq].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.unit.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单位" />
+            <lang locale="zh_HK" value="單位" />
+            <lang locale="zh_TW" value="單位" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.unit.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.unit.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.unit.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.warehouse.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="仓库" />
+            <lang locale="zh_HK" value="倉庫" />
+            <lang locale="zh_TW" value="倉庫" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.warehouse.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.warehouse.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.warehouse.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.weight].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="净重" />
+            <lang locale="zh_HK" value="淨重" />
+            <lang locale="zh_TW" value="淨重" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.weight].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[entrys.weight].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farm.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖场" />
+            <lang locale="zh_HK" value="養殖場" />
+            <lang locale="zh_TW" value="養殖場" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farm.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farm.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farm.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farmer.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户名称" />
+            <lang locale="zh_HK" value="養戶名稱" />
+            <lang locale="zh_TW" value="養戶名稱" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farmer.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farmer.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[farmer.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[handler.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[handler.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[isInit].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="初始化单据" />
+            <lang locale="zh_HK" value="初始化單據" />
+            <lang locale="zh_TW" value="初始化單據" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[isInit].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[isInit].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[isWeightSettle].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="重量结算" />
+            <lang locale="zh_HK" value="重量結算" />
+            <lang locale="zh_TW" value="重量結算" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[isWeightSettle].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[isWeightSettle].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[lastUpdateTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="最后修改时间" />
+            <lang locale="zh_HK" value="最後修改時間" />
+            <lang locale="zh_TW" value="最後修改時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[lastUpdateUser.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[lastUpdateUser.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据编号" />
+            <lang locale="zh_HK" value="單據編號" />
+            <lang locale="zh_TW" value="單據編號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[person.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="业务员" />
+            <lang locale="zh_HK" value="業務員" />
+            <lang locale="zh_TW" value="業務員" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[person.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[person.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[person.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[stockingBatch.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="批次" />
+            <lang locale="zh_HK" value="批次" />
+            <lang locale="zh_TW" value="批次" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[stockingBatch.number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[stockingBatch.number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[stockingBatch.number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[storageOrgUnit.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="库存组织" />
+            <lang locale="zh_HK" value="庫存組織" />
+            <lang locale="zh_TW" value="庫存組織" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[storageOrgUnit.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[storageOrgUnit.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.BirdsRecycleBillQuery].units.queryField[storageOrgUnit.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+    </resource>
+</joinQuery>
+

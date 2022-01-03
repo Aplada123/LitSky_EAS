@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.basedata.app</package>
+    <name>BreedDataRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>3c99f55c-12ed-43f8-a1cd-0566babc454d</id>
+            <parentID />
+            <source>Entry.materialName=Entry.material.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>bc956f90-8e4e-4c45-9d5c-67412577047b</id>
+            <parentID>3c99f55c-12ed-43f8-a1cd-0566babc454d</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>41a26aad-5d62-4a18-934c-07a40a2af8c1</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>41a26aad-5d62-4a18-934c-07a40a2af8c1</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntry.getCell(rowIndex,"materialName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>cd3e82b6-b825-4d9b-90f5-2630ee37bd82</id>
+            <parentID>3c99f55c-12ed-43f8-a1cd-0566babc454d</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>390a946d-76cc-4eb4-aca6-c7fba88a6166</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>74fc11b7-5e17-4c38-b1e9-980e7ae398de</id>
+                        <expressionID>3ecbfef1-46fb-42ee-a5ac-05176069eb5f</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>e1e75b36-fb26-4075-ac36-898a8bfa61a2</id>
+                        <expressionID>4df7601e-81dc-4da9-b99b-21de879f9462</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>390a946d-76cc-4eb4-aca6-c7fba88a6166</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3ecbfef1-46fb-42ee-a5ac-05176069eb5f</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>5209e455-11a7-4d74-8a7f-f77f37f34a4a</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5209e455-11a7-4d74-8a7f-f77f37f34a4a</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntry.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>4df7601e-81dc-4da9-b99b-21de879f9462</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>b7b965a5-0752-45d6-9d0b-ce0bf4d04712</id>
+            <parentID />
+            <source>Entry.model=Entry.material.model</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>828ee170-297c-491e-8625-3fc71a47cdfc</id>
+            <parentID>b7b965a5-0752-45d6-9d0b-ce0bf4d04712</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>49522339-8b4f-40f8-886b-3e26726fdcc4</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>49522339-8b4f-40f8-886b-3e26726fdcc4</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntry.getCell(rowIndex,"model")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>918b4dae-d741-47af-83c5-8f5f0e7ce8a2</id>
+            <parentID>b7b965a5-0752-45d6-9d0b-ce0bf4d04712</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>93cbb33c-83c8-481e-906d-2167ec4e5eef</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>2cbabfd2-36ef-49af-86f4-b0ed4d48d8bf</id>
+                        <expressionID>0cde4b91-13bb-4bad-a332-1546fd82d40e</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>018ffa3d-9a4b-4ece-9cff-58f2b4380fa1</id>
+                        <expressionID>90f6f7e2-8eb6-4d04-958e-e68fd619f037</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>93cbb33c-83c8-481e-906d-2167ec4e5eef</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0cde4b91-13bb-4bad-a332-1546fd82d40e</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>bc108e7b-99bc-4d28-b963-cfc2a962e678</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bc108e7b-99bc-4d28-b963-cfc2a962e678</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntry.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>90f6f7e2-8eb6-4d04-958e-e68fd619f037</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>model</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>ef87d5ac-a6da-4804-bd0a-3a4963602e78</id>
+            <parentID />
+            <source>SeedEntry.materialName=SeedEntry.material.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>d2793742-6bd4-41b6-9e85-2b92b198c2cc</id>
+            <parentID>ef87d5ac-a6da-4804-bd0a-3a4963602e78</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>c8c332a2-997b-47d5-95cb-e0b99d5618af</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c8c332a2-997b-47d5-95cb-e0b99d5618af</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtSeedEntry.getCell(rowIndex,"materialName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9e6ba973-47b8-4fef-876c-4410b9d4a5de</id>
+            <parentID>ef87d5ac-a6da-4804-bd0a-3a4963602e78</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>1cb0c6b4-0ffd-4a20-8051-d0513e24e70c</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>e8937350-50b0-4125-82d9-8cca95b983fc</id>
+                        <expressionID>f6363dc7-08ac-45ac-b267-1f6d1e6e5795</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>9671fc46-c0df-4a1d-b97f-0d8aa589474e</id>
+                        <expressionID>e296f731-b65a-4009-8bd6-a6beffbf24f4</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1cb0c6b4-0ffd-4a20-8051-d0513e24e70c</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f6363dc7-08ac-45ac-b267-1f6d1e6e5795</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>12ae553a-d7c4-40fe-80e5-c5e135b6a88e</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>12ae553a-d7c4-40fe-80e5-c5e135b6a88e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtSeedEntry.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e296f731-b65a-4009-8bd6-a6beffbf24f4</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>d63becb9-880a-45b9-b477-7999de70ee79</id>
+            <parentID />
+            <source>SeedEntry.model=SeedEntry.material.model</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>81e7c236-cf94-4f34-b168-7e66d2645c09</id>
+            <parentID>d63becb9-880a-45b9-b477-7999de70ee79</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>b4e6a245-5397-4987-8f1f-6e2c928c16be</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b4e6a245-5397-4987-8f1f-6e2c928c16be</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtSeedEntry.getCell(rowIndex,"model")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>690aa94d-20bf-433e-851d-70f0de1118f3</id>
+            <parentID>d63becb9-880a-45b9-b477-7999de70ee79</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>c8139f67-ec10-4a54-a97c-b2c98ff1261f</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>880ffeba-9688-4c97-b1a6-2af4a7d867cb</id>
+                        <expressionID>b467d9f8-4aab-4d4b-8154-698d16a6121a</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>355f5b72-9fe1-4304-96ca-ab5be309cfeb</id>
+                        <expressionID>9aceda67-753a-4ff7-b63b-9bc57b1249d3</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c8139f67-ec10-4a54-a97c-b2c98ff1261f</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b467d9f8-4aab-4d4b-8154-698d16a6121a</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>e545270b-7a40-4bc3-9873-149fcff0dd48</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e545270b-7a40-4bc3-9873-149fcff0dd48</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtSeedEntry.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9aceda67-753a-4ff7-b63b-9bc57b1249d3</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>model</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>514c628f-866a-43ca-bf3a-1cac7f6dd27c</id>
+            <name>Entry_materialName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[Entry_materialName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[Entry_materialName_ActionInfo].description</description>
+            <expressionID>3c99f55c-12ed-43f8-a1cd-0566babc454d</expressionID>
+        </action>
+        <action>
+            <id>64fe960a-3434-4c3e-b713-31118bbdec7e</id>
+            <name>Entry_model_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[Entry_model_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[Entry_model_ActionInfo].description</description>
+            <expressionID>b7b965a5-0752-45d6-9d0b-ce0bf4d04712</expressionID>
+        </action>
+        <action>
+            <id>9e73b673-649b-4fa9-a1e9-6a107cec1faf</id>
+            <name>SeedEntry_materialName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[SeedEntry_materialName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[SeedEntry_materialName_ActionInfo].description</description>
+            <expressionID>ef87d5ac-a6da-4804-bd0a-3a4963602e78</expressionID>
+        </action>
+        <action>
+            <id>3d93a342-f061-43c6-9174-257a78ff05b7</id>
+            <name>SeedEntry_model_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[SeedEntry_model_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[SeedEntry_model_ActionInfo].description</description>
+            <expressionID>d63becb9-880a-45b9-b477-7999de70ee79</expressionID>
+        </action>
+    </actions>
+    <rules>
+        <conditionRule>
+            <name>Entry_materialName_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_materialName_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_materialName_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="514c628f-866a-43ca-bf3a-1cac7f6dd27c" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>Entry_model_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_model_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_model_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="64fe960a-3434-4c3e-b713-31118bbdec7e" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>SeedEntry_materialName_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_materialName_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_materialName_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="9e73b673-649b-4fa9-a1e9-6a107cec1faf" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>SeedEntry_model_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_model_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_model_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="3d93a342-f061-43c6-9174-257a78ff05b7" />
+                </action>
+            </actions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[Entry_materialName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[Entry_materialName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[Entry_model_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_model" />
+            <lang locale="zh_HK" value="攜帶字段屬性_model" />
+            <lang locale="zh_TW" value="攜帶字段屬性_model" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[Entry_model_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[SeedEntry_materialName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[SeedEntry_materialName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[SeedEntry_model_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_model" />
+            <lang locale="zh_HK" value="攜帶字段屬性_model" />
+            <lang locale="zh_TW" value="攜帶字段屬性_model" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].actions.action[SeedEntry_model_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_materialName_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_materialName_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_materialName_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_materialName_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_model_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_model" />
+            <lang locale="zh_HK" value="攜帶字段屬性_model" />
+            <lang locale="zh_TW" value="攜帶字段屬性_model" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_model_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_model_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[Entry_model_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_materialName_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_materialName_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_materialName_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_materialName_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_model_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_model" />
+            <lang locale="zh_HK" value="攜帶字段屬性_model" />
+            <lang locale="zh_TW" value="攜帶字段屬性_model" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_model_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_model_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedDataRuleSet].rules.conditionRule[SeedEntry_model_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

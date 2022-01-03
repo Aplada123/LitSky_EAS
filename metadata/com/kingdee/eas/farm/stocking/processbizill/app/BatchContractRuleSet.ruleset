@@ -1,0 +1,1429 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>BatchContractRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>9db7f166-6714-41c3-91cb-006245d15005</id>
+            <parentID />
+            <source>BreedEntry.breedDataName=BreedEntry.breedDate.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>67d89e2d-0542-4eec-a10e-56ac02318499</id>
+            <parentID>9db7f166-6714-41c3-91cb-006245d15005</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>9a6afe63-d026-4238-bdce-550d01252027</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9a6afe63-d026-4238-bdce-550d01252027</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtBreedEntry.getCell(rowIndex,"breedDataName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3807c5b3-9c48-445b-88db-bd35a9870981</id>
+            <parentID>9db7f166-6714-41c3-91cb-006245d15005</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>bd33f633-6a66-4b1e-b05a-b0ebbbaff92c</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>16d50363-d71e-4126-87d8-5b2b543a8438</id>
+                        <expressionID>bcd0edef-f9cd-47ae-84be-b78975d6b6fb</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>4202e88e-7aaf-4443-9a79-bd8e14be81b6</id>
+                        <expressionID>2576f475-e90d-491a-937a-ee73f8d31d42</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bd33f633-6a66-4b1e-b05a-b0ebbbaff92c</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bcd0edef-f9cd-47ae-84be-b78975d6b6fb</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>fa701ebe-c964-40c7-9e70-0695aede1e09</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fa701ebe-c964-40c7-9e70-0695aede1e09</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtBreedEntry.getCell(rowIndex,"breedDate")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>2576f475-e90d-491a-937a-ee73f8d31d42</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>f17bde25-b183-4926-91a4-2ccf7e919457</id>
+            <parentID />
+            <source>identity=farmer.identity</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>279df693-1f6b-4add-9af6-7801ec2bc044</id>
+            <parentID>f17bde25-b183-4926-91a4-2ccf7e919457</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>1d87a377-ae7e-402d-884a-f6138f22f082</ownerID>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1d87a377-ae7e-402d-884a-f6138f22f082</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>txtidentity</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a53edf2c-76f0-4d97-93cd-78d4479c2c42</id>
+            <parentID>f17bde25-b183-4926-91a4-2ccf7e919457</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>db0f9fc4-fe24-491d-84ce-24a4b2344a9e</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>916b1dd1-93a5-4cef-adb5-b6f53a969dfa</id>
+                        <expressionID>97bf5285-360a-47a7-8356-769a6b526e2e</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>beb4fca1-a15e-4b44-8c25-522bad529bbe</id>
+                        <expressionID>a50c52c1-7bdd-4da7-8720-d99c2e87c2d7</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>db0f9fc4-fe24-491d-84ce-24a4b2344a9e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>97bf5285-360a-47a7-8356-769a6b526e2e</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>f34a3e31-58f6-4d96-a8ad-8e706dc219e0</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f34a3e31-58f6-4d96-a8ad-8e706dc219e0</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtfarmer</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a50c52c1-7bdd-4da7-8720-d99c2e87c2d7</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>identity</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>df3fce81-f6cd-455d-b1e2-649335d2005e</id>
+            <parentID />
+            <source>mobileTel=farmer.mobileTel</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>acb21a76-c400-4359-809c-3be2f5bfab9d</id>
+            <parentID>df3fce81-f6cd-455d-b1e2-649335d2005e</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>e76ae454-e7d9-484f-83af-66489afd8f9c</ownerID>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e76ae454-e7d9-484f-83af-66489afd8f9c</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>txtmobileTel</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>19af4afb-0609-460e-9ca2-78618c47fd0e</id>
+            <parentID>df3fce81-f6cd-455d-b1e2-649335d2005e</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>80ec44ec-4632-4110-b6c0-34b6780302c8</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>792eb0c9-9781-4700-b037-dc7e287d02f3</id>
+                        <expressionID>a96c7296-c55c-46a0-b555-c35c669030a7</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>b5d4bbea-2131-40fb-9898-3ae0b486621a</id>
+                        <expressionID>aeeaf3d7-e11f-4047-b609-26a21e1ee591</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>80ec44ec-4632-4110-b6c0-34b6780302c8</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a96c7296-c55c-46a0-b555-c35c669030a7</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>472f0a8a-581e-4707-9846-8dd932209257</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>472f0a8a-581e-4707-9846-8dd932209257</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtfarmer</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>aeeaf3d7-e11f-4047-b609-26a21e1ee591</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>mobileTel</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>de1f835a-9803-461d-84cb-71f655596b34</id>
+            <parentID />
+            <source>DetailEntry.materialName=DetailEntry.material.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>50bf1a14-fff6-4e72-9f75-7ef335f7838c</id>
+            <parentID>de1f835a-9803-461d-84cb-71f655596b34</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>605087a5-50b9-4f61-bbbf-45f3ab08f2b5</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>605087a5-50b9-4f61-bbbf-45f3ab08f2b5</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtDetailEntry.getCell(rowIndex,"materialName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>18672ee3-09ba-495d-a735-dbfd7662c2e8</id>
+            <parentID>de1f835a-9803-461d-84cb-71f655596b34</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>a9496a70-9aa1-4dca-9f73-dff8de8ce91e</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>12d3e4d5-a128-4b7c-8685-f04971d2f960</id>
+                        <expressionID>97f5d60f-9e2f-445b-947c-f640e944b512</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>1e16e394-7d39-4bad-940c-3128d1848203</id>
+                        <expressionID>dfc16029-0c85-4979-a0a6-4790ac3d0698</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a9496a70-9aa1-4dca-9f73-dff8de8ce91e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>97f5d60f-9e2f-445b-947c-f640e944b512</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>58c93ed5-3620-452e-8070-a2487efeda65</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>58c93ed5-3620-452e-8070-a2487efeda65</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtDetailEntry.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>dfc16029-0c85-4979-a0a6-4790ac3d0698</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>5d8c76d2-03ce-475a-9abf-a65c39d313cf</id>
+            <parentID />
+            <source>DetailEntry.model=DetailEntry.material.model</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>ddabdb67-83f4-4bce-bdc0-18cbf91eab83</id>
+            <parentID>5d8c76d2-03ce-475a-9abf-a65c39d313cf</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>b209746c-9f12-448d-b1c3-6c425af88db5</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b209746c-9f12-448d-b1c3-6c425af88db5</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtDetailEntry.getCell(rowIndex,"model")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3583bb48-4567-4125-a060-6fff2b7bc034</id>
+            <parentID>5d8c76d2-03ce-475a-9abf-a65c39d313cf</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>27dbf0bf-61d4-41a8-92cb-fb6875621b3d</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>4183cbb0-a65f-4f55-9731-7adeb279fb00</id>
+                        <expressionID>ac2d09d3-8171-4a87-b277-dd297fb594b0</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>6c19a3c2-bf5f-4ae1-85f4-d0705002d5b9</id>
+                        <expressionID>fd4e7525-e399-4724-a109-ee5383a00f6d</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>27dbf0bf-61d4-41a8-92cb-fb6875621b3d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ac2d09d3-8171-4a87-b277-dd297fb594b0</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>3d212dda-b4f2-4887-84e3-b06ab70d7ee0</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3d212dda-b4f2-4887-84e3-b06ab70d7ee0</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtDetailEntry.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fd4e7525-e399-4724-a109-ee5383a00f6d</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>model</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>e4f3330d-4e7d-4e02-b372-b9d31c13e027</id>
+            <parentID />
+            <source>breedData=stockingBatch.breedData.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>b3cfc15f-a906-4ff2-8f8d-cdf9ea7e70d0</id>
+            <parentID>e4f3330d-4e7d-4e02-b372-b9d31c13e027</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>70e13bc8-b1a2-423f-858a-acdb80596f33</ownerID>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>70e13bc8-b1a2-423f-858a-acdb80596f33</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>txtbreedData</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a93c7f0b-512d-47e3-aeb9-ceca9ee4fb50</id>
+            <parentID>e4f3330d-4e7d-4e02-b372-b9d31c13e027</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>fe09b925-3241-43d8-ac9f-15be38ec3b41</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>eef66709-68ef-4b54-a761-c1152c7d9fea</id>
+                        <expressionID>372e84e1-09fd-4471-b652-dc39e3e32f3b</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>327ac5b1-3293-4e06-8327-3e3751e2f3cf</id>
+                        <expressionID>08f4d490-5f1c-456d-867f-819bc0a7496d</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fe09b925-3241-43d8-ac9f-15be38ec3b41</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>372e84e1-09fd-4471-b652-dc39e3e32f3b</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>e802119f-1d15-4e63-a867-9fc2dac74080</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e802119f-1d15-4e63-a867-9fc2dac74080</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtstockingBatch</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>08f4d490-5f1c-456d-867f-819bc0a7496d</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>breedData.name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>72343e17-df2e-4693-9be1-d9322c141dfc</id>
+            <parentID />
+            <source>farmer = MarginBill.farmer</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>b40d03c9-5bfc-49b8-a682-2065b3df956a</id>
+            <parentID>72343e17-df2e-4693-9be1-d9322c141dfc</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>6907d2a8-ece8-48d6-925a-23bb9de6dc59</ownerID>
+                <name>data</name>
+                <type>java.lang.Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>6907d2a8-ece8-48d6-925a-23bb9de6dc59</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>prmtfarmer</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e40fcdad-5c66-449e-b595-fe58c28ea6e9</id>
+            <parentID>72343e17-df2e-4693-9be1-d9322c141dfc</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>16949d66-1905-4336-9e0b-93b6fbfbee9a</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>ee431917-9abc-4196-b8c9-d3806c990d1c</id>
+                        <expressionID>ca60ec6d-6c03-4cde-8222-06ce69528347</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>0b8dab6b-d5d8-4b52-b939-a759c6129812</id>
+                        <expressionID>165f5afe-d4e3-4a1a-a067-58571b4c7deb</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>16949d66-1905-4336-9e0b-93b6fbfbee9a</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ca60ec6d-6c03-4cde-8222-06ce69528347</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>13ea2780-5051-4cff-9c64-1b52683153a0</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>13ea2780-5051-4cff-9c64-1b52683153a0</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtMarginBill</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>165f5afe-d4e3-4a1a-a067-58571b4c7deb</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>farmer</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>8cc03ed0-5a4c-4b3a-b633-0f9088bc1dc6</id>
+            <parentID />
+            <source>breedData = settlementPolicy.breedData</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>9bf0b0f2-62e7-493e-825e-66d20d82e269</id>
+            <parentID>8cc03ed0-5a4c-4b3a-b633-0f9088bc1dc6</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>143e1ea9-650a-4a0f-b6ff-5bdac6050bcc</ownerID>
+                <name>data</name>
+                <type>java.lang.Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>143e1ea9-650a-4a0f-b6ff-5bdac6050bcc</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>prmtbreedData</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9f7d3a92-e6be-4c14-a60c-095400c1f211</id>
+            <parentID>8cc03ed0-5a4c-4b3a-b633-0f9088bc1dc6</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>003272cf-7654-48d5-b263-ec9c0c84649e</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>f2245de1-f751-45f8-b4af-264b6a62a689</id>
+                        <expressionID>cca9d349-c8c1-4c4e-b14b-7ce7ca41fbd7</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>da6afae4-c26a-43c6-987f-506e8096c823</id>
+                        <expressionID>4e113e55-80c9-420f-8397-b18274191d2f</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>003272cf-7654-48d5-b263-ec9c0c84649e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>cca9d349-c8c1-4c4e-b14b-7ce7ca41fbd7</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>070377aa-0b8b-459b-aa21-933878afd74b</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>070377aa-0b8b-459b-aa21-933878afd74b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtsettlementPolicy</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>4e113e55-80c9-420f-8397-b18274191d2f</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>breedData</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>0b965296-b757-4d9b-b67e-92b0f56e3dc1</id>
+            <parentID />
+            <source>MarginBillAmount = receiveBill.actRecAmt</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>f9803a9d-51f5-46d7-924e-48b5956493e0</id>
+            <parentID>0b965296-b757-4d9b-b67e-92b0f56e3dc1</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>0ff14573-258a-49a8-bcb2-41bb7c7c51d3</ownerID>
+                <name>value</name>
+                <type>java.lang.Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0ff14573-258a-49a8-bcb2-41bb7c7c51d3</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>txtMarginBillAmount</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d281a3a5-cfec-4322-be23-683309add834</id>
+            <parentID>0b965296-b757-4d9b-b67e-92b0f56e3dc1</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <method>
+                <ownerID>44ac753e-ff44-4193-b62b-e96a9a6a8c10</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>f7f37196-263e-41ab-99a9-73713f20b10a</id>
+                        <expressionID>a4ed40fa-6225-4c6b-a748-f4779d2fa048</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>352d79a8-56b4-489a-89c1-a10cb5deb57e</id>
+                        <expressionID>9ff118d2-e8eb-412f-88b1-3440c7fcc07e</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>44ac753e-ff44-4193-b62b-e96a9a6a8c10</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a4ed40fa-6225-4c6b-a748-f4779d2fa048</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>e7519f82-e794-4ff5-ae00-2087a1ad27c5</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e7519f82-e794-4ff5-ae00-2087a1ad27c5</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtreceiveBill</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9ff118d2-e8eb-412f-88b1-3440c7fcc07e</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>actRecAmt</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>1fa867af-6c68-45a1-a9e3-f88069017342</id>
+            <parentID />
+            <source>ReceiveBillEntry.receiveAmount=ReceiveBillEntry.receiveBill.actRecAmt</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>d33e2f6d-b185-45cc-94a2-69e0b19e31df</id>
+            <parentID>1fa867af-6c68-45a1-a9e3-f88069017342</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>c38aafc4-23d7-4592-9bfe-a75d427fcca6</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c38aafc4-23d7-4592-9bfe-a75d427fcca6</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtReceiveBillEntry.getCell(rowIndex,"receiveAmount")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ce0e07e5-edc3-4aee-bb02-7765e9a5a25b</id>
+            <parentID>1fa867af-6c68-45a1-a9e3-f88069017342</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <method>
+                <ownerID>cc2dc667-fb0b-4194-9ae8-47bca03a3767</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>49b43322-eb6b-4255-8b38-acf4cfcb19a8</id>
+                        <expressionID>91b819d5-fbd1-41fa-a12b-c4d69c54cb97</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>cb328ad7-7397-49fa-bb39-9e0304ab1cfb</id>
+                        <expressionID>9bf3043a-4d0c-4434-8604-0065524c5400</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>cc2dc667-fb0b-4194-9ae8-47bca03a3767</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>91b819d5-fbd1-41fa-a12b-c4d69c54cb97</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>6954e55a-6195-41bc-9825-2e4c3d02c3c9</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>6954e55a-6195-41bc-9825-2e4c3d02c3c9</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtReceiveBillEntry.getCell(rowIndex,"receiveBill")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9bf3043a-4d0c-4434-8604-0065524c5400</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>actRecAmt</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>297e85b3-0447-44c1-86cd-9994edaf0028</id>
+            <parentID />
+            <source>ReceiveBillEntry.receiveBizDate=ReceiveBillEntry.receiveBill.bizDate</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>781cdec4-044f-497c-a158-49beaccb9325</id>
+            <parentID>297e85b3-0447-44c1-86cd-9994edaf0028</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Date</valueType>
+            <value />
+            <property>
+                <ownerID>63619968-5811-4a36-b421-94056b4b84d6</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>63619968-5811-4a36-b421-94056b4b84d6</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtReceiveBillEntry.getCell(rowIndex,"receiveBizDate")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c4026ea5-85d3-4872-8328-94287468e18a</id>
+            <parentID>297e85b3-0447-44c1-86cd-9994edaf0028</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Date</valueType>
+            <value />
+            <method>
+                <ownerID>8c75dc58-bfaa-4b21-9c26-f1786f671f6f</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>8f36a832-7c21-4da2-baaf-158bee518ed1</id>
+                        <expressionID>d51c863f-1b70-40ea-ac2c-191534094cf9</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>63b0aa7c-2144-4ffa-b4a0-9b863114035a</id>
+                        <expressionID>9877e3ea-d821-448d-9ad8-2e0a68089d3b</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8c75dc58-bfaa-4b21-9c26-f1786f671f6f</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d51c863f-1b70-40ea-ac2c-191534094cf9</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>61bce4f9-9978-460a-a38e-c06069d89456</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>61bce4f9-9978-460a-a38e-c06069d89456</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtReceiveBillEntry.getCell(rowIndex,"receiveBill")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9877e3ea-d821-448d-9ad8-2e0a68089d3b</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>bizDate</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>9c7c86ad-40ee-46be-af53-412aca37105b</id>
+            <name>BreedEntry_breedDataName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BreedEntry_breedDataName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BreedEntry_breedDataName_ActionInfo].description</description>
+            <expressionID>9db7f166-6714-41c3-91cb-006245d15005</expressionID>
+        </action>
+        <action>
+            <id>f77de10e-c7c7-40c3-a203-7bca04b76691</id>
+            <name>BatchContract_identity_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_identity_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_identity_ActionInfo].description</description>
+            <expressionID>f17bde25-b183-4926-91a4-2ccf7e919457</expressionID>
+        </action>
+        <action>
+            <id>aa03ead1-0ebf-48b4-b59f-a8164d1f3d2c</id>
+            <name>BatchContract_mobileTel_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_mobileTel_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_mobileTel_ActionInfo].description</description>
+            <expressionID>df3fce81-f6cd-455d-b1e2-649335d2005e</expressionID>
+        </action>
+        <action>
+            <id>5076f5b3-de27-48f3-93e9-0b281f20b344</id>
+            <name>DetailEntry_materialName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[DetailEntry_materialName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[DetailEntry_materialName_ActionInfo].description</description>
+            <expressionID>de1f835a-9803-461d-84cb-71f655596b34</expressionID>
+        </action>
+        <action>
+            <id>5af2484a-ba1a-4f2a-98a1-41541b3808ef</id>
+            <name>DetailEntry_model_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[DetailEntry_model_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[DetailEntry_model_ActionInfo].description</description>
+            <expressionID>5d8c76d2-03ce-475a-9abf-a65c39d313cf</expressionID>
+        </action>
+        <action>
+            <id>11be781e-2cf5-47dc-8091-f7964be8f227</id>
+            <name>BatchContract_breedData_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_breedData_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_breedData_ActionInfo].description</description>
+            <expressionID>e4f3330d-4e7d-4e02-b372-b9d31c13e027</expressionID>
+        </action>
+        <action>
+            <id>1cae0916-2abe-45bf-a932-78de94c6681f</id>
+            <name>C_BR0HHA</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_BR0HHA].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_BR0HHA].description</description>
+            <expressionID>72343e17-df2e-4693-9be1-d9322c141dfc</expressionID>
+        </action>
+        <action>
+            <id>585b4221-8580-4294-b15b-65419749b805</id>
+            <name>C_FVAURJ</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_FVAURJ].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_FVAURJ].description</description>
+            <expressionID>8cc03ed0-5a4c-4b3a-b633-0f9088bc1dc6</expressionID>
+        </action>
+        <action>
+            <id>e697958c-374c-44ca-90ba-b4f2e4ba2daa</id>
+            <name>C_SW49QY</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_SW49QY].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_SW49QY].description</description>
+            <expressionID>0b965296-b757-4d9b-b67e-92b0f56e3dc1</expressionID>
+        </action>
+        <action>
+            <id>d56e742a-1c5b-4c27-96ea-4d650dd802e1</id>
+            <name>ReceiveBillEntry_receiveAmount_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[ReceiveBillEntry_receiveAmount_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[ReceiveBillEntry_receiveAmount_ActionInfo].description</description>
+            <expressionID>1fa867af-6c68-45a1-a9e3-f88069017342</expressionID>
+        </action>
+        <action>
+            <id>6ff893d1-2500-4aa7-8263-8544e20b833b</id>
+            <name>ReceiveBillEntry_receiveBizDate_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[ReceiveBillEntry_receiveBizDate_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[ReceiveBillEntry_receiveBizDate_ActionInfo].description</description>
+            <expressionID>297e85b3-0447-44c1-86cd-9994edaf0028</expressionID>
+        </action>
+    </actions>
+    <rules>
+        <conditionRule>
+            <name>BatchContract_identity_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_identity_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_identity_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="f77de10e-c7c7-40c3-a203-7bca04b76691" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>BatchContract_mobileTel_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_mobileTel_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_mobileTel_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="aa03ead1-0ebf-48b4-b59f-a8164d1f3d2c" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_BR0HHA</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_BR0HHA].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_BR0HHA].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="1cae0916-2abe-45bf-a932-78de94c6681f" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_FVAURJ</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_FVAURJ].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_FVAURJ].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="585b4221-8580-4294-b15b-65419749b805" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_SW49QY</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_SW49QY].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_SW49QY].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="e697958c-374c-44ca-90ba-b4f2e4ba2daa" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>ReceiveBillEntry_receiveAmount_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveAmount_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveAmount_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="d56e742a-1c5b-4c27-96ea-4d650dd802e1" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>ReceiveBillEntry_receiveBizDate_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveBizDate_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveBizDate_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="6ff893d1-2500-4aa7-8263-8544e20b833b" />
+                </action>
+            </actions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_breedData_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_breedData" />
+            <lang locale="zh_HK" value="攜帶字段屬性_breedData" />
+            <lang locale="zh_TW" value="攜帶字段屬性_breedData" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_breedData_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_identity_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_identity" />
+            <lang locale="zh_HK" value="攜帶字段屬性_identity" />
+            <lang locale="zh_TW" value="攜帶字段屬性_identity" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_identity_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_mobileTel_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_mobileTel" />
+            <lang locale="zh_HK" value="攜帶字段屬性_mobileTel" />
+            <lang locale="zh_TW" value="攜帶字段屬性_mobileTel" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BatchContract_mobileTel_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BreedEntry_breedDataName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[BreedEntry_breedDataName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_BR0HHA].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_BR0HHA].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_FVAURJ].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_FVAURJ].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_SW49QY].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[C_SW49QY].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[DetailEntry_materialName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[DetailEntry_materialName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[DetailEntry_model_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_model" />
+            <lang locale="zh_HK" value="攜帶字段屬性_model" />
+            <lang locale="zh_TW" value="攜帶字段屬性_model" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[DetailEntry_model_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[ReceiveBillEntry_receiveAmount_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_actRecAmt" />
+            <lang locale="zh_HK" value="攜帶字段屬性_actRecAmt" />
+            <lang locale="zh_TW" value="攜帶字段屬性_actRecAmt" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[ReceiveBillEntry_receiveAmount_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[ReceiveBillEntry_receiveBizDate_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_bizDate" />
+            <lang locale="zh_HK" value="攜帶字段屬性_bizDate" />
+            <lang locale="zh_TW" value="攜帶字段屬性_bizDate" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].actions.action[ReceiveBillEntry_receiveBizDate_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_identity_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_identity" />
+            <lang locale="zh_HK" value="攜帶字段屬性_identity" />
+            <lang locale="zh_TW" value="攜帶字段屬性_identity" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_identity_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_identity_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="farmer" />
+            <lang locale="zh_CN" value="farmer" />
+            <lang locale="zh_TW" value="farmer" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_identity_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_mobileTel_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_mobileTel" />
+            <lang locale="zh_HK" value="攜帶字段屬性_mobileTel" />
+            <lang locale="zh_TW" value="攜帶字段屬性_mobileTel" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_mobileTel_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_mobileTel_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="farmer" />
+            <lang locale="zh_CN" value="farmer" />
+            <lang locale="zh_TW" value="farmer" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[BatchContract_mobileTel_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_BR0HHA].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="SetFieldPropEvent0003" />
+            <lang locale="zh_HK" value="SetFieldPropEvent0003" />
+            <lang locale="zh_TW" value="SetFieldPropEvent0003" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_BR0HHA].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_BR0HHA].extendedProperty.columnName">
+            <lang locale="en_US" value="MarginBill" />
+            <lang locale="zh_CN" value="MarginBill" />
+            <lang locale="zh_TW" value="MarginBill" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_FVAURJ].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="带出品种" />
+            <lang locale="zh_HK" value="帶出品種" />
+            <lang locale="zh_TW" value="帶出品種" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_FVAURJ].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_FVAURJ].extendedProperty.columnName">
+            <lang locale="en_US" value="settlementPolicy" />
+            <lang locale="zh_CN" value="settlementPolicy" />
+            <lang locale="zh_TW" value="settlementPolicy" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_SW49QY].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="带出金额" />
+            <lang locale="zh_HK" value="帶出金額" />
+            <lang locale="zh_TW" value="帶出金額" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_SW49QY].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[C_SW49QY].extendedProperty.columnName">
+            <lang locale="en_US" value="receiveBill" />
+            <lang locale="zh_CN" value="receiveBill" />
+            <lang locale="zh_TW" value="receiveBill" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveAmount_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_actRecAmt" />
+            <lang locale="zh_HK" value="攜帶字段屬性_actRecAmt" />
+            <lang locale="zh_TW" value="攜帶字段屬性_actRecAmt" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveAmount_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveAmount_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="receiveBill" />
+            <lang locale="zh_CN" value="receiveBill" />
+            <lang locale="zh_TW" value="receiveBill" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveAmount_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveBizDate_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_bizDate" />
+            <lang locale="zh_HK" value="攜帶字段屬性_bizDate" />
+            <lang locale="zh_TW" value="攜帶字段屬性_bizDate" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveBizDate_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveBizDate_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="receiveBill" />
+            <lang locale="zh_CN" value="receiveBill" />
+            <lang locale="zh_TW" value="receiveBill" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractRuleSet].rules.conditionRule[ReceiveBillEntry_receiveBizDate_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

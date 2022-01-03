@@ -1,0 +1,4005 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<joinQuery xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.breed.business.app</package>
+    <name>CarviousFeedPlanQuery</name>
+    <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].alias</alias>
+    <description>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].description</description>
+    <userDefined>true</userDefined>
+    <reportDataSource />
+    <bizUnitPK>com.kingdee.eas.farm.breed.business.CarviousFeedPlan</bizUnitPK>
+    <connectionProvider />
+    <subObjects>
+        <subEntity>
+            <name>CarviousFeedPlan</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[CarviousFeedPlan].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlan" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>auditor</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[auditor].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>creator</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[creator].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>lastUpdateUser</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[lastUpdateUser].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>handler</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[handler].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>company</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[company].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CompanyOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>storageOrgUnit</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[storageOrgUnit].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="StorageOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>period</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[period].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.assistant.app" />
+                <key name="name" value="Period" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>technician</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[technician].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.person.app" />
+                <key name="name" value="Person" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>entrys</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanEntry" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>sendCompany</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[sendCompany].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CompanyOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>sendPerson</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[sendPerson].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="FeeSendPerson" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>entrys_batch</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys_batch].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.carnivorous.basedata.app" />
+                <key name="name" value="Batch" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>entrys_farm</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys_farm].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.carnivorous.basedata.app" />
+                <key name="name" value="Farm" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>entrys_farmer</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys_farmer].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.carnivorous.basedata.app" />
+                <key name="name" value="Farmer" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>entrys_batchContract</name>
+            <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys_batchContract].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.carnivorous.feedbiz.app" />
+                <key name="name" value="BatchContractBill" />
+            </entityRef>
+        </subEntity>
+    </subObjects>
+    <units>
+        <propertyUnit>
+            <name>NewUnit0</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit0].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit0" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditor" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit1</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit2</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit2].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit2" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="creator" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit3</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit3].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit3" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit4</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit4].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit4" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateUser" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit5</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit5].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit5" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>id</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>number</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>bizDate</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[bizDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="bizDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bizDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>description</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[description].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="description" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="description" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>createTime</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[createTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="createTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="createTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateTime</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[lastUpdateTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditor.number</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[auditor.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="auditor.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditor.name</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[auditor.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="auditor.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>creator.number</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[creator.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="creator.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>creator.name</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[creator.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="creator.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateUser.number</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[lastUpdateUser.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateUser.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateUser.name</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[lastUpdateUser.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateUser.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>handler.number</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[handler.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="handler.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>handler.name</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[handler.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="handler.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>NewUnit9</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit9].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit9" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="handler" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit8</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit8].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit8" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>Fivouchered</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[Fivouchered].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="Fivouchered" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="Fivouchered" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>billStatus</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[billStatus].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>c536dcd8-5139-42a1-b59b-ae8b1073329c</key>
+                    <parentUnit>
+                        <key name="name" value="billStatus" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="billStatus" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>company.name</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0f6ee6df-960f-43fd-ba9a-fd4f848a5a0e</key>
+                    <parentUnit>
+                        <key name="name" value="company.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>2de43493-9762-492f-9381-f7b941e16c22</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[2de43493-9762-492f-9381-f7b941e16c22].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>cb105e88-34b3-4200-9306-dd16fb45db20</key>
+                    <parentUnit>
+                        <key name="name" value="2de43493-9762-492f-9381-f7b941e16c22" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="company" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>fd038beb-5e64-4d57-a56c-e174115ca5b1</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[fd038beb-5e64-4d57-a56c-e174115ca5b1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>8492190f-7d39-4938-949e-6dff67260a37</key>
+                    <parentUnit>
+                        <key name="name" value="fd038beb-5e64-4d57-a56c-e174115ca5b1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>auditTime</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[auditTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f567cc4d-5a8a-41ae-82aa-027f66e1443e</key>
+                    <parentUnit>
+                        <key name="name" value="auditTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>company.id</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>689b6a03-b91a-4123-a02a-e953e1115a07</key>
+                    <parentUnit>
+                        <key name="name" value="company.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>storageOrgUnit.name</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[storageOrgUnit.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>b34a2dbf-f545-4f57-95a8-38727199de9a</key>
+                    <parentUnit>
+                        <key name="name" value="storageOrgUnit.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="storageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>f7c9b526-ed90-421e-b4c3-cd7349ad393e</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[f7c9b526-ed90-421e-b4c3-cd7349ad393e].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>b864839b-de0d-494e-8223-ea5d4a85d2d7</key>
+                    <parentUnit>
+                        <key name="name" value="f7c9b526-ed90-421e-b4c3-cd7349ad393e" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="storageOrgUnit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>64e58f6b-6cf9-41b6-8122-fd9a79286bb0</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[64e58f6b-6cf9-41b6-8122-fd9a79286bb0].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>28532a90-e64f-4453-9242-7b29187960d7</key>
+                    <parentUnit>
+                        <key name="name" value="64e58f6b-6cf9-41b6-8122-fd9a79286bb0" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="storageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>period.number</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[period.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>5f3fd38a-76e9-4fda-9ed4-9e299b546ba5</key>
+                    <parentUnit>
+                        <key name="name" value="period.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="period" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>6c157872-4372-40da-b549-8794b2756899</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[6c157872-4372-40da-b549-8794b2756899].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>710275ef-c251-4d49-afd0-d806dde13c07</key>
+                    <parentUnit>
+                        <key name="name" value="6c157872-4372-40da-b549-8794b2756899" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="period" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>6a497da7-6e1e-4af3-8f80-ab36ed4bd535</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[6a497da7-6e1e-4af3-8f80-ab36ed4bd535].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>5d0e06c5-5750-4bba-b0cd-64f8846bb94d</key>
+                    <parentUnit>
+                        <key name="name" value="6a497da7-6e1e-4af3-8f80-ab36ed4bd535" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="period" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>beginDate</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[beginDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>a8623302-7594-4f7c-9c25-c7875a4e900d</key>
+                    <parentUnit>
+                        <key name="name" value="beginDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="beginDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>endDate</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[endDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>8ecc3a8b-3462-4756-863d-ad12e7e39cd9</key>
+                    <parentUnit>
+                        <key name="name" value="endDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="endDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>technician.name</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[technician.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>d00dfb39-d4f4-46d7-bab5-58cb3425d00f</key>
+                    <parentUnit>
+                        <key name="name" value="technician.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="technician" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>d7df4438-75b4-4f02-80e3-b280914a9a5e</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[d7df4438-75b4-4f02-80e3-b280914a9a5e].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>62e849a0-8eeb-4efe-8b7d-8fe3db2aba07</key>
+                    <parentUnit>
+                        <key name="name" value="d7df4438-75b4-4f02-80e3-b280914a9a5e" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="technician" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>f70018f7-8e78-4845-9c0b-1f2128726f1d</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[f70018f7-8e78-4845-9c0b-1f2128726f1d].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>99f1adfa-43a4-4ce8-9c77-c74c33d49e4e</key>
+                    <parentUnit>
+                        <key name="name" value="f70018f7-8e78-4845-9c0b-1f2128726f1d" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="technician" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>entrys.hatchDate</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.hatchDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>5b670d3e-210e-4853-bba5-60c432d7d7e3</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.hatchDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="hatchDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.weekAge</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.weekAge].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>fbbafa16-151e-4a2d-91b5-4bb6c7a040ce</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.weekAge" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="weekAge" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.currentQty</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.currentQty].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>07e56553-8b09-4337-b430-81a19e6a600a</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.currentQty" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="currentQty" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.feedStdDaily</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.feedStdDaily].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f471580e-1948-4ff0-8180-3e0d58633515</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.feedStdDaily" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="feedStdDaily" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.sendDate</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.sendDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>3545f375-3e85-4f82-8505-cd5ffc36558a</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.sendDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="sendDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.num1Feed</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num1Feed].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>b3d0d267-a7ac-4837-979a-170a6a1632a4</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.num1Feed" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="num1Feed" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.num2Feed</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num2Feed].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>83bf2d95-c18d-45d8-9bba-f4af1c1193da</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.num2Feed" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="num2Feed" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.num3Feed</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num3Feed].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f4193ac2-8651-41b2-b411-e6d718b4490e</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.num3Feed" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="num3Feed" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.num4Feed</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num4Feed].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>fdf06819-b528-4a6f-81f3-a3bec75f2791</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.num4Feed" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="num4Feed" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.remark</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.remark].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>a10f5391-05c9-4efb-8a51-c69b988abb47</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.remark" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="remark" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.seq</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.seq].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>7724df6c-d911-4d7b-ac37-665edbd87e2d</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.seq" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="seq" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>e747d2fd-95c2-4ae3-bedb-e0f087e5ba25</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[e747d2fd-95c2-4ae3-bedb-e0f087e5ba25].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>4ab213d2-c0aa-433d-9b63-550b15111875</key>
+                    <parentUnit>
+                        <key name="name" value="e747d2fd-95c2-4ae3-bedb-e0f087e5ba25" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CarviousFeedPlan" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>e3438029-4db2-433a-994d-97953bbe2b4d</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[e3438029-4db2-433a-994d-97953bbe2b4d].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f6d83220-3cea-4945-9cd4-2f9a5ed6accc</key>
+                    <parentUnit>
+                        <key name="name" value="e3438029-4db2-433a-994d-97953bbe2b4d" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="parent" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>7b6195fd-fca3-4b64-87dc-91ac3eec64ac</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[7b6195fd-fca3-4b64-87dc-91ac3eec64ac].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>39563390-9d33-4d81-8735-f20e9d029735</key>
+                    <parentUnit>
+                        <key name="name" value="7b6195fd-fca3-4b64-87dc-91ac3eec64ac" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="sendCompany" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>465d0319-9749-4a28-a158-5f5dc3753b26</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[465d0319-9749-4a28-a158-5f5dc3753b26].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f338f04d-8971-4ace-bc3a-70a6cf52163a</key>
+                    <parentUnit>
+                        <key name="name" value="465d0319-9749-4a28-a158-5f5dc3753b26" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="sendCompany" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>c386b8a2-4462-447a-b83b-ee946ebcf676</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[c386b8a2-4462-447a-b83b-ee946ebcf676].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>178dec38-e038-4d5a-b909-87ddc9ba97fb</key>
+                    <parentUnit>
+                        <key name="name" value="c386b8a2-4462-447a-b83b-ee946ebcf676" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="sendPerson" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>872ad4cb-a7ab-4967-88d6-019b82f84c90</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[872ad4cb-a7ab-4967-88d6-019b82f84c90].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>ff1faa63-509d-4ce4-827f-e9688f917eec</key>
+                    <parentUnit>
+                        <key name="name" value="872ad4cb-a7ab-4967-88d6-019b82f84c90" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="sendPerson" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>sendPerson.name</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendPerson.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>5bde295b-c585-4ede-9286-2ec898e62373</key>
+                    <parentUnit>
+                        <key name="name" value="sendPerson.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="sendPerson" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>sendCompany.name</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendCompany.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>261e104f-7d6b-4517-865d-cefa0fbe9c5b</key>
+                    <parentUnit>
+                        <key name="name" value="sendCompany.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="sendCompany" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.id</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>2ebba6bc-8bd5-41d4-9192-97830d9a8803</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.spareStocking</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.spareStocking].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>4fdaa7b8-17e1-418a-81df-a922673cbfa0</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.spareStocking" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="spareStocking" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.num5Feed</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num5Feed].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>ff9b31b3-c633-4e15-8879-79217657f177</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.num5Feed" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="num5Feed" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>entrys.batch.name</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batch.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>25f91bb3-ba6c-4e6d-8426-a9b50535488d</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.batch.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_batch" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>129379fc-00f1-49dd-b5f3-854e6ec51536</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[129379fc-00f1-49dd-b5f3-854e6ec51536].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>731d1941-1072-46fd-90f4-b754347a963f</key>
+                    <parentUnit>
+                        <key name="name" value="129379fc-00f1-49dd-b5f3-854e6ec51536" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="batch" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>b94063f2-2fb5-4f00-96e2-c216c4c1273d</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[b94063f2-2fb5-4f00-96e2-c216c4c1273d].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>f50e580f-f19f-46c4-92d8-be77d2b144a4</key>
+                    <parentUnit>
+                        <key name="name" value="b94063f2-2fb5-4f00-96e2-c216c4c1273d" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_batch" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>entrys.farm.name</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farm.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>35e5ed4f-f5ec-49af-99ae-424b6795a88a</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.farm.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>d7d263f6-152d-4532-a11c-4ec54cf1621c</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[d7d263f6-152d-4532-a11c-4ec54cf1621c].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>ba64aae6-f70f-4292-a484-0cde1b5c00f3</key>
+                    <parentUnit>
+                        <key name="name" value="d7d263f6-152d-4532-a11c-4ec54cf1621c" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farm" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>015598a9-e348-4795-a5de-a0541a7d5a59</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[015598a9-e348-4795-a5de-a0541a7d5a59].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>8f19fadd-2baf-4ee7-9506-7c5a7357fb12</key>
+                    <parentUnit>
+                        <key name="name" value="015598a9-e348-4795-a5de-a0541a7d5a59" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_farm" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>entrys.farmer.name</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farmer.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>17a9d991-fc63-4a0c-b97a-e02a41e66a13</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.farmer.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_farmer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>22897b9c-bb98-4dac-afd0-51dbae14cca1</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[22897b9c-bb98-4dac-afd0-51dbae14cca1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>d9d349cc-5a86-4428-8486-a28accc7d57c</key>
+                    <parentUnit>
+                        <key name="name" value="22897b9c-bb98-4dac-afd0-51dbae14cca1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farmer" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>a9dc7e5d-d4d8-45dc-a370-9664f04953d2</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[a9dc7e5d-d4d8-45dc-a370-9664f04953d2].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>1a63c84d-4c1a-4b37-825b-83ed16f301e5</key>
+                    <parentUnit>
+                        <key name="name" value="a9dc7e5d-d4d8-45dc-a370-9664f04953d2" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_farmer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>entrys.batchContract.number</name>
+            <userDefined>true</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batchContract.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>bea742cf-fd4f-4b67-93a1-be6900e697b5</key>
+                    <parentUnit>
+                        <key name="name" value="entrys.batchContract.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_batchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>73e578b4-eded-4b62-a958-a98002d409cf</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[73e578b4-eded-4b62-a958-a98002d409cf].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>aafd6f29-9be2-4945-86c2-4d0c01af3b3b</key>
+                    <parentUnit>
+                        <key name="name" value="73e578b4-eded-4b62-a958-a98002d409cf" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="batchContract" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>1275542a-852d-485b-9d03-8f091611149f</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[1275542a-852d-485b-9d03-8f091611149f].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>28e89af3-3ef6-4981-9136-731d60fdef2b</key>
+                    <parentUnit>
+                        <key name="name" value="1275542a-852d-485b-9d03-8f091611149f" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="entrys_batchContract" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </propertyUnit>
+    </units>
+    <defaultFilter>
+        <name>defaultFilter</name>
+        <formulaString />
+        <query>
+            <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+            <key name="name" value="CarviousFeedPlanQuery" />
+        </query>
+    </defaultFilter>
+    <defaultSorters>
+        <querySorterItem>
+            <propertyName>number</propertyName>
+            <sortType>ASC</sortType>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+            <configured>false</configured>
+        </querySorterItem>
+    </defaultSorters>
+    <queryPK>
+        <name>QueryPK</name>
+        <alias>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].queryPK[QueryPK].alias</alias>
+        <description>joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].queryPK[QueryPK].description</description>
+        <keyProperties>
+            <queryField>
+                <key name="name" value="id" />
+            </queryField>
+            <queryField>
+                <key name="name" value="entrys.id" />
+            </queryField>
+        </keyProperties>
+    </queryPK>
+    <isDistinct>false</isDistinct>
+    <joins>
+        <join>
+            <name>NewJoin0</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="CarviousFeedPlan" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="auditor" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit0" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin0" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin1</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="CarviousFeedPlan" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="creator" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit2" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit3" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin1" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin2</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="CarviousFeedPlan" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="lastUpdateUser" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit4" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit5" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin2" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin4</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="CarviousFeedPlan" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="handler" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit9" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit8" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin4" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>8c3abc37-d7ca-45e9-95c2-4c2898d21dcf</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="CarviousFeedPlan" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="company" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>a9637c56-8dd2-482d-b072-9790f95f4f11</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="2de43493-9762-492f-9381-f7b941e16c22" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="fd038beb-5e64-4d57-a56c-e174115ca5b1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="8c3abc37-d7ca-45e9-95c2-4c2898d21dcf" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>c4ed5925-e4fc-44fa-a4b9-817ee92ee651</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="CarviousFeedPlan" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="storageOrgUnit" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>2f054c0e-3144-405a-82d6-c7b4c40c4798</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="f7c9b526-ed90-421e-b4c3-cd7349ad393e" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="64e58f6b-6cf9-41b6-8122-fd9a79286bb0" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="c4ed5925-e4fc-44fa-a4b9-817ee92ee651" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>2c070cce-6711-4444-8847-a282f0597f76</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="CarviousFeedPlan" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="period" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>fa2b8a4c-ac4a-4ff0-8646-34f72b468f16</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="6c157872-4372-40da-b549-8794b2756899" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="6a497da7-6e1e-4af3-8f80-ab36ed4bd535" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="2c070cce-6711-4444-8847-a282f0597f76" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>c3387ff6-b207-402f-b782-8ee3eba73772</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="CarviousFeedPlan" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="technician" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>b92206de-7a6f-4d25-948d-60f685488850</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="d7df4438-75b4-4f02-80e3-b280914a9a5e" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="f70018f7-8e78-4845-9c0b-1f2128726f1d" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="c3387ff6-b207-402f-b782-8ee3eba73772" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>fa7bf5f0-fa29-4b94-8b2c-03ad87881e7e</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="CarviousFeedPlan" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="entrys" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>af72170d-d71f-45a7-960c-825b10f2136b</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="e747d2fd-95c2-4ae3-bedb-e0f087e5ba25" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="e3438029-4db2-433a-994d-97953bbe2b4d" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="fa7bf5f0-fa29-4b94-8b2c-03ad87881e7e" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>71cc76fa-a060-4cd3-8131-316359e4ab64</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="entrys" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="sendCompany" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>dd8312be-3a17-4e71-8198-009fbdb6cd7c</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="7b6195fd-fca3-4b64-87dc-91ac3eec64ac" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="465d0319-9749-4a28-a158-5f5dc3753b26" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="71cc76fa-a060-4cd3-8131-316359e4ab64" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>4578da45-484a-4ef9-8ac1-2f994c1ed644</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="entrys" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="sendPerson" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>cf8a0614-3006-484b-b8e0-e513d69bb6ff</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="c386b8a2-4462-447a-b83b-ee946ebcf676" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="872ad4cb-a7ab-4967-88d6-019b82f84c90" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="4578da45-484a-4ef9-8ac1-2f994c1ed644" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>97a00881-2df4-46f7-8abf-9d9022ac0c6a</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="entrys" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="entrys_batch" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>97b06f77-8d55-4b90-bb6e-41532edf54b6</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="129379fc-00f1-49dd-b5f3-854e6ec51536" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="b94063f2-2fb5-4f00-96e2-c216c4c1273d" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="97a00881-2df4-46f7-8abf-9d9022ac0c6a" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>a46f656a-320c-441c-b0ce-00e6a7ba4a5d</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="entrys" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="entrys_farm" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>3b3a94f3-af58-4eef-bc19-035bc55d77ad</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="d7d263f6-152d-4532-a11c-4ec54cf1621c" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="015598a9-e348-4795-a5de-a0541a7d5a59" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="a46f656a-320c-441c-b0ce-00e6a7ba4a5d" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>5ee78d87-1abc-4b56-8fed-7fda2c025dff</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="entrys" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="entrys_farmer" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>3a19a5ef-6313-4c0a-b582-cd1ca72cec12</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="22897b9c-bb98-4dac-afd0-51dbae14cca1" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="a9dc7e5d-d4d8-45dc-a370-9664f04953d2" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="5ee78d87-1abc-4b56-8fed-7fda2c025dff" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+        <join>
+            <name>fd84c500-4019-49c9-8411-4d0f27b3e1d9</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="entrys" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="entrys_batchContract" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>8d388b61-e44b-4a79-9d7f-b1681986579c</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="73e578b4-eded-4b62-a958-a98002d409cf" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="1275542a-852d-485b-9d03-8f091611149f" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="fd84c500-4019-49c9-8411-4d0f27b3e1d9" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.breed.business.app" />
+                <key name="name" value="CarviousFeedPlanQuery" />
+            </query>
+        </join>
+    </joins>
+    <resource>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="商品代要料计划" />
+            <lang locale="zh_HK" value="商品代要料計畫" />
+            <lang locale="zh_TW" value="商品代要料計畫" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].defaultSorters.querySorterItemextendedProperty.f7WindowTitle">
+            <lang locale="en_US" value="多分录基础单据模板" />
+            <lang locale="zh_CN" value="多分录基础单据模板" />
+            <lang locale="zh_TW" value="多分录基础单据模板" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="多分录基础单据查询" />
+            <lang locale="zh_HK" value="多分錄基礎單據查詢" />
+            <lang locale="zh_TW" value="多分錄基礎單據查詢" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].extendedProperty.F7WindowTitle">
+            <lang locale="en_US" value="com.kingdee.eas.farm.breed.business.client.BusinessResource.CarviousFeedPlanQueryF7WindowTitle" />
+            <lang locale="zh_CN" value="com.kingdee.eas.farm.breed.business.client.BusinessResource.CarviousFeedPlanQueryF7WindowTitle" />
+            <lang locale="zh_TW" value="com.kingdee.eas.farm.breed.business.client.BusinessResource.CarviousFeedPlanQueryF7WindowTitle" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].extendedProperty.f7WindowTitle">
+            <lang locale="en_US" value="商品代要料计划" />
+            <lang locale="zh_CN" value="商品代要料计划" />
+            <lang locale="zh_TW" value="商品代要料计划" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].queryPK[QueryPK].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].queryPK[QueryPK].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[CarviousFeedPlan].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[auditor].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[company].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[creator].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys_batchContract].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys_batch].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys_farm].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[entrys_farmer].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[handler].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[lastUpdateUser].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[period].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[sendCompany].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[sendPerson].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[storageOrgUnit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].subObjects.subEntity[technician].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[015598a9-e348-4795-a5de-a0541a7d5a59].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[1275542a-852d-485b-9d03-8f091611149f].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[129379fc-00f1-49dd-b5f3-854e6ec51536].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[22897b9c-bb98-4dac-afd0-51dbae14cca1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[2de43493-9762-492f-9381-f7b941e16c22].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[465d0319-9749-4a28-a158-5f5dc3753b26].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[64e58f6b-6cf9-41b6-8122-fd9a79286bb0].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[6a497da7-6e1e-4af3-8f80-ab36ed4bd535].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[6c157872-4372-40da-b549-8794b2756899].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[73e578b4-eded-4b62-a958-a98002d409cf].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[7b6195fd-fca3-4b64-87dc-91ac3eec64ac].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[872ad4cb-a7ab-4967-88d6-019b82f84c90].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit0].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit2].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit3].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit4].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit5].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit8].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[NewUnit9].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[a9dc7e5d-d4d8-45dc-a370-9664f04953d2].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[b94063f2-2fb5-4f00-96e2-c216c4c1273d].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[c386b8a2-4462-447a-b83b-ee946ebcf676].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[d7d263f6-152d-4532-a11c-4ec54cf1621c].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[d7df4438-75b4-4f02-80e3-b280914a9a5e].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[e3438029-4db2-433a-994d-97953bbe2b4d].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[e747d2fd-95c2-4ae3-bedb-e0f087e5ba25].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[f70018f7-8e78-4845-9c0b-1f2128726f1d].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[f7c9b526-ed90-421e-b4c3-cd7349ad393e].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.propertyUnit[fd038beb-5e64-4d57-a56c-e174115ca5b1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[Fivouchered].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否生成凭证" />
+            <lang locale="zh_HK" value="是否生成憑證" />
+            <lang locale="zh_TW" value="是否生成憑證" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[Fivouchered].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[Fivouchered].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[auditTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核时间" />
+            <lang locale="zh_HK" value="審核時間" />
+            <lang locale="zh_TW" value="審核時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[auditTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[auditTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[auditor.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[auditor.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[beginDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="开始日期" />
+            <lang locale="zh_HK" value="開始日期" />
+            <lang locale="zh_TW" value="開始日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[beginDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[beginDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[billStatus].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据状态" />
+            <lang locale="zh_HK" value="單據狀態" />
+            <lang locale="zh_TW" value="單據狀態" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[billStatus].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[billStatus].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[bizDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="业务日期" />
+            <lang locale="zh_HK" value="業務日期" />
+            <lang locale="zh_TW" value="業務日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[bizDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[bizDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="ID" />
+            <lang locale="zh_HK" value="ID" />
+            <lang locale="zh_TW" value="ID" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.id].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.id].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.id].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="财务组织" />
+            <lang locale="zh_HK" value="財務組織" />
+            <lang locale="zh_TW" value="財務組織" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[company.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[createTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="创建时间" />
+            <lang locale="zh_HK" value="創建時間" />
+            <lang locale="zh_TW" value="創建時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[createTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[createTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[creator.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[creator.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[description].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="参考信息" />
+            <lang locale="zh_HK" value="參考信息" />
+            <lang locale="zh_TW" value="參考信息" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[description].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[description].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[endDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="结束日期" />
+            <lang locale="zh_HK" value="結束日期" />
+            <lang locale="zh_TW" value="結束日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[endDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[endDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batch.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="批次" />
+            <lang locale="zh_HK" value="批次" />
+            <lang locale="zh_TW" value="批次" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batch.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batch.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batch.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batchContract.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="批次合同" />
+            <lang locale="zh_HK" value="批次合同" />
+            <lang locale="zh_TW" value="批次合同" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batchContract.number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batchContract.number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.batchContract.number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.currentQty].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="存栏" />
+            <lang locale="zh_HK" value="存欄" />
+            <lang locale="zh_TW" value="存欄" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.currentQty].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.currentQty].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farm.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖场" />
+            <lang locale="zh_HK" value="養殖場" />
+            <lang locale="zh_TW" value="養殖場" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farm.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farm.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farm.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farmer.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖户" />
+            <lang locale="zh_HK" value="養殖戶" />
+            <lang locale="zh_TW" value="養殖戶" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farmer.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farmer.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.farmer.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.feedStdDaily].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="日耗料标准" />
+            <lang locale="zh_HK" value="日耗料標準" />
+            <lang locale="zh_TW" value="日耗料標準" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.feedStdDaily].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.feedStdDaily].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.hatchDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="上苗日期" />
+            <lang locale="zh_HK" value="上苗日期" />
+            <lang locale="zh_TW" value="上苗日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.hatchDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.hatchDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="entrys.id" />
+            <lang locale="zh_HK" value="entrys.id" />
+            <lang locale="zh_TW" value="entrys.id" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num1Feed].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="1#料" />
+            <lang locale="zh_HK" value="1#料" />
+            <lang locale="zh_TW" value="1#料" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num1Feed].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num1Feed].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num1Feed].extendedProperty.isSumField">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num2Feed].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="2#料" />
+            <lang locale="zh_HK" value="2#料" />
+            <lang locale="zh_TW" value="2#料" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num2Feed].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num2Feed].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num2Feed].extendedProperty.isSumField">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num3Feed].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="3#料" />
+            <lang locale="zh_HK" value="3#料" />
+            <lang locale="zh_TW" value="3#料" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num3Feed].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num3Feed].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num3Feed].extendedProperty.isSumField">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num4Feed].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="4#料" />
+            <lang locale="zh_HK" value="4#料" />
+            <lang locale="zh_TW" value="4#料" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num4Feed].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num4Feed].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num4Feed].extendedProperty.isSumField">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num5Feed].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="5#料" />
+            <lang locale="zh_HK" value="5#料" />
+            <lang locale="zh_TW" value="5#料" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num5Feed].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.num5Feed].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.remark].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="备注" />
+            <lang locale="zh_HK" value="備註" />
+            <lang locale="zh_TW" value="備註" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.remark].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.remark].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.sendDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="送料日期" />
+            <lang locale="zh_HK" value="送料日期" />
+            <lang locale="zh_TW" value="送料日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.sendDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.sendDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.seq].displayName">
+            <lang locale="en_US" value="sequence" />
+            <lang locale="zh_CN" value="单据分录序列号" />
+            <lang locale="zh_HK" value="單據分錄序列號" />
+            <lang locale="zh_TW" value="單據分錄序列號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.seq].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.seq].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.spareStocking].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="月末库存" />
+            <lang locale="zh_HK" value="月末庫存" />
+            <lang locale="zh_TW" value="月末庫存" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.spareStocking].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.spareStocking].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.weekAge].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="周龄" />
+            <lang locale="zh_HK" value="周齡" />
+            <lang locale="zh_TW" value="周齡" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.weekAge].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[entrys.weekAge].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[handler.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[handler.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[lastUpdateTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="最后修改时间" />
+            <lang locale="zh_HK" value="最後修改時間" />
+            <lang locale="zh_TW" value="最後修改時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[lastUpdateUser.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[lastUpdateUser.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据编号" />
+            <lang locale="zh_HK" value="單據編號" />
+            <lang locale="zh_TW" value="單據編號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[period.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="会计期间" />
+            <lang locale="zh_HK" value="會計期間" />
+            <lang locale="zh_TW" value="會計期間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[period.number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[period.number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[period.number].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendCompany.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="送料公司" />
+            <lang locale="zh_HK" value="送料公司" />
+            <lang locale="zh_TW" value="送料公司" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendCompany.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendCompany.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendCompany.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendPerson.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="送料人" />
+            <lang locale="zh_HK" value="送料人" />
+            <lang locale="zh_TW" value="送料人" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendPerson.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendPerson.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[sendPerson.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[storageOrgUnit.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="库存组织" />
+            <lang locale="zh_HK" value="庫存組織" />
+            <lang locale="zh_TW" value="庫存組織" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[storageOrgUnit.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[storageOrgUnit.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[storageOrgUnit.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[technician.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="技术员" />
+            <lang locale="zh_HK" value="技術員" />
+            <lang locale="zh_TW" value="技術員" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[technician.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[technician.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.breed.business.app.CarviousFeedPlanQuery].units.queryField[technician.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+    </resource>
+</joinQuery>
+

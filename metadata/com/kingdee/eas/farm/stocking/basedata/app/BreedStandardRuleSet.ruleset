@@ -1,0 +1,2313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.basedata.app</package>
+    <name>BreedStandardRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>0692b232-8e94-41a8-abbe-20a7d92255ae</id>
+            <parentID />
+            <source>DrugEntry.unit = DrugEntry.material.baseUnit</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>1c066f6c-0cbe-4b50-a121-4eab54c26084</id>
+            <parentID>0692b232-8e94-41a8-abbe-20a7d92255ae</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType />
+            <value />
+            <property>
+                <ownerID>d9b8ec1d-4d4d-4732-96a8-400e13340235</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d9b8ec1d-4d4d-4732-96a8-400e13340235</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtDrugEntry.getCell(rowIndex,"unit")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0ad20892-5846-4cfc-a687-9fb0f2b6e1ad</id>
+            <parentID>0692b232-8e94-41a8-abbe-20a7d92255ae</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType />
+            <value />
+            <method>
+                <ownerID>7fc0a185-fc49-4141-9205-6c32007958a7</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>3a3a74d1-8532-4dd2-b4cb-6fb8def88bd5</id>
+                        <expressionID>69b18bda-ef72-46a8-bd03-36884f1e970f</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>922e5d2a-de05-4d87-a1ff-2983822d8c17</id>
+                        <expressionID>d8fb24f8-198a-47f2-9ebe-ebbd0b542526</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>7fc0a185-fc49-4141-9205-6c32007958a7</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>69b18bda-ef72-46a8-bd03-36884f1e970f</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>fdebab1b-78e1-4bff-b6fc-e3ed3b3a2ee8</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fdebab1b-78e1-4bff-b6fc-e3ed3b3a2ee8</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtDrugEntry.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d8fb24f8-198a-47f2-9ebe-ebbd0b542526</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>baseUnit</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>f2497e73-b902-40ac-95fd-37f0b8c94c38</id>
+            <parentID />
+            <source>DrugEntry.materialName=DrugEntry.material.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>55d3dd96-1987-4799-b3cf-258d9160e278</id>
+            <parentID>f2497e73-b902-40ac-95fd-37f0b8c94c38</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>231dbe60-1bca-4eb8-802e-31bad53b817d</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>231dbe60-1bca-4eb8-802e-31bad53b817d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtDrugEntry.getCell(rowIndex,"materialName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>61699932-f4e3-4e2b-8eb5-0c426d420ae6</id>
+            <parentID>f2497e73-b902-40ac-95fd-37f0b8c94c38</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>97efa8f1-5cc1-45e0-bb2a-ac3b4517f69d</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>689f019c-c0e4-42a1-886f-c266682f23a8</id>
+                        <expressionID>f25d3e9e-3405-4132-b30b-99c09ece942d</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>5b95d6be-08a7-4d4e-97bb-d1d252d3a5eb</id>
+                        <expressionID>472d7502-5d82-4c76-9892-bd634a9aa441</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>97efa8f1-5cc1-45e0-bb2a-ac3b4517f69d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f25d3e9e-3405-4132-b30b-99c09ece942d</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>ade32261-4eb9-4a35-a289-a1699827beeb</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ade32261-4eb9-4a35-a289-a1699827beeb</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtDrugEntry.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>472d7502-5d82-4c76-9892-bd634a9aa441</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>7345006a-df1c-4c2b-8087-e7db2ee3711c</id>
+            <parentID />
+            <source>DrugEntry.model=DrugEntry.material.model</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>d1545d7d-d0e4-40e2-a281-fe3a9e2ea095</id>
+            <parentID>7345006a-df1c-4c2b-8087-e7db2ee3711c</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>f745b164-028e-4a5e-9c26-b9e28c54d578</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f745b164-028e-4a5e-9c26-b9e28c54d578</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtDrugEntry.getCell(rowIndex,"model")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>63d7b569-0135-4639-a7b7-b1ddb7aef2cb</id>
+            <parentID>7345006a-df1c-4c2b-8087-e7db2ee3711c</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>6d8aa9b0-094f-4d09-a3af-d5554a885839</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>449919dc-e3e3-4fb9-8e8c-74b5e94a9f61</id>
+                        <expressionID>be3ce303-b5b6-4894-8ded-ec48bb4e8f10</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>e5e9e8d0-9968-4415-8060-5296f567bcf8</id>
+                        <expressionID>70a2eed9-80ee-4c81-bea5-c03f238745ee</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>6d8aa9b0-094f-4d09-a3af-d5554a885839</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>be3ce303-b5b6-4894-8ded-ec48bb4e8f10</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>96243cbf-0999-43ad-8b00-e32065f81783</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>96243cbf-0999-43ad-8b00-e32065f81783</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtDrugEntry.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>70a2eed9-80ee-4c81-bea5-c03f238745ee</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>model</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>71bbab65-f41d-4796-9209-ef476f873dbd</id>
+            <parentID />
+            <source>[Entrys.endWeek] = [Entrys.week]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>065de142-75a4-44dd-80ec-b067b98acad8</id>
+            <parentID>71bbab65-f41d-4796-9209-ef476f873dbd</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>4822f544-4179-47c0-bd7c-c4ee53a43045</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>4822f544-4179-47c0-bd7c-c4ee53a43045</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"endWeek")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e182904d-624b-4a27-bdec-03b6c14bafe8</id>
+            <parentID>71bbab65-f41d-4796-9209-ef476f873dbd</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>67292433-c434-4564-a4a7-22d6debd0769</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>67292433-c434-4564-a4a7-22d6debd0769</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"week")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>afaf1b0d-0ce9-44db-86c4-dd56c90e7758</id>
+            <parentID />
+            <source>[Entrys.cockMaterial] = [Entrys.henMaterial]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>8f72754b-f58d-4e15-a017-8c64bad0b8a8</id>
+            <parentID>afaf1b0d-0ce9-44db-86c4-dd56c90e7758</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType />
+            <value />
+            <property>
+                <ownerID>3668b6cc-8c2d-4d80-af37-9b549fd22531</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3668b6cc-8c2d-4d80-af37-9b549fd22531</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"cockMaterial")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>839594c1-af3b-4a0e-af5d-f1afbbdf03cf</id>
+            <parentID>afaf1b0d-0ce9-44db-86c4-dd56c90e7758</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType />
+            <value />
+            <property>
+                <ownerID>714c4b31-9b6c-43b5-9356-7ed7ac17ce4f</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>714c4b31-9b6c-43b5-9356-7ed7ac17ce4f</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"henMaterial")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>e79d4f52-9f0f-4f98-8484-695710e63c10</id>
+            <parentID />
+            <source>[LayEggEntrys.endWeek] = [LayEggEntrys.week]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>41451561-dc96-4529-a3d0-d5a612e0a62f</id>
+            <parentID>e79d4f52-9f0f-4f98-8484-695710e63c10</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>9acb71e0-9ff7-4ca9-be68-73b6ccc3223e</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9acb71e0-9ff7-4ca9-be68-73b6ccc3223e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"endWeek")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>653755a9-c8c3-492e-bda5-82c429d51b2e</id>
+            <parentID>e79d4f52-9f0f-4f98-8484-695710e63c10</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>113921eb-9ab4-45b7-b9a9-cd5213905cdb</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>113921eb-9ab4-45b7-b9a9-cd5213905cdb</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"week")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>3b9e2ab5-4c49-4991-8f66-9a9ba2b9cf05</id>
+            <parentID />
+            <source>[LayEggEntrys.endDays] =  [LayEggEntrys.days]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>282949e7-a5ab-4947-9c80-9e1b31cef2e8</id>
+            <parentID>3b9e2ab5-4c49-4991-8f66-9a9ba2b9cf05</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>bb1ad02d-c084-476c-8cec-2e4bbd54cf32</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bb1ad02d-c084-476c-8cec-2e4bbd54cf32</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"endDays")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1ce4d0fe-ed76-472e-bb7e-a2d15161ecf3</id>
+            <parentID>3b9e2ab5-4c49-4991-8f66-9a9ba2b9cf05</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>756cdf97-3a1a-48bd-b8f2-aecb793f0f4a</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>756cdf97-3a1a-48bd-b8f2-aecb793f0f4a</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"days")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>3e19a3f4-988f-4520-bc98-717184716737</id>
+            <parentID />
+            <source>[Entrys.week] = [Entrys.endWeek]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>a42701c0-d8fa-42cd-9a23-54d853fb7014</id>
+            <parentID>3e19a3f4-988f-4520-bc98-717184716737</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>a42be777-4385-4992-b2ac-c2ae4753b684</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a42be777-4385-4992-b2ac-c2ae4753b684</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"week")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8fd71b6e-1bc0-4240-bc29-c0718cb3f8be</id>
+            <parentID>3e19a3f4-988f-4520-bc98-717184716737</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>a4601875-9e0f-4628-9bba-86bc6ebf7335</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a4601875-9e0f-4628-9bba-86bc6ebf7335</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"endWeek")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>47bcff4b-0f7b-4dcf-9336-0d8e8da03001</id>
+            <parentID />
+            <source>[Entrys.days] = [Entrys.endDays]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>7f599d73-6372-46f5-8dd1-77b024ef909b</id>
+            <parentID>47bcff4b-0f7b-4dcf-9336-0d8e8da03001</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>7156bc59-589d-401b-b183-de2dba1206cc</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>7156bc59-589d-401b-b183-de2dba1206cc</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"days")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b57ed11f-35be-42b0-9246-b28730630889</id>
+            <parentID>47bcff4b-0f7b-4dcf-9336-0d8e8da03001</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>43b8102c-0c0c-4d73-8da7-ba4df62bd064</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>43b8102c-0c0c-4d73-8da7-ba4df62bd064</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"endDays")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>60c441e5-6dac-40f7-8130-a1623c9d8710</id>
+            <parentID />
+            <source>[Entrys.henMaterial] = [Entrys.cockMaterial]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>930f1a90-eebc-46ee-9693-18977974d055</id>
+            <parentID>60c441e5-6dac-40f7-8130-a1623c9d8710</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType />
+            <value />
+            <property>
+                <ownerID>ea494bf0-6260-4fe3-b8ef-aad8044ec650</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ea494bf0-6260-4fe3-b8ef-aad8044ec650</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"henMaterial")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b9026027-86ad-4c85-9df3-bffee0f5553e</id>
+            <parentID>60c441e5-6dac-40f7-8130-a1623c9d8710</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType />
+            <value />
+            <property>
+                <ownerID>c956333a-79a1-475c-800a-2c6366342c02</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c956333a-79a1-475c-800a-2c6366342c02</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"cockMaterial")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>620ea4bc-e72e-40c3-92fb-f66f4ef92276</id>
+            <parentID />
+            <source>[Entrys.endDays] = [Entrys.days]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>259a0172-82d4-44f2-9836-283c43a19a4f</id>
+            <parentID>620ea4bc-e72e-40c3-92fb-f66f4ef92276</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>63f21836-22dc-4f39-b043-2ce5588dad82</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>63f21836-22dc-4f39-b043-2ce5588dad82</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"endDays")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>7f97e845-98f8-46bf-8136-24f1d28282ee</id>
+            <parentID>620ea4bc-e72e-40c3-92fb-f66f4ef92276</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>00c47f9b-9e9f-4654-9524-58a25c16e85f</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>00c47f9b-9e9f-4654-9524-58a25c16e85f</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"days")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>a1534498-a41e-4a27-ba09-b59cba2601bf</id>
+            <parentID />
+            <source>[LayEggEntrys.week] = [LayEggEntrys.endWeek]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>ca0bce25-5b9b-4b7c-8694-8531f169ce16</id>
+            <parentID>a1534498-a41e-4a27-ba09-b59cba2601bf</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>fe03bc0d-9844-4334-9dad-c56b7c79f726</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fe03bc0d-9844-4334-9dad-c56b7c79f726</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"week")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a9d67194-6200-4623-85af-0ec8401a656c</id>
+            <parentID>a1534498-a41e-4a27-ba09-b59cba2601bf</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>d554ddf4-7bff-4eef-80e5-511ffa1856ee</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d554ddf4-7bff-4eef-80e5-511ffa1856ee</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"endWeek")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>31760277-9cf2-4efc-a88c-62fea60c5768</id>
+            <parentID />
+            <source>[LayEggEntrys.days] = [LayEggEntrys.endDays]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>fcb81e4c-7c01-479c-8d34-478f4a76bf87</id>
+            <parentID>31760277-9cf2-4efc-a88c-62fea60c5768</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>c3c96837-fb5c-4e73-8b10-55bb942567f6</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c3c96837-fb5c-4e73-8b10-55bb942567f6</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"days")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d90b35b1-539f-471b-8746-cfc0f26478fa</id>
+            <parentID>31760277-9cf2-4efc-a88c-62fea60c5768</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>811fe980-4b96-4590-829e-1be752d052b3</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>811fe980-4b96-4590-829e-1be752d052b3</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"endDays")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>133bc6a8-56d1-4557-a00a-98a6ff4dc190</id>
+            <parentID />
+            <source>[Entrys.cockQtyPerday] = [Entrys.cockQtyPerday]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>7f9f2d63-c63d-46b8-9665-516fcbc7bfbc</id>
+            <parentID>133bc6a8-56d1-4557-a00a-98a6ff4dc190</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>1170832a-2734-4a23-9b2a-9605adb7ca7b</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1170832a-2734-4a23-9b2a-9605adb7ca7b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"cockQtyPerday")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>96efa34e-ffeb-49dc-a9bb-a8408524300a</id>
+            <parentID>133bc6a8-56d1-4557-a00a-98a6ff4dc190</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>771321eb-f762-4cb7-89fc-5fbf635eae6e</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>771321eb-f762-4cb7-89fc-5fbf635eae6e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"cockQtyPerday")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>ee34d9f2-ea3f-4877-9627-fd4e5c4c4506</id>
+            <parentID />
+            <source>[Entrys.cockQtyPerday] = [Entrys.cockQtyPerday]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>89acd80f-b363-4d9f-96e2-b93cc3a43eba</id>
+            <parentID>ee34d9f2-ea3f-4877-9627-fd4e5c4c4506</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>1a59b7df-5821-48ad-8612-a96520eaae96</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1a59b7df-5821-48ad-8612-a96520eaae96</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"cockQtyPerday")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>75dcf3bc-6113-4417-be35-af49ee367619</id>
+            <parentID>ee34d9f2-ea3f-4877-9627-fd4e5c4c4506</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>dc675b4a-6314-4390-a4b7-ce073b94be2f</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>dc675b4a-6314-4390-a4b7-ce073b94be2f</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"cockQtyPerday")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>fa328181-ec12-405c-8342-44ab7f50a7ce</id>
+            <parentID />
+            <source>[Entrys.endWeek] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>5ab38083-52fe-4cd5-9a40-18bd01bb9330</id>
+            <parentID>fa328181-ec12-405c-8342-44ab7f50a7ce</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>de404557-d9fa-4f8a-881e-e894769a4ceb</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>de404557-d9fa-4f8a-881e-e894769a4ceb</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"endWeek")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>6334fba4-f4c3-4bb9-8916-4f7ac7a096ac</id>
+            <parentID>fa328181-ec12-405c-8342-44ab7f50a7ce</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>91a0ee97-03ad-48e4-b11f-ed414cba7427</id>
+            <parentID />
+            <source>ISNULL([Entrys.cockMaterial]  )</source>
+            <type>METHODINVOKE</type>
+            <valueType>boolean</valueType>
+            <value />
+            <method>
+                <ownerID>4514c3c7-c5d9-48e4-bf9f-71511df56dc8</ownerID>
+                <name>isNull</name>
+                <type>boolean</type>
+                <parameters>
+                    <parameter>
+                        <id>81365858-903a-45ae-8d8f-2ce714bcc08c</id>
+                        <expressionID>3f1187a3-cfbe-48c8-982f-9b932107bd7c</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>4514c3c7-c5d9-48e4-bf9f-71511df56dc8</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3f1187a3-cfbe-48c8-982f-9b932107bd7c</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType />
+            <value />
+            <property>
+                <ownerID>4fc2f253-8333-45dc-b72c-30cb1c814600</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>4fc2f253-8333-45dc-b72c-30cb1c814600</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"cockMaterial")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>2162840b-de08-418c-9f9a-680708dc41e9</id>
+            <parentID />
+            <source>[LayEggEntrys.endWeek] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>2cfa8d30-4319-463f-8345-bb65fc2df1b7</id>
+            <parentID>2162840b-de08-418c-9f9a-680708dc41e9</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>8a852088-cbc4-40e2-be44-e4d22ecebc8b</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8a852088-cbc4-40e2-be44-e4d22ecebc8b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"endWeek")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>21f0dce8-80b7-4114-bd81-b0aa6abddde7</id>
+            <parentID>2162840b-de08-418c-9f9a-680708dc41e9</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>7c35bee7-04e9-4009-b6ab-2cf574c744aa</id>
+            <parentID />
+            <source>[LayEggEntrys.endDays] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>74da8dc6-b4cd-4258-a363-396c4fcd6699</id>
+            <parentID>7c35bee7-04e9-4009-b6ab-2cf574c744aa</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>244ccd1e-27ae-4f0c-a6b6-504076bf0dda</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>244ccd1e-27ae-4f0c-a6b6-504076bf0dda</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"endDays")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bd92b67f-b458-44a6-ab29-267436574d72</id>
+            <parentID>7c35bee7-04e9-4009-b6ab-2cf574c744aa</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>24c3997f-3798-41c4-939e-9712553ca033</id>
+            <parentID />
+            <source>[Entrys.week] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>aeda0f79-b8fc-47d1-9a99-678533b32137</id>
+            <parentID>24c3997f-3798-41c4-939e-9712553ca033</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>1c01cec7-5c19-4fff-95be-1f07a061df0e</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1c01cec7-5c19-4fff-95be-1f07a061df0e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"week")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b307bc81-cf88-4203-837d-aa7b98c40dd4</id>
+            <parentID>24c3997f-3798-41c4-939e-9712553ca033</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>6f44b8d6-8fab-4ee1-b979-a288eae52e65</id>
+            <parentID />
+            <source>[Entrys.days] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>41037b08-8677-4bf7-87a2-09c7855c78bf</id>
+            <parentID>6f44b8d6-8fab-4ee1-b979-a288eae52e65</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>9fcc59ab-7622-4d68-a7b6-d1e94b825f2b</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9fcc59ab-7622-4d68-a7b6-d1e94b825f2b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"days")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>de40cadd-eda0-4906-9f01-68af77904ebc</id>
+            <parentID>6f44b8d6-8fab-4ee1-b979-a288eae52e65</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>16a8d14c-e74e-4fc0-beee-9c1d94b3ee6f</id>
+            <parentID />
+            <source>ISNULL( [Entrys.henMaterial] )</source>
+            <type>METHODINVOKE</type>
+            <valueType>boolean</valueType>
+            <value />
+            <method>
+                <ownerID>d7bb1a41-a6d6-487c-bbdb-a00a50f46190</ownerID>
+                <name>isNull</name>
+                <type>boolean</type>
+                <parameters>
+                    <parameter>
+                        <id>246158ec-5af4-466d-a10c-fb84fe1b3e63</id>
+                        <expressionID>5efbf492-4eac-4a28-9ad4-87e55ebf351b</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d7bb1a41-a6d6-487c-bbdb-a00a50f46190</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5efbf492-4eac-4a28-9ad4-87e55ebf351b</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType />
+            <value />
+            <property>
+                <ownerID>5c54a276-3751-4c72-a114-7a6dfd6c4946</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5c54a276-3751-4c72-a114-7a6dfd6c4946</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"henMaterial")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>4a5139db-029d-4b06-8752-6ef8bad867e8</id>
+            <parentID />
+            <source>[Entrys.endDays] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>8a955638-a3e2-4c9b-bb9c-8eb00a9bbfdf</id>
+            <parentID>4a5139db-029d-4b06-8752-6ef8bad867e8</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>5e7595b3-9a3b-4f65-94be-b3642ad61ef5</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5e7595b3-9a3b-4f65-94be-b3642ad61ef5</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"endDays")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3b984407-e6b0-4a8a-9cde-94a2254f1768</id>
+            <parentID>4a5139db-029d-4b06-8752-6ef8bad867e8</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>e209c027-ff0c-4936-9405-49f0abce2897</id>
+            <parentID />
+            <source>[LayEggEntrys.week] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>6280c4ad-5fb3-4680-840e-0183efd4f9ef</id>
+            <parentID>e209c027-ff0c-4936-9405-49f0abce2897</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>8cc971cb-fee0-4586-a071-a69b750fbe39</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8cc971cb-fee0-4586-a071-a69b750fbe39</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"week")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e23d6a7d-3e18-459b-8196-595af932d535</id>
+            <parentID>e209c027-ff0c-4936-9405-49f0abce2897</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>59b9ceac-44df-4b9e-b04e-f3b8c6d4817c</id>
+            <parentID />
+            <source>[LayEggEntrys.days] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>52bfa7b9-19f2-4804-8af5-6ad4d27a90ac</id>
+            <parentID>59b9ceac-44df-4b9e-b04e-f3b8c6d4817c</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Integer</valueType>
+            <value />
+            <property>
+                <ownerID>8554501f-e4d5-49a9-ae86-bb44fc62a374</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8554501f-e4d5-49a9-ae86-bb44fc62a374</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtLayEggEntrys.getCell(rowIndex,"days")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e345562f-ae3c-4d53-a3a5-2e213f9c3258</id>
+            <parentID>59b9ceac-44df-4b9e-b04e-f3b8c6d4817c</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>adc33c3e-5432-4f6f-8b24-08e31e76c05c</id>
+            <parentID />
+            <source>[Entrys.cockQtyPerday]&lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>59d51a69-6f3f-4a60-b1af-470551929b22</id>
+            <parentID>adc33c3e-5432-4f6f-8b24-08e31e76c05c</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>d2eee943-5e72-4fa6-a276-c08b3cb3b715</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d2eee943-5e72-4fa6-a276-c08b3cb3b715</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"cockQtyPerday")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9f9614df-d6a6-4d6d-9ec6-bc7751e98eb8</id>
+            <parentID>adc33c3e-5432-4f6f-8b24-08e31e76c05c</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>c727c0e6-8f2a-4c48-bcc1-e5a26c9863b5</id>
+            <parentID />
+            <source>[Entrys.cockQtyPerday] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>8511853b-3e37-41d7-9267-25e2e24c78ab</id>
+            <parentID>c727c0e6-8f2a-4c48-bcc1-e5a26c9863b5</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>078afa7f-fce5-41e0-8609-07253d52d17d</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>078afa7f-fce5-41e0-8609-07253d52d17d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"cockQtyPerday")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>aa0f42e5-b4d3-4df1-b3bf-573e78e0ed88</id>
+            <parentID>c727c0e6-8f2a-4c48-bcc1-e5a26c9863b5</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>4d4d76ad-fb02-4bb4-91c8-07c4cabd47a0</id>
+            <name>C_CHCIT2</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_CHCIT2].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_CHCIT2].description</description>
+            <expressionID>0692b232-8e94-41a8-abbe-20a7d92255ae</expressionID>
+        </action>
+        <action>
+            <id>5c22990a-8d71-4cdd-8dcd-b7a06787748a</id>
+            <name>DrugEntry_materialName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[DrugEntry_materialName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[DrugEntry_materialName_ActionInfo].description</description>
+            <expressionID>f2497e73-b902-40ac-95fd-37f0b8c94c38</expressionID>
+        </action>
+        <action>
+            <id>0b72c246-9b78-4220-bc74-e02e057da914</id>
+            <name>DrugEntry_model_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[DrugEntry_model_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[DrugEntry_model_ActionInfo].description</description>
+            <expressionID>7345006a-df1c-4c2b-8087-e7db2ee3711c</expressionID>
+        </action>
+        <action>
+            <id>71610fd4-2d5d-4c23-a6e4-b15c37bbc79f</id>
+            <name>C_GARU3Z</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GARU3Z].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GARU3Z].description</description>
+            <expressionID>71bbab65-f41d-4796-9209-ef476f873dbd</expressionID>
+        </action>
+        <action>
+            <id>3e1ad4d2-661d-4e1d-9fc8-5b8c50b66239</id>
+            <name>C_GAUVGR</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAUVGR].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAUVGR].description</description>
+            <expressionID>afaf1b0d-0ce9-44db-86c4-dd56c90e7758</expressionID>
+        </action>
+        <action>
+            <id>349ba385-e3ab-473d-96c7-a73c3d659c2a</id>
+            <name>C_GAVGPS</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAVGPS].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAVGPS].description</description>
+            <expressionID>e79d4f52-9f0f-4f98-8484-695710e63c10</expressionID>
+        </action>
+        <action>
+            <id>6dc80baa-e97b-46e4-92f5-bb31405d9510</id>
+            <name>C_GAW7XF</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAW7XF].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAW7XF].description</description>
+            <expressionID>3b9e2ab5-4c49-4991-8f66-9a9ba2b9cf05</expressionID>
+        </action>
+        <action>
+            <id>dd0f097d-f7fe-4e29-bea3-298474262a7c</id>
+            <name>C_GAW$PO</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAW$PO].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAW$PO].description</description>
+            <expressionID>3e19a3f4-988f-4520-bc98-717184716737</expressionID>
+        </action>
+        <action>
+            <id>121a2918-a1fe-48a5-a430-4d612fd2a57a</id>
+            <name>C_GAXHHE</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAXHHE].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAXHHE].description</description>
+            <expressionID>47bcff4b-0f7b-4dcf-9336-0d8e8da03001</expressionID>
+        </action>
+        <action>
+            <id>61432e68-7a94-4448-bb70-72ccb705e0c2</id>
+            <name>C_GAX$LD</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAX$LD].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAX$LD].description</description>
+            <expressionID>60c441e5-6dac-40f7-8130-a1623c9d8710</expressionID>
+        </action>
+        <action>
+            <id>e16863aa-6126-43cb-938c-e22911b89daf</id>
+            <name>C_GASTVI</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GASTVI].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GASTVI].description</description>
+            <expressionID>620ea4bc-e72e-40c3-92fb-f66f4ef92276</expressionID>
+        </action>
+        <action>
+            <id>918d13b4-be2d-4566-8b17-14fdf6a73ae4</id>
+            <name>C_GBI2BL</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GBI2BL].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GBI2BL].description</description>
+            <expressionID>a1534498-a41e-4a27-ba09-b59cba2601bf</expressionID>
+        </action>
+        <action>
+            <id>3b2816a8-b3c9-444a-90e5-994afab6a697</id>
+            <name>C_GBIMAO</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GBIMAO].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GBIMAO].description</description>
+            <expressionID>31760277-9cf2-4efc-a88c-62fea60c5768</expressionID>
+        </action>
+        <action>
+            <id>25aeec10-298b-4369-b97b-9a75c79bc149</id>
+            <name>C_GZ10F3</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GZ10F3].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GZ10F3].description</description>
+            <expressionID>133bc6a8-56d1-4557-a00a-98a6ff4dc190</expressionID>
+        </action>
+        <action>
+            <id>f6072c82-abdc-47f8-acf8-d3f2853f7516</id>
+            <name>C_GZ231I</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GZ231I].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GZ231I].description</description>
+            <expressionID>ee34d9f2-ea3f-4877-9627-fd4e5c4c4506</expressionID>
+        </action>
+    </actions>
+    <conditions>
+        <baseCondition>
+            <id>faf507d0-0538-470b-a133-4cd060c79fc7</id>
+            <name>C_GASNK6</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GASNK6].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GASNK6].description</description>
+            <expressionID>fa328181-ec12-405c-8342-44ab7f50a7ce</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>e5f1d3e1-490e-44c8-bc0f-db0ac456675a</id>
+            <name>C_GAV1GJ</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAV1GJ].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAV1GJ].description</description>
+            <expressionID>91a0ee97-03ad-48e4-b11f-ed414cba7427</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>6669e57e-57d2-40e6-8473-a61a046cce2c</id>
+            <name>C_GAW33K</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAW33K].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAW33K].description</description>
+            <expressionID>2162840b-de08-418c-9f9a-680708dc41e9</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>47440a7e-4aef-49f0-b2ca-aa0b845b7109</id>
+            <name>C_GAWT6L</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAWT6L].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAWT6L].description</description>
+            <expressionID>7c35bee7-04e9-4009-b6ab-2cf574c744aa</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>eb7b4cb4-ed32-4e9b-bb7a-cfa38b0fd3ed</id>
+            <name>C_GAXCWY</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAXCWY].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAXCWY].description</description>
+            <expressionID>24c3997f-3798-41c4-939e-9712553ca033</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>2e51fc86-f8ce-411a-910e-4b37f8e25924</id>
+            <name>C_GAXWSP</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAXWSP].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAXWSP].description</description>
+            <expressionID>6f44b8d6-8fab-4ee1-b979-a288eae52e65</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>27240bf1-8a16-4555-9133-9e054e955cea</id>
+            <name>C_GAYCYD</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAYCYD].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAYCYD].description</description>
+            <expressionID>16a8d14c-e74e-4fc0-beee-9c1d94b3ee6f</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>658f719a-f65b-41c3-adcd-725c377db668</id>
+            <name>C_GAT824</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAT824].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAT824].description</description>
+            <expressionID>4a5139db-029d-4b06-8752-6ef8bad867e8</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>833e6041-be8c-422a-90a5-87f207a0d323</id>
+            <name>C_GBIFRH</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GBIFRH].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GBIFRH].description</description>
+            <expressionID>e209c027-ff0c-4936-9405-49f0abce2897</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>76a98680-4b7e-487a-894e-99fc410c9688</id>
+            <name>C_GBIU4A</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GBIU4A].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GBIU4A].description</description>
+            <expressionID>59b9ceac-44df-4b9e-b04e-f3b8c6d4817c</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>5d2ec426-eb83-4a4d-8eb9-46366fee006c</id>
+            <name>C_GZ1QLG</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GZ1QLG].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GZ1QLG].description</description>
+            <expressionID>adc33c3e-5432-4f6f-8b24-08e31e76c05c</expressionID>
+        </baseCondition>
+        <baseCondition>
+            <id>07286e91-0816-4633-9af1-534b81c8b8ab</id>
+            <name>C_GZ2IRX</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GZ2IRX].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GZ2IRX].description</description>
+            <expressionID>c727c0e6-8f2a-4c48-bcc1-e5a26c9863b5</expressionID>
+        </baseCondition>
+    </conditions>
+    <rules>
+        <conditionRule>
+            <name>BreedStandardC_GATC42</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GATC42].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GATC42].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="faf507d0-0538-470b-a133-4cd060c79fc7" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="71610fd4-2d5d-4c23-a6e4-b15c37bbc79f" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>BreedStandardC_GBGSFT</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBGSFT].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBGSFT].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="658f719a-f65b-41c3-adcd-725c377db668" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="e16863aa-6126-43cb-938c-e22911b89daf" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_GAXCWY</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXCWY].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXCWY].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="eb7b4cb4-ed32-4e9b-bb7a-cfa38b0fd3ed" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="dd0f097d-f7fe-4e29-bea3-298474262a7c" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_GAXWSP</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXWSP].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXWSP].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="2e51fc86-f8ce-411a-910e-4b37f8e25924" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="121a2918-a1fe-48a5-a430-4d612fd2a57a" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>BreedStandardC_GAV3B4</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GAV3B4].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GAV3B4].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="e5f1d3e1-490e-44c8-bc0f-db0ac456675a" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="3e1ad4d2-661d-4e1d-9fc8-5b8c50b66239" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_GZ1QLG</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ1QLG].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ1QLG].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="5d2ec426-eb83-4a4d-8eb9-46366fee006c" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="25aeec10-298b-4369-b97b-9a75c79bc149" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_GAYCYD</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAYCYD].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAYCYD].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="27240bf1-8a16-4555-9133-9e054e955cea" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="61432e68-7a94-4448-bb70-72ccb705e0c2" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_GZ2IRX</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ2IRX].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ2IRX].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="07286e91-0816-4633-9af1-534b81c8b8ab" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="f6072c82-abdc-47f8-acf8-d3f2853f7516" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_GAW33K</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAW33K].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAW33K].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="6669e57e-57d2-40e6-8473-a61a046cce2c" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="349ba385-e3ab-473d-96c7-a73c3d659c2a" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_GAWT6L</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAWT6L].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAWT6L].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="47440a7e-4aef-49f0-b2ca-aa0b845b7109" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="6dc80baa-e97b-46e4-92f5-bb31405d9510" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_GBIFRH</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GBIFRH].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GBIFRH].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="833e6041-be8c-422a-90a5-87f207a0d323" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="918d13b4-be2d-4566-8b17-14fdf6a73ae4" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>BreedStandardC_GBI$C3</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBI$C3].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBI$C3].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="76a98680-4b7e-487a-894e-99fc410c9688" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="3b2816a8-b3c9-444a-90e5-994afab6a697" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>DrugEntry_materialName_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_materialName_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_materialName_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="5c22990a-8d71-4cdd-8dcd-b7a06787748a" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>DrugEntry_model_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_model_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_model_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="0b72c246-9b78-4220-bc74-e02e057da914" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>C_CHCIT2</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_CHCIT2].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_CHCIT2].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="4d4d76ad-fb02-4bb4-91c8-07c4cabd47a0" />
+                </action>
+            </actions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_CHCIT2].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_CHCIT2].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GARU3Z].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GARU3Z].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GASTVI].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GASTVI].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAUVGR].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAUVGR].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAVGPS].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAVGPS].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAW$PO].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAW$PO].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAW7XF].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAW7XF].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAX$LD].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAX$LD].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAXHHE].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GAXHHE].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GBI2BL].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GBI2BL].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GBIMAO].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GBIMAO].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GZ10F3].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GZ10F3].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GZ231I].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[C_GZ231I].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[DrugEntry_materialName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[DrugEntry_materialName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[DrugEntry_model_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_model" />
+            <lang locale="zh_HK" value="攜帶字段屬性_model" />
+            <lang locale="zh_TW" value="攜帶字段屬性_model" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].actions.action[DrugEntry_model_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GASNK6].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GASNK6].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAT824].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAT824].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAV1GJ].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAV1GJ].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAW33K].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAW33K].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAWT6L].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAWT6L].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAXCWY].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAXCWY].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAXWSP].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAXWSP].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAYCYD].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GAYCYD].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GBIFRH].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GBIFRH].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GBIU4A].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GBIU4A].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GZ1QLG].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GZ1QLG].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GZ2IRX].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].conditions.baseCondition[C_GZ2IRX].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GATC42].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置周龄" />
+            <lang locale="zh_HK" value="設置周齡" />
+            <lang locale="zh_TW" value="設置周齡" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GATC42].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GATC42].extendedProperty.columnName">
+            <lang locale="en_US" value="week" />
+            <lang locale="zh_CN" value="week" />
+            <lang locale="zh_TW" value="week" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GAV3B4].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置公禽料" />
+            <lang locale="zh_HK" value="設置公禽料" />
+            <lang locale="zh_TW" value="設置公禽料" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GAV3B4].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GAV3B4].extendedProperty.columnName">
+            <lang locale="en_US" value="henMaterial" />
+            <lang locale="zh_CN" value="henMaterial" />
+            <lang locale="zh_TW" value="henMaterial" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBGSFT].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置日龄" />
+            <lang locale="zh_HK" value="設置日齡" />
+            <lang locale="zh_TW" value="設置日齡" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBGSFT].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBGSFT].extendedProperty.columnName">
+            <lang locale="en_US" value="days" />
+            <lang locale="zh_CN" value="days" />
+            <lang locale="zh_TW" value="days" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBI$C3].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置日龄" />
+            <lang locale="zh_HK" value="設置日齡" />
+            <lang locale="zh_TW" value="設置日齡" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBI$C3].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[BreedStandardC_GBI$C3].extendedProperty.columnName">
+            <lang locale="en_US" value="endDays" />
+            <lang locale="zh_CN" value="endDays" />
+            <lang locale="zh_TW" value="endDays" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_CHCIT2].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="带出计量单位" />
+            <lang locale="zh_HK" value="帶出計量單位" />
+            <lang locale="zh_TW" value="帶出計量單位" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_CHCIT2].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_CHCIT2].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAW33K].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置周龄" />
+            <lang locale="zh_HK" value="設置周齡" />
+            <lang locale="zh_TW" value="設置周齡" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAW33K].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAW33K].extendedProperty.columnName">
+            <lang locale="en_US" value="week" />
+            <lang locale="zh_CN" value="week" />
+            <lang locale="zh_TW" value="week" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAWT6L].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置日龄" />
+            <lang locale="zh_HK" value="設置日齡" />
+            <lang locale="zh_TW" value="設置日齡" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAWT6L].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAWT6L].extendedProperty.columnName">
+            <lang locale="en_US" value="days" />
+            <lang locale="zh_CN" value="days" />
+            <lang locale="zh_TW" value="days" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXCWY].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置周龄" />
+            <lang locale="zh_HK" value="設置周齡" />
+            <lang locale="zh_TW" value="設置周齡" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXCWY].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXCWY].extendedProperty.columnName">
+            <lang locale="en_US" value="endWeek" />
+            <lang locale="zh_CN" value="endWeek" />
+            <lang locale="zh_TW" value="endWeek" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXWSP].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置日龄" />
+            <lang locale="zh_HK" value="設置日齡" />
+            <lang locale="zh_TW" value="設置日齡" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXWSP].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAXWSP].extendedProperty.columnName">
+            <lang locale="en_US" value="endDays" />
+            <lang locale="zh_CN" value="endDays" />
+            <lang locale="zh_TW" value="endDays" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAYCYD].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置母禽料" />
+            <lang locale="zh_HK" value="設置母禽料" />
+            <lang locale="zh_TW" value="設置母禽料" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAYCYD].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GAYCYD].extendedProperty.columnName">
+            <lang locale="en_US" value="cockMaterial" />
+            <lang locale="zh_CN" value="cockMaterial" />
+            <lang locale="zh_TW" value="cockMaterial" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GBIFRH].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置周龄" />
+            <lang locale="zh_HK" value="設置周齡" />
+            <lang locale="zh_TW" value="設置周齡" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GBIFRH].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GBIFRH].extendedProperty.columnName">
+            <lang locale="en_US" value="endWeek" />
+            <lang locale="zh_CN" value="endWeek" />
+            <lang locale="zh_TW" value="endWeek" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ1QLG].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置喂料量" />
+            <lang locale="zh_HK" value="設置喂料量" />
+            <lang locale="zh_TW" value="設置喂料量" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ1QLG].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ1QLG].extendedProperty.columnName">
+            <lang locale="en_US" value="henQtyPerday" />
+            <lang locale="zh_CN" value="henQtyPerday" />
+            <lang locale="zh_TW" value="henQtyPerday" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ2IRX].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置喂料量" />
+            <lang locale="zh_HK" value="設置喂料量" />
+            <lang locale="zh_TW" value="設置喂料量" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ2IRX].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[C_GZ2IRX].extendedProperty.columnName">
+            <lang locale="en_US" value="cockQtyPerday" />
+            <lang locale="zh_CN" value="cockQtyPerday" />
+            <lang locale="zh_TW" value="cockQtyPerday" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_materialName_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_materialName_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_materialName_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_materialName_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_model_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_model" />
+            <lang locale="zh_HK" value="攜帶字段屬性_model" />
+            <lang locale="zh_TW" value="攜帶字段屬性_model" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_model_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_model_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.BreedStandardRuleSet].rules.conditionRule[DrugEntry_model_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

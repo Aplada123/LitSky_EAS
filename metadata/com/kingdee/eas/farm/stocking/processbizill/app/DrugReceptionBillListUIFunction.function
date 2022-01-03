@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functionObject xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>DrugReceptionBillListUIFunction</name>
+    <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].alias</alias>
+    <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].description</description>
+    <userDefined>false</userDefined>
+    <isBindSingleBizObject>false</isBindSingleBizObject>
+    <operations>
+        <operation>
+            <name>ActionRemove</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[ActionRemove].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[ActionRemove].description</description>
+            <reverseOperation />
+            <eventMethod>be5779dd-00fe-1000-e000-0007c0a813a9</eventMethod>
+            <event>deleteEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>74b6f5a7-0105-1000-e000-00f1c0a813a4uiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="DrugReceptionBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionRemove</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billid</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[ActionRemove].uiActionRef.parameters.parameter[billid].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[ActionRemove].uiActionRef.parameters.parameter[billid].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="DrugReceptionBill" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>audit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[audit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[audit].description</description>
+            <reverseOperation />
+            <eventMethod>b1897d2f-c561-479d-8052-4e7a1416196c</eventMethod>
+            <event>auditEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>2ab53aad-7e62-49c6-ad9a-216186d81edeuiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="DrugReceptionBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="DrugReceptionBill" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>unAudit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[unAudit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[unAudit].description</description>
+            <reverseOperation />
+            <eventMethod>8c6e33b7-abf0-495d-b284-cae08138a78b</eventMethod>
+            <event>unAuditEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>233312a5-e59c-4141-a177-57789eefa661uiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="DrugReceptionBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionUnAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="DrugReceptionBill" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>chkVoucherFlag</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherFlag].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherFlag].description</description>
+            <reverseOperation />
+            <eventMethod>7d8763b5-6115-4fa0-9ea6-0d12e0d89eda</eventMethod>
+            <event>chkVoucherFlagEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>08cac3d0-40eb-48ec-8aaf-0e3079fba213uiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="DrugReceptionBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionChkVoucherFlag</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherFlag].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherFlag].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="DrugReceptionBill" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>chkVoucherAll</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherAll].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherAll].description</description>
+            <reverseOperation />
+            <eventMethod>ba1b386c-d486-4576-b98f-755365ff2579</eventMethod>
+            <event>chkVoucherAllEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>fda10d9f-c2e3-41ca-8f7c-71aad93f124fuiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="DrugReceptionBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionChkVoucherAll</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherAll].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherAll].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="DrugReceptionBill" />
+            </entityObjectRef>
+        </operation>
+    </operations>
+    <resource>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="药品领用单列表功能" />
+            <lang locale="zh_HK" value="藥品領用單列表功能" />
+            <lang locale="zh_TW" value="藥品領用單列表功能" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[ActionRemove].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="删除" />
+            <lang locale="zh_HK" value="刪除" />
+            <lang locale="zh_TW" value="刪除" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[ActionRemove].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="删除" />
+            <lang locale="zh_HK" value="刪除" />
+            <lang locale="zh_TW" value="刪除" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[ActionRemove].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[ActionRemove].uiActionRef.parameters.parameter[billid].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[ActionRemove].uiActionRef.parameters.parameter[billid].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[audit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核" />
+            <lang locale="zh_HK" value="審核" />
+            <lang locale="zh_TW" value="審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[audit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[audit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherAll].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="全部校验凭证" />
+            <lang locale="zh_HK" value="全部校驗憑證" />
+            <lang locale="zh_TW" value="全部校驗憑證" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherAll].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherAll].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherAll].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherAll].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherFlag].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="校验凭证" />
+            <lang locale="zh_HK" value="校驗憑證" />
+            <lang locale="zh_TW" value="校驗憑證" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherFlag].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherFlag].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherFlag].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[chkVoucherFlag].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[unAudit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="反审核" />
+            <lang locale="zh_HK" value="反審核" />
+            <lang locale="zh_TW" value="反審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[unAudit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[unAudit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.DrugReceptionBillListUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+    </resource>
+</functionObject>
+

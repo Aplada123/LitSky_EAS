@@ -1,0 +1,1075 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<joinQuery xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>storageIsBizUnitQuery</name>
+    <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].alias</alias>
+    <description>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].description</description>
+    <userDefined>true</userDefined>
+    <reportDataSource />
+    <bizUnitPK />
+    <connectionProvider />
+    <subObjects>
+        <subEntity>
+            <name>StorageOrgUnit</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[StorageOrgUnit].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="StorageOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>CU</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[CU].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CtrlUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>NewSubObject</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[NewSubObject].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="OrgUnitRelation" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>NewSubObject1</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[NewSubObject1].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="OrgTypeRelation" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>NewSubObject2</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[NewSubObject2].alias</alias>
+            <userDefined>true</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CompanyOrgUnit" />
+            </entityRef>
+        </subEntity>
+    </subObjects>
+    <units>
+        <queryField>
+            <name>id</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>ce703235-e612-447b-9875-f3f95703f961</key>
+                    <parentUnit>
+                        <key name="name" value="id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>number</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>9986ef4c-ed58-45ac-b6f2-c8338193f084</key>
+                    <parentUnit>
+                        <key name="name" value="number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>name</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>4c9738e6-ed63-4926-8a81-bb5b32683501</key>
+                    <parentUnit>
+                        <key name="name" value="name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>simpleName</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[simpleName].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>ab3fdf6e-913c-49b7-8755-ca66353d9124</key>
+                    <parentUnit>
+                        <key name="name" value="simpleName" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="simpleName" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>description</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[description].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>eff1034b-fabc-4488-b04a-419ab3a07d29</key>
+                    <parentUnit>
+                        <key name="name" value="description" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="description" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>longNumber</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[longNumber].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>5bdf6d3e-374a-4546-98be-fdab0b71314f</key>
+                    <parentUnit>
+                        <key name="name" value="longNumber" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="longNumber" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>isStorageOrgUnit</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[isStorageOrgUnit].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>120fe8c4-9562-40c1-a03f-d236ab44cd6b</key>
+                    <parentUnit>
+                        <key name="name" value="isStorageOrgUnit" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="isStorageOrgUnit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>CU.id</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[CU.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>da5cafeb-fbf4-434d-afc8-a293e9440b84</key>
+                    <parentUnit>
+                        <key name="name" value="CU.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CU" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>f50487fe-bd32-4d5e-a64f-8e25773a15c4</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[f50487fe-bd32-4d5e-a64f-8e25773a15c4].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>3bdaef31-5be0-4237-b223-a8254c90b5a3</key>
+                    <parentUnit>
+                        <key name="name" value="f50487fe-bd32-4d5e-a64f-8e25773a15c4" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="CU" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>37ed701e-e502-486a-87e0-d25511830a68</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[37ed701e-e502-486a-87e0-d25511830a68].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>8a8eaf39-7ca6-4626-821c-ecde7b842944</key>
+                    <parentUnit>
+                        <key name="name" value="37ed701e-e502-486a-87e0-d25511830a68" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="CU" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>isBizUnit</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[isBizUnit].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>32013957-7c55-4f9e-aa21-01bb1a11b99f</key>
+                    <parentUnit>
+                        <key name="name" value="isBizUnit" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="isBizUnit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>903e21a9-d5a2-4b95-9cc3-3fd0a075953f</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[903e21a9-d5a2-4b95-9cc3-3fd0a075953f].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>9b778c7c-f9ad-483c-9493-a6c3528c0a57</key>
+                    <parentUnit>
+                        <key name="name" value="903e21a9-d5a2-4b95-9cc3-3fd0a075953f" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="StorageOrgUnit" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>33f03b9f-a672-41a4-b38b-996b174d7e33</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[33f03b9f-a672-41a4-b38b-996b174d7e33].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>c29417a3-3e0d-4f6f-9bc1-03f1e740d2e3</key>
+                    <parentUnit>
+                        <key name="name" value="33f03b9f-a672-41a4-b38b-996b174d7e33" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="NewSubObject" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="fromUnit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>8e658028-c74f-42d9-ad3b-6dd8f6e42cc4</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[8e658028-c74f-42d9-ad3b-6dd8f6e42cc4].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>4a4b09d5-1782-4bb7-9426-ae096561dafe</key>
+                    <parentUnit>
+                        <key name="name" value="8e658028-c74f-42d9-ad3b-6dd8f6e42cc4" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="NewSubObject" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="typeRelation" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>86dfd2ce-19d1-4fb1-b8eb-bcfb0a908b61</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[86dfd2ce-19d1-4fb1-b8eb-bcfb0a908b61].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>99872b71-d03f-4ac3-a7f0-aa06059d0344</key>
+                    <parentUnit>
+                        <key name="name" value="86dfd2ce-19d1-4fb1-b8eb-bcfb0a908b61" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="NewSubObject1" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>935003fb-7f88-43b4-bf00-7fad24f76733</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[935003fb-7f88-43b4-bf00-7fad24f76733].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>b96684f7-ffb2-47db-a4fb-d3f446dd46df</key>
+                    <parentUnit>
+                        <key name="name" value="935003fb-7f88-43b4-bf00-7fad24f76733" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="NewSubObject" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="toUnit" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>14033485-66e4-4673-90d1-80d2c3d365c3</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[14033485-66e4-4673-90d1-80d2c3d365c3].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>1567ede8-1b23-43b8-a717-5c2925ca4599</key>
+                    <parentUnit>
+                        <key name="name" value="14033485-66e4-4673-90d1-80d2c3d365c3" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="NewSubObject2" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>company.id</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[company.id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>93f7c573-7fde-4dbe-a994-c05b0e26d598</key>
+                    <parentUnit>
+                        <key name="name" value="company.id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="NewSubObject2" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>NewSubObject1.toType</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[NewSubObject1.toType].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>766005e4-bde1-4ba2-a86f-98ecfb16454a</key>
+                    <parentUnit>
+                        <key name="name" value="NewSubObject1.toType" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="NewSubObject1" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="toType" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>NewSubObject1.fromType</name>
+            <userDefined>true</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[NewSubObject1.fromType].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>63e7f1ea-bf13-4f4d-8950-c9431abb7b91</key>
+                    <parentUnit>
+                        <key name="name" value="NewSubObject1.fromType" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="NewSubObject1" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="fromType" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </queryField>
+    </units>
+    <defaultFilter>
+        <name>defaultFilter</name>
+        <formulaString>#0 and #1 and #2 and #3</formulaString>
+        <filterItems>
+            <queryFilterItem>
+                <propertyName>isStorageOrgUnit</propertyName>
+                <compareType>=</compareType>
+                <compareValue>1</compareValue>
+                <userDefined>true</userDefined>
+                <filter>
+                    <key name="name" value="defaultFilter" />
+                </filter>
+                <configured>false</configured>
+            </queryFilterItem>
+            <queryFilterItem>
+                <propertyName>isBizUnit</propertyName>
+                <compareType>=</compareType>
+                <compareValue>1</compareValue>
+                <userDefined>true</userDefined>
+                <filter>
+                    <key name="name" value="defaultFilter" />
+                </filter>
+                <configured>false</configured>
+            </queryFilterItem>
+            <queryFilterItem>
+                <propertyName>NewSubObject1.fromType</propertyName>
+                <compareType>=</compareType>
+                <compareValue>4</compareValue>
+                <userDefined>true</userDefined>
+                <filter>
+                    <key name="name" value="defaultFilter" />
+                </filter>
+                <configured>false</configured>
+            </queryFilterItem>
+            <queryFilterItem>
+                <propertyName>NewSubObject1.toType</propertyName>
+                <compareType>=</compareType>
+                <compareValue>1</compareValue>
+                <userDefined>true</userDefined>
+                <filter>
+                    <key name="name" value="defaultFilter" />
+                </filter>
+                <configured>false</configured>
+            </queryFilterItem>
+        </filterItems>
+        <query>
+            <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+            <key name="name" value="storageIsBizUnitQuery" />
+        </query>
+    </defaultFilter>
+    <queryPK>
+        <name>QueryPK</name>
+        <alias>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].queryPK[QueryPK].alias</alias>
+        <description>joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].queryPK[QueryPK].description</description>
+        <keyProperties>
+            <queryField>
+                <key name="name" value="id" />
+            </queryField>
+        </keyProperties>
+    </queryPK>
+    <isDistinct>false</isDistinct>
+    <joins>
+        <join>
+            <name>c88b4923-363b-46b3-ba96-3a0f9385f46f</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="StorageOrgUnit" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="CU" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>c166a828-a29c-4a74-8b37-c859c0b35948</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="f50487fe-bd32-4d5e-a64f-8e25773a15c4" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="37ed701e-e502-486a-87e0-d25511830a68" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="c88b4923-363b-46b3-ba96-3a0f9385f46f" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </join>
+        <join>
+            <name>6ef25997-cb55-4f6d-8f3c-83df6bf88ecb</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="StorageOrgUnit" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="NewSubObject" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>11724734-25a8-4e9e-ad10-cd7ed21aed99</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="903e21a9-d5a2-4b95-9cc3-3fd0a075953f" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="33f03b9f-a672-41a4-b38b-996b174d7e33" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="6ef25997-cb55-4f6d-8f3c-83df6bf88ecb" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </join>
+        <join>
+            <name>7a676db9-6b8d-4d02-940f-a6b681f3444b</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="NewSubObject" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="NewSubObject1" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>d99b3710-a4a8-4db7-9cdb-45c650ca69a2</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="8e658028-c74f-42d9-ad3b-6dd8f6e42cc4" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="86dfd2ce-19d1-4fb1-b8eb-bcfb0a908b61" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="7a676db9-6b8d-4d02-940f-a6b681f3444b" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </join>
+        <join>
+            <name>ebb24e6a-824d-4ced-b6e8-507aef2058cf</name>
+            <formulaString>#0</formulaString>
+            <type>INNER JOIN</type>
+            <leftObject>
+                <key name="name" value="NewSubObject" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="NewSubObject2" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>2f20d5c7-b5e3-4d26-9001-94c1bb59254b</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="935003fb-7f88-43b4-bf00-7fad24f76733" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="14033485-66e4-4673-90d1-80d2c3d365c3" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="ebb24e6a-824d-4ced-b6e8-507aef2058cf" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="storageIsBizUnitQuery" />
+            </query>
+        </join>
+    </joins>
+    <resource>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="实体库存组织查询" />
+            <lang locale="zh_HK" value="實體庫存組織查詢" />
+            <lang locale="zh_TW" value="實體庫存組織查詢" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].queryPK[QueryPK].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].queryPK[QueryPK].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[CU].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[NewSubObject1].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[NewSubObject2].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[NewSubObject].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].subObjects.subEntity[StorageOrgUnit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[14033485-66e4-4673-90d1-80d2c3d365c3].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[33f03b9f-a672-41a4-b38b-996b174d7e33].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[37ed701e-e502-486a-87e0-d25511830a68].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[86dfd2ce-19d1-4fb1-b8eb-bcfb0a908b61].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[8e658028-c74f-42d9-ad3b-6dd8f6e42cc4].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[903e21a9-d5a2-4b95-9cc3-3fd0a075953f].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[935003fb-7f88-43b4-bf00-7fad24f76733].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.propertyUnit[f50487fe-bd32-4d5e-a64f-8e25773a15c4].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[CU.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="ID" />
+            <lang locale="zh_HK" value="ID" />
+            <lang locale="zh_TW" value="ID" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[CU.id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[NewSubObject1.fromType].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="源组织类型" />
+            <lang locale="zh_HK" value="源組織類型" />
+            <lang locale="zh_TW" value="源組織類型" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[NewSubObject1.toType].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="目标组织类型" />
+            <lang locale="zh_HK" value="目標組織類型" />
+            <lang locale="zh_TW" value="目標組織類型" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[company.id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="ID" />
+            <lang locale="zh_HK" value="ID" />
+            <lang locale="zh_TW" value="ID" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[company.id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[description].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="描述" />
+            <lang locale="zh_HK" value="描述" />
+            <lang locale="zh_TW" value="描述" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="ID" />
+            <lang locale="zh_HK" value="ID" />
+            <lang locale="zh_TW" value="ID" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[id].extendedProperty.isVisibleForKDTable">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[isBizUnit].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否实体组织" />
+            <lang locale="zh_HK" value="是否實體組織" />
+            <lang locale="zh_TW" value="是否實體組織" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[isStorageOrgUnit].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否是库存组织" />
+            <lang locale="zh_HK" value="是否是庫存組織" />
+            <lang locale="zh_TW" value="是否是庫存組織" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[longNumber].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="长编码" />
+            <lang locale="zh_HK" value="長編碼" />
+            <lang locale="zh_TW" value="長編碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="名称" />
+            <lang locale="zh_HK" value="名稱" />
+            <lang locale="zh_TW" value="名稱" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="编码" />
+            <lang locale="zh_HK" value="編碼" />
+            <lang locale="zh_TW" value="編碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.processbizill.app.storageIsBizUnitQuery].units.queryField[simpleName].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="简称" />
+            <lang locale="zh_HK" value="簡稱" />
+            <lang locale="zh_TW" value="簡稱" />
+        </rs>
+    </resource>
+</joinQuery>
+

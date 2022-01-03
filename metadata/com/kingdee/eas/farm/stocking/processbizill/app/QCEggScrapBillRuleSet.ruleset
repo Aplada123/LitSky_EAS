@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>QCEggScrapBillRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.QCEggScrapBillRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.QCEggScrapBillRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>782324be-c91e-466f-9be6-061037344a9b</id>
+            <parentID />
+            <source>entrys.materialName=entrys.material.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>0ed481bc-24ec-49a5-89aa-7b723a7089fa</id>
+            <parentID>782324be-c91e-466f-9be6-061037344a9b</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>037b6551-247e-4520-9b55-317b0bd4fd40</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>037b6551-247e-4520-9b55-317b0bd4fd40</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"materialName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5cf860b8-9e0b-4739-a9a5-ed8cb0e20c09</id>
+            <parentID>782324be-c91e-466f-9be6-061037344a9b</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>36d83324-dcfd-46bc-9d2c-7078c790fbc6</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>8ebc9a89-7f11-492e-b9d6-3bf5d19a6f55</id>
+                        <expressionID>53e30076-8e8d-43cc-8278-92b3fcd509a3</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>ae3df812-1e78-4d03-8886-ff96b44ed09e</id>
+                        <expressionID>e8180efb-1abc-4949-8592-14e80e370ae0</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>36d83324-dcfd-46bc-9d2c-7078c790fbc6</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>53e30076-8e8d-43cc-8278-92b3fcd509a3</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>fc69a106-8014-4921-a113-46a74fb0702b</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fc69a106-8014-4921-a113-46a74fb0702b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e8180efb-1abc-4949-8592-14e80e370ae0</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>fdb39b9c-5d96-497a-aaea-7e2a29518d14</id>
+            <name>entrys_materialName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.QCEggScrapBillRuleSet].actions.action[entrys_materialName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.QCEggScrapBillRuleSet].actions.action[entrys_materialName_ActionInfo].description</description>
+            <expressionID>782324be-c91e-466f-9be6-061037344a9b</expressionID>
+        </action>
+    </actions>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.QCEggScrapBillRuleSet].actions.action[entrys_materialName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.QCEggScrapBillRuleSet].actions.action[entrys_materialName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.QCEggScrapBillRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.QCEggScrapBillRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+    </resource>
+</ruleSet>
+

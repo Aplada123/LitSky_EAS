@@ -1,0 +1,967 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.feemanager.basebizbill.app</package>
+    <name>TransportationrecordRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].description</description>
+    <userDefined>false</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>f93b70c5-14d3-491f-80ae-b2e364bc9708</id>
+            <parentID />
+            <source>entrys.salesman=entrys.salesid.salePerson.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>d1da85d9-43c5-4f28-a4c3-d86c54d54eed</id>
+            <parentID>f93b70c5-14d3-491f-80ae-b2e364bc9708</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>c2bd2f02-32c4-485a-bb33-e06bdc9cd7c2</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c2bd2f02-32c4-485a-bb33-e06bdc9cd7c2</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"salesman")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>89367629-c9e8-4147-a45e-bd5f06e2c17f</id>
+            <parentID>f93b70c5-14d3-491f-80ae-b2e364bc9708</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>9f370b7c-0b91-4672-b2fd-33d5979aac8e</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>66a87a3d-ecdd-40af-9d12-0ed17ea17086</id>
+                        <expressionID>f7095f83-32a1-4c25-bbb2-e1a9c39907e4</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>c55aa058-e57e-4f91-9f10-f6fd61bda517</id>
+                        <expressionID>1417e8e0-0fe2-486a-928a-6590fc1ba780</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9f370b7c-0b91-4672-b2fd-33d5979aac8e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f7095f83-32a1-4c25-bbb2-e1a9c39907e4</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>ec111143-c0f7-4cb6-afef-cd33a23ab2be</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ec111143-c0f7-4cb6-afef-cd33a23ab2be</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"salesid")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1417e8e0-0fe2-486a-928a-6590fc1ba780</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>salePerson.name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>5b1e9998-dcd8-44ad-9570-4e9144941ca1</id>
+            <parentID />
+            <source>entrys.salesman=entrys.salesid.salePerson.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>1cb64469-ec8d-4dea-b250-1841b8f195f0</id>
+            <parentID>5b1e9998-dcd8-44ad-9570-4e9144941ca1</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>828bffdc-a35b-4b8c-adff-a2da2489cb73</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>828bffdc-a35b-4b8c-adff-a2da2489cb73</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"salesman")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d3c5166f-c14a-49d4-81ed-8a2ffec24a37</id>
+            <parentID>5b1e9998-dcd8-44ad-9570-4e9144941ca1</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>8155baca-800d-4a39-a80c-5ff673908881</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>76d87b54-d320-4505-858c-a2515459bd1f</id>
+                        <expressionID>6e8f57be-a28e-4d5f-9cf0-cb357333351e</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>de511866-d521-4852-a6fd-d983554edee5</id>
+                        <expressionID>171d8762-fdc9-4851-a0b5-4f06e16cdace</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8155baca-800d-4a39-a80c-5ff673908881</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>6e8f57be-a28e-4d5f-9cf0-cb357333351e</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>b794dd44-36f2-446f-96e9-a18295ce39b9</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b794dd44-36f2-446f-96e9-a18295ce39b9</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"salesid")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>171d8762-fdc9-4851-a0b5-4f06e16cdace</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>salePerson.name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>6fff220a-fc8e-483d-b777-e06c0f4a7591</id>
+            <parentID />
+            <source>driver=car.driverName</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>1c4eec3a-158a-4892-8725-a4d64ac9538a</id>
+            <parentID>6fff220a-fc8e-483d-b777-e06c0f4a7591</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>0c29a732-e6ea-4542-927a-f14dd902e60b</ownerID>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0c29a732-e6ea-4542-927a-f14dd902e60b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>txtdriver</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>79a4fe0f-1b3c-45bc-8c36-1be923507bf2</id>
+            <parentID>6fff220a-fc8e-483d-b777-e06c0f4a7591</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>0ed2fdea-13a4-4998-84e8-42f17702cf92</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>dd733a32-a28e-4096-ac38-7448d3340a90</id>
+                        <expressionID>85d6dd7e-fd27-41a2-bfa4-b863e659208a</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>bb14eed0-859f-4b3b-b437-b5327319d8ea</id>
+                        <expressionID>80fb6d5a-fd9d-40dd-b69c-687d4614112d</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0ed2fdea-13a4-4998-84e8-42f17702cf92</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>85d6dd7e-fd27-41a2-bfa4-b863e659208a</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>30edeadf-2ac2-43ec-8751-a7dc81f4323a</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>30edeadf-2ac2-43ec-8751-a7dc81f4323a</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtcar</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>80fb6d5a-fd9d-40dd-b69c-687d4614112d</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>driverName</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>56110181-5b4b-4314-a964-0d30d38daf6b</id>
+            <parentID />
+            <source>AssEntrys.tramil=AssEntrys.settleid.mileage</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>24e61f3a-528e-49db-84d6-7478c76d6abc</id>
+            <parentID>56110181-5b4b-4314-a964-0d30d38daf6b</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>8a9c2fb6-3980-48b4-ad32-7aa30a9c6d3d</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8a9c2fb6-3980-48b4-ad32-7aa30a9c6d3d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtAssEntrys.getCell(rowIndex,"tramil")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e3fa2a79-5b48-4262-80a6-daa958d3b7bd</id>
+            <parentID>56110181-5b4b-4314-a964-0d30d38daf6b</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>a6fe6aca-57e6-45ba-af88-dd084f10ed31</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>a1be4f44-74aa-4cb0-8f16-5807ee5317a9</id>
+                        <expressionID>70fbb3d4-9ee2-4e54-aa5c-9decbc520457</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>f114516e-e27d-4160-98dc-d2949c8ba2b9</id>
+                        <expressionID>9d77a917-b964-46f5-8886-832039fb5be4</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a6fe6aca-57e6-45ba-af88-dd084f10ed31</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>70fbb3d4-9ee2-4e54-aa5c-9decbc520457</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>d64b3980-d6e1-475b-b151-36cd2319b66c</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d64b3980-d6e1-475b-b151-36cd2319b66c</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtAssEntrys.getCell(rowIndex,"settleid")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9d77a917-b964-46f5-8886-832039fb5be4</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>mileage</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>b65115af-7eb3-4bdd-bde6-7133cb8c737b</id>
+            <parentID />
+            <source>AssEntrys.calfright=AssEntrys.settleid.frightamount</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>368add28-9f62-4968-9cd7-4d90e3bb7ebf</id>
+            <parentID>b65115af-7eb3-4bdd-bde6-7133cb8c737b</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>375e0c07-5ac2-488b-942d-013edaa6bc1c</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>375e0c07-5ac2-488b-942d-013edaa6bc1c</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtAssEntrys.getCell(rowIndex,"calfright")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>7dc91533-bdc9-434c-a9f9-bc524ddbb51c</id>
+            <parentID>b65115af-7eb3-4bdd-bde6-7133cb8c737b</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <method>
+                <ownerID>71574b7a-570a-4b89-898e-1652e4dd48d7</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>cdf3e70e-d10c-4415-9b3f-32be90ddb7b7</id>
+                        <expressionID>9d8e4ce2-2792-46aa-abeb-e18a060486e8</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>4d7e99c5-b1ef-4538-bc6d-62872793d82e</id>
+                        <expressionID>e5d1e1cf-6d4a-4855-b0a0-6c459271d0b4</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>71574b7a-570a-4b89-898e-1652e4dd48d7</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9d8e4ce2-2792-46aa-abeb-e18a060486e8</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>263584dd-f91d-4681-a151-720b6f205b72</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>263584dd-f91d-4681-a151-720b6f205b72</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtAssEntrys.getCell(rowIndex,"settleid")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e5d1e1cf-6d4a-4855-b0a0-6c459271d0b4</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>frightamount</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>10186bbe-067f-4a9c-a56e-7cc7a0557297</id>
+            <parentID />
+            <source>AssEntrys.duckamount=AssEntrys.settle.duckamount</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>32613170-25c9-4346-868e-5a6be4351ed5</id>
+            <parentID>10186bbe-067f-4a9c-a56e-7cc7a0557297</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>3ebfd8f4-f4d5-4b7e-8500-a952d3d5dc21</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3ebfd8f4-f4d5-4b7e-8500-a952d3d5dc21</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtAssEntrys.getCell(rowIndex,"duckamount")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8da65631-2db8-4b42-a43e-3f873dd1f731</id>
+            <parentID>10186bbe-067f-4a9c-a56e-7cc7a0557297</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <method>
+                <ownerID>c80b6687-6f55-45e2-8911-54d03a2f116d</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>71a8c8cb-e070-4bf5-9344-70be31f4f25e</id>
+                        <expressionID>217a1b93-94d3-420d-98ea-9278862fbee8</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>8a6f8111-dc1c-4b57-ae32-8fa99b4afca7</id>
+                        <expressionID>9bc03c99-08c6-4cb4-9fb3-718e2401f94f</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c80b6687-6f55-45e2-8911-54d03a2f116d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>217a1b93-94d3-420d-98ea-9278862fbee8</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>538759a5-8966-4d00-8d6f-88871976b408</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>538759a5-8966-4d00-8d6f-88871976b408</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtAssEntrys.getCell(rowIndex,"settle")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9bc03c99-08c6-4cb4-9fb3-718e2401f94f</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>duckamount</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>bb9eed1b-d0c1-4fc6-a014-44d50f4d2186</id>
+            <parentID />
+            <source>entrys.customer=entrys.salesid.orderCustomer.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>b095a56b-0df7-4798-ba85-6c5554912958</id>
+            <parentID>bb9eed1b-d0c1-4fc6-a014-44d50f4d2186</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>23674de4-9e3a-40ff-94ce-e48b08759203</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>23674de4-9e3a-40ff-94ce-e48b08759203</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"customer")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f70b6479-7bea-4e27-8d46-1c2142a0e4af</id>
+            <parentID>bb9eed1b-d0c1-4fc6-a014-44d50f4d2186</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>b06c462d-7db0-497a-8638-05283edc3dc5</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>780c493a-f984-4616-84e2-2ac5a3e766a3</id>
+                        <expressionID>5617bc54-9925-4c9e-87ae-3727eef465c5</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>2ae971e2-0ff1-4625-9c8f-bff6a2965948</id>
+                        <expressionID>b91caf95-641e-46a0-899b-dd5548d7bdcc</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b06c462d-7db0-497a-8638-05283edc3dc5</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5617bc54-9925-4c9e-87ae-3727eef465c5</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>d4ec8c77-0cf6-465c-98c5-f0b23ffdde84</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d4ec8c77-0cf6-465c-98c5-f0b23ffdde84</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"salesid")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b91caf95-641e-46a0-899b-dd5548d7bdcc</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>orderCustomer.name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>7f1c2b46-290c-4fa5-9b46-13340b22bf1d</id>
+            <parentID />
+            <source>drive = car.driver.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>d333a23d-c773-4c06-bfd1-bf8bd1b4112e</id>
+            <parentID>7f1c2b46-290c-4fa5-9b46-13340b22bf1d</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>1301bf40-240b-454f-8092-a6c2cb12f19a</ownerID>
+                <name>data</name>
+                <type>java.lang.Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1301bf40-240b-454f-8092-a6c2cb12f19a</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>prmtdrive</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>cbd4a36e-fe00-417e-a3af-589803d2a903</id>
+            <parentID>7f1c2b46-290c-4fa5-9b46-13340b22bf1d</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>83288565-97be-4acc-aeb6-3029046ac37a</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>0f65211c-933e-4417-a7e4-8c24852a1512</id>
+                        <expressionID>2ec93866-96a5-4c7b-8336-fae9a49e8997</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>8397f002-50cb-48c7-bdea-df227368fee6</id>
+                        <expressionID>fc20f46f-8a48-494e-b4ec-817846e326f3</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>83288565-97be-4acc-aeb6-3029046ac37a</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>2ec93866-96a5-4c7b-8336-fae9a49e8997</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>5f63f868-84d8-40cb-a27b-3594a4b94394</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5f63f868-84d8-40cb-a27b-3594a4b94394</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtcar</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fc20f46f-8a48-494e-b4ec-817846e326f3</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>driver.name</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>91f77cb6-6cb5-4496-8ffe-6ada86f64107</id>
+            <name>entrys_salesman_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_salesman_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_salesman_ActionInfo].description</description>
+            <expressionID>f93b70c5-14d3-491f-80ae-b2e364bc9708</expressionID>
+        </action>
+        <action>
+            <id>088f2432-afb5-403e-8d2f-f22e8b84ba60</id>
+            <name>entrys_salesman_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_salesman_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_salesman_ActionInfo].description</description>
+            <expressionID>5b1e9998-dcd8-44ad-9570-4e9144941ca1</expressionID>
+        </action>
+        <action>
+            <id>2ba024a3-baa9-4565-a291-650caae33213</id>
+            <name>Transportationrecord_driver_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[Transportationrecord_driver_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[Transportationrecord_driver_ActionInfo].description</description>
+            <expressionID>6fff220a-fc8e-483d-b777-e06c0f4a7591</expressionID>
+        </action>
+        <action>
+            <id>5fa83f57-80ed-4c95-89be-196647241188</id>
+            <name>AssEntrys_tramil_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_tramil_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_tramil_ActionInfo].description</description>
+            <expressionID>56110181-5b4b-4314-a964-0d30d38daf6b</expressionID>
+        </action>
+        <action>
+            <id>f651ac04-89db-4ff7-959c-438e864046ec</id>
+            <name>AssEntrys_calfright_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_calfright_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_calfright_ActionInfo].description</description>
+            <expressionID>b65115af-7eb3-4bdd-bde6-7133cb8c737b</expressionID>
+        </action>
+        <action>
+            <id>5b38e64f-f106-43b3-9f52-24ad59148521</id>
+            <name>AssEntrys_duckamount_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_duckamount_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_duckamount_ActionInfo].description</description>
+            <expressionID>10186bbe-067f-4a9c-a56e-7cc7a0557297</expressionID>
+        </action>
+        <action>
+            <id>fdef6299-3937-42fc-a6c8-2ac736eb6d5e</id>
+            <name>entrys_customer_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_customer_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_customer_ActionInfo].description</description>
+            <expressionID>bb9eed1b-d0c1-4fc6-a014-44d50f4d2186</expressionID>
+        </action>
+        <action>
+            <id>01273ef4-57ea-434a-81a5-b808d2c722b5</id>
+            <name>D1WWLLJW</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[D1WWLLJW].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[D1WWLLJW].description</description>
+            <expressionID>7f1c2b46-290c-4fa5-9b46-13340b22bf1d</expressionID>
+        </action>
+    </actions>
+    <rules>
+        <conditionRule>
+            <name>entrys_salesman_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_salesman_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_salesman_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="088f2432-afb5-403e-8d2f-f22e8b84ba60" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>entrys_customer_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_customer_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_customer_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="fdef6299-3937-42fc-a6c8-2ac736eb6d5e" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>D1WWLLJW</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[D1WWLLJW].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[D1WWLLJW].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="01273ef4-57ea-434a-81a5-b808d2c722b5" />
+                </action>
+            </actions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_calfright_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_frightamount" />
+            <lang locale="zh_HK" value="攜帶字段屬性_frightamount" />
+            <lang locale="zh_TW" value="攜帶字段屬性_frightamount" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_calfright_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_duckamount_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_duckamount" />
+            <lang locale="zh_HK" value="攜帶字段屬性_duckamount" />
+            <lang locale="zh_TW" value="攜帶字段屬性_duckamount" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_duckamount_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_tramil_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_mileage" />
+            <lang locale="zh_HK" value="攜帶字段屬性_mileage" />
+            <lang locale="zh_TW" value="攜帶字段屬性_mileage" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[AssEntrys_tramil_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[D1WWLLJW].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[D1WWLLJW].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[Transportationrecord_driver_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_driverName" />
+            <lang locale="zh_HK" value="攜帶字段屬性_driverName" />
+            <lang locale="zh_TW" value="攜帶字段屬性_driverName" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[Transportationrecord_driver_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_customer_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_orderCustomer" />
+            <lang locale="zh_HK" value="攜帶字段屬性_orderCustomer" />
+            <lang locale="zh_TW" value="攜帶字段屬性_orderCustomer" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_customer_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_salesman_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_salePerson" />
+            <lang locale="zh_HK" value="攜帶字段屬性_salePerson" />
+            <lang locale="zh_TW" value="攜帶字段屬性_salePerson" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].actions.action[entrys_salesman_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[D1WWLLJW].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="SetFieldPropEvent0001" />
+            <lang locale="zh_HK" value="SetFieldPropEvent0001" />
+            <lang locale="zh_TW" value="SetFieldPropEvent0001" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[D1WWLLJW].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[D1WWLLJW].extendedProperty.columnName">
+            <lang locale="en_US" value="car" />
+            <lang locale="zh_CN" value="car" />
+            <lang locale="zh_TW" value="car" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_customer_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_orderCustomer" />
+            <lang locale="zh_HK" value="攜帶字段屬性_orderCustomer" />
+            <lang locale="zh_TW" value="攜帶字段屬性_orderCustomer" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_customer_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_customer_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="salesid" />
+            <lang locale="zh_CN" value="salesid" />
+            <lang locale="zh_TW" value="salesid" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_customer_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_salesman_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_salePerson" />
+            <lang locale="zh_HK" value="攜帶字段屬性_salePerson" />
+            <lang locale="zh_TW" value="攜帶字段屬性_salePerson" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_salesman_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_salesman_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="salesid" />
+            <lang locale="zh_CN" value="salesid" />
+            <lang locale="zh_TW" value="salesid" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basebizbill.app.TransportationrecordRuleSet].rules.conditionRule[entrys_salesman_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

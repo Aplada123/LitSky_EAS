@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functionObject xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>BatchContractEditUIFunction</name>
+    <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].alias</alias>
+    <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].description</description>
+    <userDefined>false</userDefined>
+    <isBindSingleBizObject>false</isBindSingleBizObject>
+    <operations>
+        <operation>
+            <name>ActionSubmit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[ActionSubmit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[ActionSubmit].description</description>
+            <reverseOperation />
+            <eventMethod>dfd2c083-00fa-1000-e000-001fc0a813e6</eventMethod>
+            <event>submitEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>50cf5dac-0105-1000-e000-00cac0a813a4uiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="BatchContractEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionSubmit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContract" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>audit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[audit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[audit].description</description>
+            <reverseOperation />
+            <eventMethod>b1897d2f-c561-479d-8052-4e7a1416196c</eventMethod>
+            <event>auditEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>509827be-9015-4e52-aa67-166fa22e2de4uiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="BatchContractEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContract" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>unAudit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[unAudit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[unAudit].description</description>
+            <reverseOperation />
+            <eventMethod>8c6e33b7-abf0-495d-b284-cae08138a78b</eventMethod>
+            <event>unAuditEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>f4d17c16-3682-4041-a547-105ad23d5de4uiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="BatchContractEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionUnAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContract" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>isTemplate</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isTemplate].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isTemplate].description</description>
+            <reverseOperation />
+            <eventMethod>598456c4-3b98-445b-a904-5965df5b19fe</eventMethod>
+            <event>isTemplateEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>7375a725-3e0e-435a-8a61-74f98a2cef2auiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="BatchContractEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionIsTemplate</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isTemplate].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isTemplate].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContract" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>isInit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isInit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isInit].description</description>
+            <reverseOperation />
+            <eventMethod>b6bcf3e9-4eec-484e-8806-0eb26663c376</eventMethod>
+            <event>isInitEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>790a0488-ff81-4c00-ab97-3d9b2ec25a8auiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="BatchContractEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionIsInit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isInit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isInit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="BatchContract" />
+            </entityObjectRef>
+        </operation>
+    </operations>
+    <resource>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].alias">
+            <lang locale="en_US" value="多分录基础单据编辑界面业务功能" />
+            <lang locale="zh_CN" value="批次合同编辑功能" />
+            <lang locale="zh_HK" value="批次合同編輯功能" />
+            <lang locale="zh_TW" value="批次合同編輯功能" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].description">
+            <lang locale="en_US" value="多分录基础单据编辑界面业务功能" />
+            <lang locale="zh_CN" value="多分录基础单据编辑界面业务功能" />
+            <lang locale="zh_HK" value="多分錄基礎單據編輯介面業務功能" />
+            <lang locale="zh_TW" value="多分錄基礎單據編輯介面業務功能" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[ActionSubmit].alias">
+            <lang locale="en_US" value="提交" />
+            <lang locale="zh_CN" value="提交" />
+            <lang locale="zh_HK" value="提交" />
+            <lang locale="zh_TW" value="提交" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[ActionSubmit].description">
+            <lang locale="en_US" value="提交" />
+            <lang locale="zh_CN" value="提交" />
+            <lang locale="zh_HK" value="提交" />
+            <lang locale="zh_TW" value="提交" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[ActionSubmit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="单据内码" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="单据内码" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[audit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核" />
+            <lang locale="zh_HK" value="審核" />
+            <lang locale="zh_TW" value="審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[audit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[audit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isInit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="初始化" />
+            <lang locale="zh_HK" value="初始化" />
+            <lang locale="zh_TW" value="初始化" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isInit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isInit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isInit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isInit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isTemplate].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否模板" />
+            <lang locale="zh_HK" value="是否範本" />
+            <lang locale="zh_TW" value="是否範本" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isTemplate].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isTemplate].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isTemplate].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[isTemplate].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[unAudit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="反审核" />
+            <lang locale="zh_HK" value="反審核" />
+            <lang locale="zh_TW" value="反審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[unAudit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[unAudit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.BatchContractEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+    </resource>
+</functionObject>
+

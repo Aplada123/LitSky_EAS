@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functionObject xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.basebizbill.app</package>
+    <name>FarmerApplyBillListUIFunction</name>
+    <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].alias</alias>
+    <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].description</description>
+    <userDefined>false</userDefined>
+    <isBindSingleBizObject>false</isBindSingleBizObject>
+    <operations>
+        <operation>
+            <name>ActionRemove</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[ActionRemove].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[ActionRemove].description</description>
+            <reverseOperation />
+            <eventMethod>be5779dd-00fe-1000-e000-0007c0a813a9</eventMethod>
+            <event>deleteEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>74b6f5a7-0105-1000-e000-00f1c0a813a4uiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.client" />
+                    <key name="name" value="FarmerApplyBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionRemove</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billid</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[ActionRemove].uiActionRef.parameters.parameter[billid].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[ActionRemove].uiActionRef.parameters.parameter[billid].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBill" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>audit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[audit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[audit].description</description>
+            <reverseOperation />
+            <eventMethod>b1897d2f-c561-479d-8052-4e7a1416196c</eventMethod>
+            <event>auditEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>2ab53aad-7e62-49c6-ad9a-216186d81edeuiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.client" />
+                    <key name="name" value="FarmerApplyBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBill" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>unAudit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[unAudit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[unAudit].description</description>
+            <reverseOperation />
+            <eventMethod>8c6e33b7-abf0-495d-b284-cae08138a78b</eventMethod>
+            <event>unAuditEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>233312a5-e59c-4141-a177-57789eefa661uiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.client" />
+                    <key name="name" value="FarmerApplyBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionUnAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBill" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>isTemplate</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isTemplate].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isTemplate].description</description>
+            <reverseOperation />
+            <eventMethod>aa1240a5-d7be-47cc-9b57-46a87d4ccb77</eventMethod>
+            <event>isTemplateEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>e8176293-a902-4a03-a886-eaabba5fe26buiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.client" />
+                    <key name="name" value="FarmerApplyBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionIsTemplate</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isTemplate].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isTemplate].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBill" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>isCheckItemEntry</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isCheckItemEntry].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isCheckItemEntry].description</description>
+            <reverseOperation />
+            <eventMethod>3a9c5e4a-e068-4cf7-aad2-70005ae46b56</eventMethod>
+            <event>isCheckItemEntryEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>027ed42c-0149-4e8a-9491-ec979fc6602cuiaf</id>
+                <uiStatus />
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.client" />
+                    <key name="name" value="FarmerApplyBillListUI" />
+                </uiObjectRef>
+                <actionRefName>ActionIsCheckItemEntry</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isCheckItemEntry].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isCheckItemEntry].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBill" />
+            </entityObjectRef>
+        </operation>
+    </operations>
+    <resource>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户资格申请列表功能" />
+            <lang locale="zh_HK" value="養戶資格申請列表功能" />
+            <lang locale="zh_TW" value="養戶資格申請列表功能" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[ActionRemove].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="删除" />
+            <lang locale="zh_HK" value="刪除" />
+            <lang locale="zh_TW" value="刪除" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[ActionRemove].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="删除" />
+            <lang locale="zh_HK" value="刪除" />
+            <lang locale="zh_TW" value="刪除" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[ActionRemove].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[ActionRemove].uiActionRef.parameters.parameter[billid].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[ActionRemove].uiActionRef.parameters.parameter[billid].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[audit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核" />
+            <lang locale="zh_HK" value="審核" />
+            <lang locale="zh_TW" value="審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[audit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[audit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isCheckItemEntry].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="评定项目修改" />
+            <lang locale="zh_HK" value="評定項目修改" />
+            <lang locale="zh_TW" value="評定項目修改" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isCheckItemEntry].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isCheckItemEntry].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isCheckItemEntry].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isCheckItemEntry].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isTemplate].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否模板" />
+            <lang locale="zh_HK" value="是否範本" />
+            <lang locale="zh_TW" value="是否範本" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isTemplate].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isTemplate].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isTemplate].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[isTemplate].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[unAudit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="反审核" />
+            <lang locale="zh_HK" value="反審核" />
+            <lang locale="zh_TW" value="反審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[unAudit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[unAudit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillListUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+    </resource>
+</functionObject>
+

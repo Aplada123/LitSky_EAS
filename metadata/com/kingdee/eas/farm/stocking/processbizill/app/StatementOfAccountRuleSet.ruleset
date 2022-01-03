@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>StatementOfAccountRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>4cf7926c-88f6-45e2-8a4b-51f86b0b3d43</id>
+            <parentID />
+            <source>Feedsnew.feedName=Feedsnew.feedsone.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>ffa30681-cfbc-46a9-8e4e-85db24853ff2</id>
+            <parentID>4cf7926c-88f6-45e2-8a4b-51f86b0b3d43</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>b793ee63-753f-4f18-acc9-c5e301c69dea</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b793ee63-753f-4f18-acc9-c5e301c69dea</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtFeedsnew.getCell(rowIndex,"feedName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>13cca417-25f6-4b05-83c0-67e6c12ad7f5</id>
+            <parentID>4cf7926c-88f6-45e2-8a4b-51f86b0b3d43</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>dd1f817c-c60f-41ec-94ca-59204a8bd1f4</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>40f10324-de0e-418e-93c8-9dda8da48b08</id>
+                        <expressionID>a5a3dadd-4cfb-411c-82e2-00b19d61b4c3</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>59c6f98d-71d6-43eb-ac95-689fe6d637d5</id>
+                        <expressionID>7c5579d8-65c5-4dae-a841-fe48716e0df8</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>dd1f817c-c60f-41ec-94ca-59204a8bd1f4</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a5a3dadd-4cfb-411c-82e2-00b19d61b4c3</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>003615bd-8b9d-41b3-a33f-88164b7eb05b</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>003615bd-8b9d-41b3-a33f-88164b7eb05b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtFeedsnew.getCell(rowIndex,"feedsone")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>7c5579d8-65c5-4dae-a841-fe48716e0df8</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>7c0b3097-735d-48b7-8d8b-9898578d2869</id>
+            <name>Feedsnew_feedName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].actions.action[Feedsnew_feedName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].actions.action[Feedsnew_feedName_ActionInfo].description</description>
+            <expressionID>4cf7926c-88f6-45e2-8a4b-51f86b0b3d43</expressionID>
+        </action>
+    </actions>
+    <rules>
+        <conditionRule>
+            <name>Feedsnew_feedName_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].rules.conditionRule[Feedsnew_feedName_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].rules.conditionRule[Feedsnew_feedName_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="7c0b3097-735d-48b7-8d8b-9898578d2869" />
+                </action>
+            </actions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].actions.action[Feedsnew_feedName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].actions.action[Feedsnew_feedName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].rules.conditionRule[Feedsnew_feedName_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].rules.conditionRule[Feedsnew_feedName_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].rules.conditionRule[Feedsnew_feedName_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="feedsone" />
+            <lang locale="zh_CN" value="feedsone" />
+            <lang locale="zh_TW" value="feedsone" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.StatementOfAccountRuleSet].rules.conditionRule[Feedsnew_feedName_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

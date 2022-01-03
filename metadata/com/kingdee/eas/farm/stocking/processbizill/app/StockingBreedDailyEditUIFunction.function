@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functionObject xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>StockingBreedDailyEditUIFunction</name>
+    <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].alias</alias>
+    <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].description</description>
+    <userDefined>false</userDefined>
+    <isBindSingleBizObject>false</isBindSingleBizObject>
+    <operations>
+        <operation>
+            <name>ActionSubmit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[ActionSubmit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[ActionSubmit].description</description>
+            <reverseOperation />
+            <eventMethod>dfd2c083-00fa-1000-e000-001fc0a813e6</eventMethod>
+            <event>submitEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>50cf5dac-0105-1000-e000-00cac0a813a4uiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="StockingBreedDailyEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionSubmit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDaily" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>audit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[audit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[audit].description</description>
+            <reverseOperation />
+            <eventMethod>bec8b8ba-2749-43e3-b2bd-fc4d59087a04</eventMethod>
+            <event>auditEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>06c999c0-ea13-4714-a8eb-e18bd659001euiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>true</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="StockingBreedDailyEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>true</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDaily" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>unAudit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[unAudit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[unAudit].description</description>
+            <reverseOperation />
+            <eventMethod>78874e2f-37f1-462f-a366-4ce5291ea970</eventMethod>
+            <event>unAuditEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>aade54e4-46d6-4402-af7b-dc72c2aebd76uiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>true</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="StockingBreedDailyEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionUnAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>true</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDaily" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>genNextBill</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[genNextBill].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[genNextBill].description</description>
+            <reverseOperation />
+            <eventMethod>dca8b4fd-4cee-443f-8f33-5d548c3336f3</eventMethod>
+            <event>genNextBillEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>5ef3acd4-3e35-4ec0-a451-60ef2950de7fuiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="StockingBreedDailyEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionGenNextBill</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[genNextBill].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[genNextBill].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDaily" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>reShareCoalAndDiesel</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[reShareCoalAndDiesel].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[reShareCoalAndDiesel].description</description>
+            <reverseOperation />
+            <eventMethod>e7fca5b1-cf97-498a-bd94-3c11276a3319</eventMethod>
+            <event>reShareCoalAndDieselEvent</event>
+            <userDefined>false</userDefined>
+            <uiActionRef>
+                <id>146ca8f0-2b28-4335-9142-58874140f058uiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>false</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="StockingBreedDailyEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionReShareCoalAndDiesel</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[reShareCoalAndDiesel].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[reShareCoalAndDiesel].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>false</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="StockingBreedDaily" />
+            </entityObjectRef>
+        </operation>
+    </operations>
+    <resource>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].alias">
+            <lang locale="en_US" value="多分录基础单据编辑界面业务功能" />
+            <lang locale="zh_CN" value="养殖日报编辑功能" />
+            <lang locale="zh_HK" value="養殖日報編輯功能" />
+            <lang locale="zh_TW" value="養殖日報編輯功能" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].description">
+            <lang locale="en_US" value="多分录基础单据编辑界面业务功能" />
+            <lang locale="zh_CN" value="多分录基础单据编辑界面业务功能" />
+            <lang locale="zh_HK" value="多分錄基礎單據編輯介面業務功能" />
+            <lang locale="zh_TW" value="多分錄基礎單據編輯介面業務功能" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[ActionSubmit].alias">
+            <lang locale="en_US" value="提交" />
+            <lang locale="zh_CN" value="提交" />
+            <lang locale="zh_HK" value="提交" />
+            <lang locale="zh_TW" value="提交" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[ActionSubmit].description">
+            <lang locale="en_US" value="提交" />
+            <lang locale="zh_CN" value="提交" />
+            <lang locale="zh_HK" value="提交" />
+            <lang locale="zh_TW" value="提交" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[ActionSubmit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="单据内码" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="单据内码" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[audit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核" />
+            <lang locale="zh_HK" value="審核" />
+            <lang locale="zh_TW" value="審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[audit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[audit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[genNextBill].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="生成下游单据" />
+            <lang locale="zh_HK" value="生成下遊單據" />
+            <lang locale="zh_TW" value="生成下遊單據" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[genNextBill].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[genNextBill].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[genNextBill].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[genNextBill].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[reShareCoalAndDiesel].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="重新分摊煤和柴油" />
+            <lang locale="zh_HK" value="重新分攤煤和柴油" />
+            <lang locale="zh_TW" value="重新分攤煤和柴油" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[reShareCoalAndDiesel].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[reShareCoalAndDiesel].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[reShareCoalAndDiesel].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[reShareCoalAndDiesel].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[unAudit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="反审核" />
+            <lang locale="zh_HK" value="反審核" />
+            <lang locale="zh_TW" value="反審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[unAudit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[unAudit].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.StockingBreedDailyEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+    </resource>
+</functionObject>
+

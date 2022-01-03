@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataTable xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.basedata.app</package>
+    <name>T_FM_PersonFarmerRelationEntry</name>
+    <alias>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].alias</alias>
+    <description>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].description</description>
+    <userDefined>false</userDefined>
+    <bizUnitPK />
+    <columns>
+        <column>
+            <name>FID</name>
+            <alias>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FID].alias</alias>
+            <description>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FID].description</description>
+            <userDefined>false</userDefined>
+            <isMultilingual>false</isMultilingual>
+            <isEncoded>false</isEncoded>
+            <isNullable>false</isNullable>
+            <defaultValue>''</defaultValue>
+            <sqlType>VARCHAR</sqlType>
+            <length>44</length>
+            <scale>0</scale>
+            <precision>0</precision>
+        </column>
+        <column>
+            <name>FSeq</name>
+            <alias>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FSeq].alias</alias>
+            <description>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FSeq].description</description>
+            <userDefined>false</userDefined>
+            <isMultilingual>false</isMultilingual>
+            <isEncoded>false</isEncoded>
+            <isNullable>false</isNullable>
+            <defaultValue>0</defaultValue>
+            <sqlType>INT</sqlType>
+            <length>4</length>
+            <scale>0</scale>
+            <precision>4</precision>
+        </column>
+        <column>
+            <name>FParentID</name>
+            <alias>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FParentID].alias</alias>
+            <description>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FParentID].description</description>
+            <userDefined>false</userDefined>
+            <isMultilingual>false</isMultilingual>
+            <isEncoded>false</isEncoded>
+            <isNullable>false</isNullable>
+            <defaultValue>''</defaultValue>
+            <sqlType>VARCHAR</sqlType>
+            <length>44</length>
+            <scale>0</scale>
+            <precision>0</precision>
+        </column>
+        <column>
+            <name>FFSeq0</name>
+            <alias>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFSeq0].alias</alias>
+            <description>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFSeq0].description</description>
+            <userDefined>false</userDefined>
+            <isMultilingual>false</isMultilingual>
+            <isEncoded>false</isEncoded>
+            <isNullable>true</isNullable>
+            <defaultValue />
+            <sqlType>INT</sqlType>
+            <length>0</length>
+            <scale>0</scale>
+            <precision>0</precision>
+        </column>
+        <column>
+            <name>FFarmerID</name>
+            <alias>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFarmerID].alias</alias>
+            <description>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFarmerID].description</description>
+            <userDefined>false</userDefined>
+            <isMultilingual>false</isMultilingual>
+            <isEncoded>false</isEncoded>
+            <isNullable>true</isNullable>
+            <defaultValue />
+            <sqlType>VARCHAR</sqlType>
+            <length>44</length>
+            <scale>0</scale>
+            <precision>0</precision>
+        </column>
+        <column>
+            <name>FFarmerName</name>
+            <alias>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFarmerName].alias</alias>
+            <description>dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFarmerName].description</description>
+            <userDefined>false</userDefined>
+            <isMultilingual>false</isMultilingual>
+            <isEncoded>false</isEncoded>
+            <isNullable>true</isNullable>
+            <defaultValue />
+            <sqlType>NVARCHAR</sqlType>
+            <length>80</length>
+            <scale>0</scale>
+            <precision>0</precision>
+        </column>
+    </columns>
+    <primaryKey>
+        <name>PK_FM_PersonFREegp</name>
+        <userDefined>false</userDefined>
+        <primaryKeyColumns>
+            <primaryKeyColumn>
+                <indexID>0</indexID>
+                <sortType />
+                <column>
+                    <key name="name" value="FID" />
+                </column>
+            </primaryKeyColumn>
+        </primaryKeyColumns>
+    </primaryKey>
+    <foreignKeys>
+        <foreignKey>
+            <name>FK_FM_PersonFREA8p</name>
+            <userDefined>false</userDefined>
+            <refTable>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="T_FM_Farmers" />
+            </refTable>
+            <fkColumnPairs>
+                <fkColumnPair>
+                    <sequence>0</sequence>
+                    <refColumn>
+                        <key name="name" value="FID" />
+                    </refColumn>
+                    <fkColumn>
+                        <key name="name" value="FFarmerID" />
+                    </fkColumn>
+                </fkColumnPair>
+            </fkColumnPairs>
+        </foreignKey>
+    </foreignKeys>
+    <resource>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖户" />
+            <lang locale="zh_HK" value="養殖戶" />
+            <lang locale="zh_TW" value="養殖戶" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFSeq0].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据分录序列号" />
+            <lang locale="zh_HK" value="單據分錄序列號" />
+            <lang locale="zh_TW" value="單據分錄序列號" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFSeq0].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFarmerID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户编码" />
+            <lang locale="zh_HK" value="養戶編碼" />
+            <lang locale="zh_TW" value="養戶編碼" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFarmerID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户编码" />
+            <lang locale="zh_HK" value="養戶編碼" />
+            <lang locale="zh_TW" value="養戶編碼" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFarmerName].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户名称" />
+            <lang locale="zh_HK" value="養戶名稱" />
+            <lang locale="zh_TW" value="養戶名稱" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FFarmerName].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户名称" />
+            <lang locale="zh_HK" value="養戶名稱" />
+            <lang locale="zh_TW" value="養戶名稱" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FParentID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FParentID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FSeq].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据分录序列号" />
+            <lang locale="zh_HK" value="單據分錄序列號" />
+            <lang locale="zh_TW" value="單據分錄序列號" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].columns.column[FSeq].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据分录序列号（定义为序列属性即使用{seq}）" />
+            <lang locale="zh_HK" value="單據分錄序列號（定義為序列屬性即使用{seq}）" />
+            <lang locale="zh_TW" value="單據分錄序列號（定義為序列屬性即使用{seq}）" />
+        </rs>
+        <rs key="dataTable[com.kingdee.eas.farm.stocking.basedata.app.T_FM_PersonFarmerRelationEntry].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+    </resource>
+</dataTable>
+

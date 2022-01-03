@@ -1,0 +1,3125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<joinQuery xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.basebizbill.app</package>
+    <name>FarmerApplyBillQuery</name>
+    <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].alias</alias>
+    <description>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].description</description>
+    <userDefined>false</userDefined>
+    <reportDataSource />
+    <bizUnitPK>com.kingdee.eas.farm.stocking.basebizbill.FarmerApplyBill</bizUnitPK>
+    <connectionProvider />
+    <subObjects>
+        <subEntity>
+            <name>FarmerApplyBill</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[FarmerApplyBill].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBill" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>auditor</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[auditor].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>creator</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[creator].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>lastUpdateUser</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[lastUpdateUser].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>handler</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[handler].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.base.permission.app" />
+                <key name="name" value="User" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>company</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[company].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.org.app" />
+                <key name="name" value="CompanyOrgUnit" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>ssessmentPerson</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[ssessmentPerson].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.basedata.person.app" />
+                <key name="name" value="Person" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>farmer</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[farmer].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="Farmers" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>farmerGroup</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[farmerGroup].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basedata.app" />
+                <key name="name" value="Farmers" />
+            </entityRef>
+        </subEntity>
+        <subEntity>
+            <name>BEBank</name>
+            <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[BEBank].alias</alias>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <entityRef>
+                <key name="package" value="com.kingdee.eas.fm.be.app" />
+                <key name="name" value="BEBank" />
+            </entityRef>
+        </subEntity>
+    </subObjects>
+    <units>
+        <propertyUnit>
+            <name>NewUnit0</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit0].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit0" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditor" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit1</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit2</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit2].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit2" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="creator" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit3</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit3].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit3" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit4</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit4].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit4" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateUser" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit5</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit5].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit5" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>id</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[id].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="id" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>bizDate</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bizDate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="bizDate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bizDate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>description</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[description].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="description" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="description" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>createTime</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[createTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="createTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="createTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateTime</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[lastUpdateTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Timestamp</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="lastUpdateTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditor.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[auditor.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="auditor.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditor.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[auditor.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="auditor.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="auditor" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>creator.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[creator.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="creator.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>creator.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[creator.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="creator.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="creator" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateUser.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[lastUpdateUser.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateUser.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>lastUpdateUser.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[lastUpdateUser.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="lastUpdateUser.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="lastUpdateUser" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>handler.number</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[handler.number].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="handler.number" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="number" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>handler.name</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[handler.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="handler.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>NewUnit9</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit9].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit9" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="handler" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>NewUnit8</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit8].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="NewUnit8" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="handler" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>Fivouchered</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[Fivouchered].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0</key>
+                    <parentUnit>
+                        <key name="name" value="Fivouchered" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="Fivouchered" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>billStatus</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[billStatus].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>c536dcd8-5139-42a1-b59b-ae8b1073329c</key>
+                    <parentUnit>
+                        <key name="name" value="billStatus" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="billStatus" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>company.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[company.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>0f6ee6df-960f-43fd-ba9a-fd4f848a5a0e</key>
+                    <parentUnit>
+                        <key name="name" value="company.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>2de43493-9762-492f-9381-f7b941e16c22</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[2de43493-9762-492f-9381-f7b941e16c22].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>cb105e88-34b3-4200-9306-dd16fb45db20</key>
+                    <parentUnit>
+                        <key name="name" value="2de43493-9762-492f-9381-f7b941e16c22" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="company" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>fd038beb-5e64-4d57-a56c-e174115ca5b1</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[fd038beb-5e64-4d57-a56c-e174115ca5b1].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>8492190f-7d39-4938-949e-6dff67260a37</key>
+                    <parentUnit>
+                        <key name="name" value="fd038beb-5e64-4d57-a56c-e174115ca5b1" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="company" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>1aeeebc4-49e4-42eb-b354-fc19fa1b04d1</key>
+                    <parentUnit>
+                        <key name="name" value="name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>sex</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[sex].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>bc8268cf-d631-48c7-ab37-160f233c74a4</key>
+                    <parentUnit>
+                        <key name="name" value="sex" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="sex" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>identity</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[identity].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>3b1ce965-9c8e-4fd1-ada9-6110c430708d</key>
+                    <parentUnit>
+                        <key name="name" value="identity" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="identity" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>mobileTel</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[mobileTel].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>e70f9b91-82ee-41c8-bad9-e14648231b41</key>
+                    <parentUnit>
+                        <key name="name" value="mobileTel" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="mobileTel" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>tel</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[tel].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>605833c6-e809-4d3f-975f-d991f4266da9</key>
+                    <parentUnit>
+                        <key name="name" value="tel" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="tel" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>address</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[address].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>16a25318-d0df-4c79-abb5-a058da420740</key>
+                    <parentUnit>
+                        <key name="name" value="address" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="address" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>bankNo</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankNo].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>2fcbee57-cede-4529-b04e-a2f4cba7da51</key>
+                    <parentUnit>
+                        <key name="name" value="bankNo" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bankNo" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>bankName</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankName].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>9b0b6f13-e8cd-4a56-9844-d340336d939a</key>
+                    <parentUnit>
+                        <key name="name" value="bankName" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bankName" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>auditTime</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[auditTime].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Date</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f567cc4d-5a8a-41ae-82aa-027f66e1443e</key>
+                    <parentUnit>
+                        <key name="name" value="auditTime" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="auditTime" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>experience</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[experience].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>38848f7c-e975-402f-8129-6716c0277de9</key>
+                    <parentUnit>
+                        <key name="name" value="experience" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="experience" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>breedLvl</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[breedLvl].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>8f130658-7aa6-4cc2-b456-6a687483a189</key>
+                    <parentUnit>
+                        <key name="name" value="breedLvl" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="breedLvl" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>score</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[score].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Number</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>40c92919-4834-4b84-a1f9-3c6960a19e6c</key>
+                    <parentUnit>
+                        <key name="name" value="score" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="score" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>ssessmentPerson.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[ssessmentPerson.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>8e861608-fae2-4c6c-b821-e54be4bdc069</key>
+                    <parentUnit>
+                        <key name="name" value="ssessmentPerson.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="ssessmentPerson" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>4a13d903-9a63-4e72-8b37-5bcf38a0584b</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[4a13d903-9a63-4e72-8b37-5bcf38a0584b].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>9b37f90e-2331-463e-9f1c-2b35d9bb60d1</key>
+                    <parentUnit>
+                        <key name="name" value="4a13d903-9a63-4e72-8b37-5bcf38a0584b" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="ssessmentPerson" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>5b0c889a-ac9d-4c77-92e0-61a53dfa8753</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[5b0c889a-ac9d-4c77-92e0-61a53dfa8753].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>49d4dda9-2d68-4890-9145-8856ac6bbdd2</key>
+                    <parentUnit>
+                        <key name="name" value="5b0c889a-ac9d-4c77-92e0-61a53dfa8753" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="ssessmentPerson" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>isTemplate</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[isTemplate].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Boolean</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>cb8a0d48-0537-46c8-b14f-bac7d578a2de</key>
+                    <parentUnit>
+                        <key name="name" value="isTemplate" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="isTemplate" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>WoM</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[WoM].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>a6c18d33-f518-4016-b0e0-e9a6edeb27cf</key>
+                    <parentUnit>
+                        <key name="name" value="WoM" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="WoM" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>checkResult</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[checkResult].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>06fb89a9-080c-4f66-9dfb-54ddbc7dd601</key>
+                    <parentUnit>
+                        <key name="name" value="checkResult" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="checkResult" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>farmer.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmer.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>c0f5bf4f-e29e-42fe-a1c3-23610ee45421</key>
+                    <parentUnit>
+                        <key name="name" value="farmer.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farmer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>51ec1c61-e410-4ce1-bb3f-0024cc5d669d</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[51ec1c61-e410-4ce1-bb3f-0024cc5d669d].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>a6d3f469-5d1d-4f84-95a1-6d2c9926b152</key>
+                    <parentUnit>
+                        <key name="name" value="51ec1c61-e410-4ce1-bb3f-0024cc5d669d" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farmer" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>946eeb19-13a0-4104-992d-0ad286f6f21d</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[946eeb19-13a0-4104-992d-0ad286f6f21d].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>edaaeb23-6c60-4d36-b866-99277bba653e</key>
+                    <parentUnit>
+                        <key name="name" value="946eeb19-13a0-4104-992d-0ad286f6f21d" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farmer" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>farmerGroup.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmerGroup.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>16a399e7-72f0-419e-b78c-cc2532f5db51</key>
+                    <parentUnit>
+                        <key name="name" value="farmerGroup.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farmerGroup" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>b1631914-bca7-4a6b-af9c-47d7ddbcde8c</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[b1631914-bca7-4a6b-af9c-47d7ddbcde8c].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>e9384e25-f279-48cc-bf2f-6a78f30d6909</key>
+                    <parentUnit>
+                        <key name="name" value="b1631914-bca7-4a6b-af9c-47d7ddbcde8c" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="farmerGroup" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>e1825fab-e3bc-4869-9df9-0bfbccf5e1b3</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[e1825fab-e3bc-4869-9df9-0bfbccf5e1b3].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>ee8edf94-13bc-4e6c-9f56-39c25281c5a6</key>
+                    <parentUnit>
+                        <key name="name" value="e1825fab-e3bc-4869-9df9-0bfbccf5e1b3" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="farmerGroup" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>age</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[age].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>f5f86ff5-439a-4ccc-ae0f-a0d2f8ce5b71</key>
+                    <parentUnit>
+                        <key name="name" value="age" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="age" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>nation</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[nation].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>44b51a11-611b-4d0b-9063-51eaf7120e76</key>
+                    <parentUnit>
+                        <key name="name" value="nation" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="nation" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>eduLvl</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[eduLvl].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>b97adac3-fbf9-4167-ab06-88b145eb453b</key>
+                    <parentUnit>
+                        <key name="name" value="eduLvl" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="eduLvl" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>familyPeronCount</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[familyPeronCount].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>Int</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>ca2415c5-75a6-4176-ae70-baea5ab58145</key>
+                    <parentUnit>
+                        <key name="name" value="familyPeronCount" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="familyPeronCount" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>bankAccountNo</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankAccountNo].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>99776ab2-824a-4c4e-9d3d-bb30205c56c4</key>
+                    <parentUnit>
+                        <key name="name" value="bankAccountNo" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="bankAccountNo" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <queryField>
+            <name>BEBank.name</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[BEBank.name].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>dbe24407-77a3-4141-9e14-84ae885a5ffd</key>
+                    <parentUnit>
+                        <key name="name" value="BEBank.name" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BEBank" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="name" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+        <propertyUnit>
+            <name>45637716-733d-40f1-8c52-a96c76a940cc</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[45637716-733d-40f1-8c52-a96c76a940cc].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>f315db69-7c53-400a-b85c-8f929fbf1dfa</key>
+                    <parentUnit>
+                        <key name="name" value="45637716-733d-40f1-8c52-a96c76a940cc" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="BEBank" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <propertyUnit>
+            <name>58fec57a-a37a-455e-af62-67b112c69b07</name>
+            <userDefined>false</userDefined>
+            <formulaString />
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[58fec57a-a37a-455e-af62-67b112c69b07].displayName</displayName>
+            <groupType />
+            <isSelector>false</isSelector>
+            <isFilter>false</isFilter>
+            <isSorter>false</isSorter>
+            <isParameter>false</isParameter>
+            <returnType />
+            <propertyRefs>
+                <propertyRef>
+                    <key>75d4f622-dd37-49d5-b706-e64abc38dece</key>
+                    <parentUnit>
+                        <key name="name" value="58fec57a-a37a-455e-af62-67b112c69b07" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="BEBank" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="id" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </propertyUnit>
+        <queryField>
+            <name>actualName</name>
+            <userDefined>false</userDefined>
+            <formulaString>#0</formulaString>
+            <constString />
+            <displayName>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[actualName].displayName</displayName>
+            <groupType />
+            <isSelector>true</isSelector>
+            <isFilter>true</isFilter>
+            <isSorter>true</isSorter>
+            <isParameter>false</isParameter>
+            <returnType>String</returnType>
+            <propertyRefs>
+                <propertyRef>
+                    <key>14abee8b-026b-497e-b54d-33d824df7459</key>
+                    <parentUnit>
+                        <key name="name" value="actualName" />
+                    </parentUnit>
+                    <subEntity>
+                        <key name="name" value="FarmerApplyBill" />
+                    </subEntity>
+                    <refProperty>
+                        <key name="name" value="actualName" />
+                    </refProperty>
+                </propertyRef>
+            </propertyRefs>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </queryField>
+    </units>
+    <defaultFilter>
+        <name>defaultFilter</name>
+        <formulaString />
+        <query>
+            <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+            <key name="name" value="FarmerApplyBillQuery" />
+        </query>
+    </defaultFilter>
+    <defaultSorters>
+        <querySorterItem>
+            <propertyName>number</propertyName>
+            <sortType>ASC</sortType>
+            <userDefined>false</userDefined>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+            <configured>false</configured>
+        </querySorterItem>
+    </defaultSorters>
+    <queryPK>
+        <name>QueryPK</name>
+        <alias>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].queryPK[QueryPK].alias</alias>
+        <description>joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].queryPK[QueryPK].description</description>
+        <keyProperties>
+            <queryField>
+                <key name="name" value="id" />
+            </queryField>
+        </keyProperties>
+    </queryPK>
+    <isDistinct>false</isDistinct>
+    <joins>
+        <join>
+            <name>NewJoin0</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmerApplyBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="auditor" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit0" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin0" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin1</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmerApplyBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="creator" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit2" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit3" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin1" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin2</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmerApplyBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="lastUpdateUser" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit4" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit5" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin2" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>NewJoin4</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmerApplyBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="handler" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>0</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="NewUnit9" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="NewUnit8" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="NewJoin4" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>8c3abc37-d7ca-45e9-95c2-4c2898d21dcf</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmerApplyBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="company" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>a9637c56-8dd2-482d-b072-9790f95f4f11</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="2de43493-9762-492f-9381-f7b941e16c22" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="fd038beb-5e64-4d57-a56c-e174115ca5b1" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="8c3abc37-d7ca-45e9-95c2-4c2898d21dcf" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>754eeaf1-90a4-43cc-9efd-4921b807d725</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmerApplyBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="ssessmentPerson" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>49cb3733-2f0c-4847-b0de-0ec4c6420211</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="4a13d903-9a63-4e72-8b37-5bcf38a0584b" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="5b0c889a-ac9d-4c77-92e0-61a53dfa8753" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="754eeaf1-90a4-43cc-9efd-4921b807d725" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>d58b275f-d5d6-4e62-a258-3af454589279</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmerApplyBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="farmer" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>e285ce8a-86b1-4e1a-a24e-f7ea8ee231fc</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="51ec1c61-e410-4ce1-bb3f-0024cc5d669d" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="946eeb19-13a0-4104-992d-0ad286f6f21d" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="d58b275f-d5d6-4e62-a258-3af454589279" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>1d4e5a02-72ea-4747-9ddb-1a21f4f85ddc</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmerApplyBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="farmerGroup" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>173abeb8-ed13-4283-a871-e9a027b890dd</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="b1631914-bca7-4a6b-af9c-47d7ddbcde8c" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="e1825fab-e3bc-4869-9df9-0bfbccf5e1b3" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="1d4e5a02-72ea-4747-9ddb-1a21f4f85ddc" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </join>
+        <join>
+            <name>4d41c6ef-806f-451b-8021-ea152fb3727c</name>
+            <formulaString>#0</formulaString>
+            <type>LEFT OUTER JOIN</type>
+            <leftObject>
+                <key name="name" value="FarmerApplyBill" />
+            </leftObject>
+            <rightObject>
+                <key name="name" value="BEBank" />
+            </rightObject>
+            <joinItems>
+                <joinItem>
+                    <name>1864f6bb-0925-4e40-ba05-c40c4e91d261</name>
+                    <compareType>=</compareType>
+                    <leftField>
+                        <key name="name" value="45637716-733d-40f1-8c52-a96c76a940cc" />
+                    </leftField>
+                    <rightField>
+                        <key name="name" value="58fec57a-a37a-455e-af62-67b112c69b07" />
+                    </rightField>
+                    <join>
+                        <key name="name" value="4d41c6ef-806f-451b-8021-ea152fb3727c" />
+                    </join>
+                </joinItem>
+            </joinItems>
+            <query>
+                <key name="package" value="com.kingdee.eas.farm.stocking.basebizbill.app" />
+                <key name="name" value="FarmerApplyBillQuery" />
+            </query>
+        </join>
+    </joins>
+    <resource>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户资格申请" />
+            <lang locale="zh_HK" value="養戶資格申請" />
+            <lang locale="zh_TW" value="養戶資格申請" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].defaultSorters.querySorterItemextendedProperty.f7WindowTitle">
+            <lang locale="en_US" value="多分录基础单据模板" />
+            <lang locale="zh_CN" value="多分录基础单据模板" />
+            <lang locale="zh_TW" value="多分录基础单据模板" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="多分录基础单据查询" />
+            <lang locale="zh_HK" value="多分錄基礎單據查詢" />
+            <lang locale="zh_TW" value="多分錄基礎單據查詢" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].extendedProperty.F7WindowTitle">
+            <lang locale="en_US" value="com.kingdee.eas.farm.stocking.basebizbill.client.BasebizbillResource.FarmerApplyBillQueryF7WindowTitle" />
+            <lang locale="zh_CN" value="com.kingdee.eas.farm.stocking.basebizbill.client.BasebizbillResource.FarmerApplyBillQueryF7WindowTitle" />
+            <lang locale="zh_TW" value="com.kingdee.eas.farm.stocking.basebizbill.client.BasebizbillResource.FarmerApplyBillQueryF7WindowTitle" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].extendedProperty.f7WindowTitle">
+            <lang locale="en_US" value="养户资格申请" />
+            <lang locale="zh_CN" value="养户资格申请" />
+            <lang locale="zh_TW" value="养户资格申请" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].queryPK[QueryPK].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].queryPK[QueryPK].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[BEBank].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[FarmerApplyBill].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[auditor].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[company].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[creator].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[farmerGroup].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[farmer].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[handler].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[lastUpdateUser].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].subObjects.subEntity[ssessmentPerson].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[2de43493-9762-492f-9381-f7b941e16c22].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[45637716-733d-40f1-8c52-a96c76a940cc].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[4a13d903-9a63-4e72-8b37-5bcf38a0584b].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[51ec1c61-e410-4ce1-bb3f-0024cc5d669d].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[58fec57a-a37a-455e-af62-67b112c69b07].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[5b0c889a-ac9d-4c77-92e0-61a53dfa8753].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[946eeb19-13a0-4104-992d-0ad286f6f21d].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit0].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit2].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit3].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit4].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit5].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit8].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[NewUnit9].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[b1631914-bca7-4a6b-af9c-47d7ddbcde8c].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[e1825fab-e3bc-4869-9df9-0bfbccf5e1b3].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.propertyUnit[fd038beb-5e64-4d57-a56c-e174115ca5b1].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[BEBank.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="银行" />
+            <lang locale="zh_HK" value="銀行" />
+            <lang locale="zh_TW" value="銀行" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[BEBank.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[BEBank.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[BEBank.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[Fivouchered].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否生成凭证" />
+            <lang locale="zh_HK" value="是否生成憑證" />
+            <lang locale="zh_TW" value="是否生成憑證" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[Fivouchered].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[Fivouchered].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[WoM].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="口碑" />
+            <lang locale="zh_HK" value="口碑" />
+            <lang locale="zh_TW" value="口碑" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[WoM].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[WoM].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[actualName].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户实名" />
+            <lang locale="zh_HK" value="養戶實名" />
+            <lang locale="zh_TW" value="養戶實名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[actualName].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[actualName].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[address].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="地址" />
+            <lang locale="zh_HK" value="地址" />
+            <lang locale="zh_TW" value="地址" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[address].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[address].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[age].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="年龄" />
+            <lang locale="zh_HK" value="年齡" />
+            <lang locale="zh_TW" value="年齡" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[age].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[age].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[auditTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核时间" />
+            <lang locale="zh_HK" value="審核時間" />
+            <lang locale="zh_TW" value="審核時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[auditTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[auditTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[auditor.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[auditor.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankAccountNo].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="开户人姓名" />
+            <lang locale="zh_HK" value="開戶人姓名" />
+            <lang locale="zh_TW" value="開戶人姓名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankAccountNo].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankAccountNo].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankName].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="银行名称" />
+            <lang locale="zh_HK" value="銀行名稱" />
+            <lang locale="zh_TW" value="銀行名稱" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankName].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankName].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankNo].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="银行账号" />
+            <lang locale="zh_HK" value="銀行賬號" />
+            <lang locale="zh_TW" value="銀行賬號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankNo].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bankNo].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[billStatus].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据状态" />
+            <lang locale="zh_HK" value="單據狀態" />
+            <lang locale="zh_TW" value="單據狀態" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[billStatus].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[billStatus].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bizDate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="业务日期" />
+            <lang locale="zh_HK" value="業務日期" />
+            <lang locale="zh_TW" value="業務日期" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bizDate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[bizDate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[breedLvl].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖水平" />
+            <lang locale="zh_HK" value="養殖水平" />
+            <lang locale="zh_TW" value="養殖水平" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[breedLvl].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[breedLvl].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[checkResult].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="综合结论" />
+            <lang locale="zh_HK" value="綜合結論" />
+            <lang locale="zh_TW" value="綜合結論" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[checkResult].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[checkResult].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[company.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="财务组织" />
+            <lang locale="zh_HK" value="財務組織" />
+            <lang locale="zh_TW" value="財務組織" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[company.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[company.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[company.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[createTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="创建时间" />
+            <lang locale="zh_HK" value="創建時間" />
+            <lang locale="zh_TW" value="創建時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[createTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[createTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[creator.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[creator.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[description].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="参考信息" />
+            <lang locale="zh_HK" value="參考信息" />
+            <lang locale="zh_TW" value="參考信息" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[description].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[description].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[eduLvl].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="文化程度" />
+            <lang locale="zh_HK" value="文化程度" />
+            <lang locale="zh_TW" value="文化程度" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[eduLvl].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[eduLvl].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[experience].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖经验(年)" />
+            <lang locale="zh_HK" value="養殖經驗(年)" />
+            <lang locale="zh_TW" value="養殖經驗(年)" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[experience].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[experience].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[familyPeronCount].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="家庭人口数" />
+            <lang locale="zh_HK" value="家庭人口數" />
+            <lang locale="zh_TW" value="家庭人口數" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[familyPeronCount].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[familyPeronCount].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmer.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养殖户" />
+            <lang locale="zh_HK" value="養殖戶" />
+            <lang locale="zh_TW" value="養殖戶" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmer.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmer.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmer.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmerGroup.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="养户分类" />
+            <lang locale="zh_HK" value="養戶分類" />
+            <lang locale="zh_TW" value="養戶分類" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmerGroup.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmerGroup.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[farmerGroup.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[handler.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[handler.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[id].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[identity].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="身份证号码" />
+            <lang locale="zh_HK" value="身份證號碼" />
+            <lang locale="zh_TW" value="身份證號碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[identity].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[identity].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[isTemplate].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="是否模板" />
+            <lang locale="zh_HK" value="是否範本" />
+            <lang locale="zh_TW" value="是否範本" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[isTemplate].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[isTemplate].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[lastUpdateTime].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="最后修改时间" />
+            <lang locale="zh_HK" value="最後修改時間" />
+            <lang locale="zh_TW" value="最後修改時間" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[lastUpdateTime].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[lastUpdateUser.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="别名" />
+            <lang locale="zh_HK" value="別名" />
+            <lang locale="zh_TW" value="別名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[lastUpdateUser.number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="用户名" />
+            <lang locale="zh_HK" value="用戶名" />
+            <lang locale="zh_TW" value="用戶名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[mobileTel].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="手机号码" />
+            <lang locale="zh_HK" value="手機號碼" />
+            <lang locale="zh_TW" value="手機號碼" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[mobileTel].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[mobileTel].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="姓名" />
+            <lang locale="zh_HK" value="姓名" />
+            <lang locale="zh_TW" value="姓名" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[nation].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="民族" />
+            <lang locale="zh_HK" value="民族" />
+            <lang locale="zh_TW" value="民族" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[nation].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[nation].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[number].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据编号" />
+            <lang locale="zh_HK" value="單據編號" />
+            <lang locale="zh_TW" value="單據編號" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[number].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[number].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[score].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="综合评分" />
+            <lang locale="zh_HK" value="綜合評分" />
+            <lang locale="zh_TW" value="綜合評分" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[score].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[score].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[sex].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="性别" />
+            <lang locale="zh_HK" value="性別" />
+            <lang locale="zh_TW" value="性別" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[sex].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[sex].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[ssessmentPerson.name].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="评分人" />
+            <lang locale="zh_HK" value="評分人" />
+            <lang locale="zh_TW" value="評分人" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[ssessmentPerson.name].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[ssessmentPerson.name].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[ssessmentPerson.name].extendedProperty.isUsingF7">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[tel].displayName">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="固定电话" />
+            <lang locale="zh_HK" value="固定電話" />
+            <lang locale="zh_TW" value="固定電話" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[tel].extendedProperty.isCommonQueryFilter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="joinQuery[com.kingdee.eas.farm.stocking.basebizbill.app.FarmerApplyBillQuery].units.queryField[tel].extendedProperty.isCommonQuerySorter">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+    </resource>
+</joinQuery>
+

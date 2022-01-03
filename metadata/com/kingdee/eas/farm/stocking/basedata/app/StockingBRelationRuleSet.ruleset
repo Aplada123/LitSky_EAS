@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.basedata.app</package>
+    <name>StockingBRelationRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>196b66a1-d0c8-4d97-a767-3065e6b4f9a4</id>
+            <parentID />
+            <source>BatchListEntry.stockingBatchName=BatchListEntry.stockingBatchNum.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>0a1c7db0-d70e-457f-98d5-98138c50c098</id>
+            <parentID>196b66a1-d0c8-4d97-a767-3065e6b4f9a4</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>398ffe19-3e7c-4662-a58d-55aa6282eb01</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>398ffe19-3e7c-4662-a58d-55aa6282eb01</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtBatchListEntry.getCell(rowIndex,"stockingBatchName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c78534a4-45af-468f-a9ea-6394cb3087d7</id>
+            <parentID>196b66a1-d0c8-4d97-a767-3065e6b4f9a4</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>3e5f8bf1-9d43-420f-b5e4-59f7e06d53cd</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>d8f5e288-14b6-47bc-8480-4f72e9fb6317</id>
+                        <expressionID>0fb21ea4-df7c-481b-9229-d3731cf4072c</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>ebfa81bc-f2d1-466b-a931-ac8af2dadc86</id>
+                        <expressionID>beee70f5-76a0-47ec-b44c-1fd4a3026ae2</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3e5f8bf1-9d43-420f-b5e4-59f7e06d53cd</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0fb21ea4-df7c-481b-9229-d3731cf4072c</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>ad3cc705-feda-45e4-a849-5a9351ef7f6e</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ad3cc705-feda-45e4-a849-5a9351ef7f6e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtBatchListEntry.getCell(rowIndex,"stockingBatchNum")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>beee70f5-76a0-47ec-b44c-1fd4a3026ae2</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>5f4b5f97-15c2-43b2-8691-1f4f94618fda</id>
+            <parentID />
+            <source>BatchListEntry.bName=BatchListEntry.bNum.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>07ffbc75-8858-488c-ba82-e7721f1c9407</id>
+            <parentID>5f4b5f97-15c2-43b2-8691-1f4f94618fda</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>a94206b6-76ea-429b-9a8b-a460cc9e7af4</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a94206b6-76ea-429b-9a8b-a460cc9e7af4</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtBatchListEntry.getCell(rowIndex,"bName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5ac4b5ec-2942-499a-8371-dfe8103b34a1</id>
+            <parentID>5f4b5f97-15c2-43b2-8691-1f4f94618fda</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>24e9baa6-4bd3-47a5-b608-aeea2c42357e</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>a334d80e-f01e-4da1-b47e-a1b8ae166453</id>
+                        <expressionID>59635222-6424-4fbe-8ab5-fac4ffe3712a</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>49186e8b-7b97-4abb-8c50-46d246f9c553</id>
+                        <expressionID>b26343d6-3c80-4584-98c4-c95a676321a1</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>24e9baa6-4bd3-47a5-b608-aeea2c42357e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>59635222-6424-4fbe-8ab5-fac4ffe3712a</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>4c34b6f1-22f6-492d-9c98-fba08352c62b</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>4c34b6f1-22f6-492d-9c98-fba08352c62b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtBatchListEntry.getCell(rowIndex,"bNum")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b26343d6-3c80-4584-98c4-c95a676321a1</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>ed751d90-f62a-4d7d-98d1-70f85ac5012b</id>
+            <name>BatchListEntry_stockingBatchName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].actions.action[BatchListEntry_stockingBatchName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].actions.action[BatchListEntry_stockingBatchName_ActionInfo].description</description>
+            <expressionID>196b66a1-d0c8-4d97-a767-3065e6b4f9a4</expressionID>
+        </action>
+        <action>
+            <id>0485631f-4ec5-47a6-bf65-45c0835a2216</id>
+            <name>BatchListEntry_bName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].actions.action[BatchListEntry_bName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].actions.action[BatchListEntry_bName_ActionInfo].description</description>
+            <expressionID>5f4b5f97-15c2-43b2-8691-1f4f94618fda</expressionID>
+        </action>
+    </actions>
+    <rules>
+        <conditionRule>
+            <name>BatchListEntry_bName_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].rules.conditionRule[BatchListEntry_bName_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].rules.conditionRule[BatchListEntry_bName_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="0485631f-4ec5-47a6-bf65-45c0835a2216" />
+                </action>
+            </actions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].actions.action[BatchListEntry_bName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].actions.action[BatchListEntry_bName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].actions.action[BatchListEntry_stockingBatchName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].actions.action[BatchListEntry_stockingBatchName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].rules.conditionRule[BatchListEntry_bName_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].rules.conditionRule[BatchListEntry_bName_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].rules.conditionRule[BatchListEntry_bName_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="bNum" />
+            <lang locale="zh_CN" value="bNum" />
+            <lang locale="zh_TW" value="bNum" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.basedata.app.StockingBRelationRuleSet].rules.conditionRule[BatchListEntry_bName_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

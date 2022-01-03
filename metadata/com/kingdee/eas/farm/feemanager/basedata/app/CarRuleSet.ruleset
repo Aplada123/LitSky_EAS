@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.feemanager.basedata.app</package>
+    <name>CarRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>52568384-7dce-4cee-9e4c-f31530a422f3</id>
+            <parentID />
+            <source>driverName = driver.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>b0c7cdbb-fa7f-4ce8-8e90-417c53ede8c8</id>
+            <parentID>52568384-7dce-4cee-9e4c-f31530a422f3</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>e740c1b6-3498-4bae-af77-f90d3bf92a79</ownerID>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e740c1b6-3498-4bae-af77-f90d3bf92a79</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>txtdriverName</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>36c34f89-c862-4b21-97a7-60884f7d9fa4</id>
+            <parentID>52568384-7dce-4cee-9e4c-f31530a422f3</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>1d7c7677-d796-4931-8959-b956e57e1e0b</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>0dc61212-aba6-460e-8195-170905e684b7</id>
+                        <expressionID>80eefcde-2e78-48bf-b0fa-1ff8ab216124</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>e498e0b3-c7f0-434a-a8f9-4ea19731c6ee</id>
+                        <expressionID>1e4dbf15-0dc1-4ac2-a7e1-24106bcb1fe7</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1d7c7677-d796-4931-8959-b956e57e1e0b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>80eefcde-2e78-48bf-b0fa-1ff8ab216124</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>c7e99c46-261b-4ca7-813c-1c7bc7757b40</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c7e99c46-261b-4ca7-813c-1c7bc7757b40</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtdriver</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1e4dbf15-0dc1-4ac2-a7e1-24106bcb1fe7</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>3fe23d09-965a-493e-9fde-a4fe3e4db52b</id>
+            <parentID />
+            <source>driverName = driver.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>6615626d-92e9-47e2-9646-8ae204162816</id>
+            <parentID>3fe23d09-965a-493e-9fde-a4fe3e4db52b</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>0e1657c9-11a8-42e3-88a9-69b6eb2ad1d1</ownerID>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0e1657c9-11a8-42e3-88a9-69b6eb2ad1d1</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>txtdriverName</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>6023d76d-5ceb-4192-a46b-cb785f424b49</id>
+            <parentID>3fe23d09-965a-493e-9fde-a4fe3e4db52b</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>13986bf1-14f7-4495-8561-b92b8d89b0ec</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>3b4aabda-8d93-4a49-9bcc-4a7712bc7d19</id>
+                        <expressionID>fd4a1997-055d-45fe-a72c-539021875a9b</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>b26a80dd-5bcf-418d-a9f5-5ab12467ef32</id>
+                        <expressionID>68203904-ae76-45cf-bdcf-6bbc6f84a71b</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>13986bf1-14f7-4495-8561-b92b8d89b0ec</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fd4a1997-055d-45fe-a72c-539021875a9b</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>b8c381d6-44dd-4a08-a652-bb643960dc5d</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b8c381d6-44dd-4a08-a652-bb643960dc5d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtdriver</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>68203904-ae76-45cf-bdcf-6bbc6f84a71b</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>27c98633-98e2-43c9-bbd5-529df6310739</id>
+            <parentID />
+            <source>driverphone=driverID.driverphone</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>11cb09ad-0b21-4b5b-b817-724b9eda4602</id>
+            <parentID>27c98633-98e2-43c9-bbd5-529df6310739</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>c49cb6cd-0f94-40ec-9aad-8a28abc0eb1c</ownerID>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c49cb6cd-0f94-40ec-9aad-8a28abc0eb1c</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>txtdriverphone</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3fab6417-da0e-49dd-a55d-92af30a4f662</id>
+            <parentID>27c98633-98e2-43c9-bbd5-529df6310739</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>4036fd67-3607-4a4a-a3eb-a40b1ef5162b</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>560560bc-9f1b-4b33-9a45-b6442b9a7b5f</id>
+                        <expressionID>28696a91-0e3c-4355-ae11-569ba2f8f993</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>17fdcfdd-8df0-4efa-9ee6-4eada6f6633f</id>
+                        <expressionID>b2e3f737-659b-4809-af68-a1bca4f794ba</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>4036fd67-3607-4a4a-a3eb-a40b1ef5162b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>28696a91-0e3c-4355-ae11-569ba2f8f993</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>0db582e4-134a-4022-9af9-f91ec1a1f5f9</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0db582e4-134a-4022-9af9-f91ec1a1f5f9</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtdriverID</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b2e3f737-659b-4809-af68-a1bca4f794ba</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>driverphone</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>2dec392c-699d-4366-b640-d2f5de92fb6e</id>
+            <parentID />
+            <source>driverphone=driverID.driverphone</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>03afda0a-52b1-4998-a698-6265d983dfea</id>
+            <parentID>2dec392c-699d-4366-b640-d2f5de92fb6e</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>366d8eb4-10bd-4571-899f-5adb1d2575d0</ownerID>
+                <name>text</name>
+                <type>java.lang.String</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>366d8eb4-10bd-4571-899f-5adb1d2575d0</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>txtdriverphone</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>27977730-cb51-494e-9423-c2802611c881</id>
+            <parentID>2dec392c-699d-4366-b640-d2f5de92fb6e</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>1fe9fdd3-a634-4fb4-b3eb-710f9c21ff56</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>66f7e65a-722e-449a-af95-895b7d683c2f</id>
+                        <expressionID>bd5d8a45-bc92-4813-885f-d03ede943adc</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>91a8ab62-e21f-45a3-a456-4e38a3591363</id>
+                        <expressionID>c5f01008-3b1d-4f1b-a420-2dbc4d20db52</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1fe9fdd3-a634-4fb4-b3eb-710f9c21ff56</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bd5d8a45-bc92-4813-885f-d03ede943adc</id>
+            <parentID />
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Object</valueType>
+            <value />
+            <method>
+                <ownerID>957b8707-61c4-4c1d-9917-4227f0191b11</ownerID>
+                <name>getData</name>
+                <type>Object</type>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>957b8707-61c4-4c1d-9917-4227f0191b11</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)prmtdriverID</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c5f01008-3b1d-4f1b-a420-2dbc4d20db52</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>driverphone</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>3e365f7d-bb4f-4ec2-a333-33e6c610905d</id>
+            <parentID />
+            <source>Entry.driverAge=Entry.driver.driverage</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>a15ac743-ea3a-486b-bdb5-0a782bab3f02</id>
+            <parentID>3e365f7d-bb4f-4ec2-a333-33e6c610905d</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>4ef0fe4f-bb01-46be-80d6-a64049951d1a</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>4ef0fe4f-bb01-46be-80d6-a64049951d1a</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntry.getCell(rowIndex,"driverAge")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ba81b643-4755-4b04-a788-34787abfa65f</id>
+            <parentID>3e365f7d-bb4f-4ec2-a333-33e6c610905d</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>57c1532c-d47e-46a3-a2d1-a530d8c1550f</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>7c67533c-0b25-4f1b-aa38-87b16d3ab5e7</id>
+                        <expressionID>216ebb1e-97c0-4f2a-909c-025cf11fd164</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>270f7b88-a195-48ab-b5ae-7828c0dda5a8</id>
+                        <expressionID>5ca920d8-0d2a-4256-9e0d-fa6e390b7173</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>57c1532c-d47e-46a3-a2d1-a530d8c1550f</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>216ebb1e-97c0-4f2a-909c-025cf11fd164</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>d3bb7107-c1b6-4d77-8bfc-4b1809899f31</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d3bb7107-c1b6-4d77-8bfc-4b1809899f31</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntry.getCell(rowIndex,"driver")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5ca920d8-0d2a-4256-9e0d-fa6e390b7173</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>driverage</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>8ec3c47a-4cfe-477a-b317-737615972d30</id>
+            <parentID />
+            <source>Entry.driverID=Entry.driver.drivercardid</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>218dff63-8b31-4556-a180-980be24d7dfe</id>
+            <parentID>8ec3c47a-4cfe-477a-b317-737615972d30</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>ca88f9dd-0c1c-48ca-bb44-29396230de4e</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ca88f9dd-0c1c-48ca-bb44-29396230de4e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntry.getCell(rowIndex,"driverID")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f6be2078-d9ff-4b44-a5fb-9fc9bcaab8ce</id>
+            <parentID>8ec3c47a-4cfe-477a-b317-737615972d30</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>20d817af-7522-47f7-bfe9-023135ef5671</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>4fe5cf19-764a-4daf-8b90-5c7e1ad05340</id>
+                        <expressionID>770be806-8b30-4695-b458-e1c9efff1386</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>c8a50a26-f8bd-4734-80b6-22776f0baa01</id>
+                        <expressionID>74c1ebcc-d9b2-405c-8045-673d2c8a9c5f</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>20d817af-7522-47f7-bfe9-023135ef5671</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>770be806-8b30-4695-b458-e1c9efff1386</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>c4be8897-d613-4126-a6f9-1bb42f334008</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c4be8897-d613-4126-a6f9-1bb42f334008</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntry.getCell(rowIndex,"driver")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>74c1ebcc-d9b2-405c-8045-673d2c8a9c5f</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>drivercardid</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>298c4875-5e2c-49d1-b372-4757158a5492</id>
+            <parentID />
+            <source>Entry.driverNative=Entry.driver.driverplace</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>dc91add5-82b2-49f8-a17d-be63adbb661c</id>
+            <parentID>298c4875-5e2c-49d1-b372-4757158a5492</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>c77709b5-f9e1-4c90-ab83-dd348eff05ac</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c77709b5-f9e1-4c90-ab83-dd348eff05ac</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntry.getCell(rowIndex,"driverNative")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>738d2139-cd5d-46b7-9164-f7e8a8da857b</id>
+            <parentID>298c4875-5e2c-49d1-b372-4757158a5492</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>f00518d6-257e-4001-9451-12474ce256dd</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>fda14035-243b-47b1-aabf-284500d7b441</id>
+                        <expressionID>73c428b9-33af-4172-ac52-86f5be5d706f</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>12834fff-7d78-437b-8941-07eea9c532f7</id>
+                        <expressionID>7d8a05cd-c60f-4df2-811c-466bd35e1214</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f00518d6-257e-4001-9451-12474ce256dd</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>73c428b9-33af-4172-ac52-86f5be5d706f</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>3a8df4be-f8b7-4755-b947-36089a8d4cde</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3a8df4be-f8b7-4755-b947-36089a8d4cde</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntry.getCell(rowIndex,"driver")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>7d8a05cd-c60f-4df2-811c-466bd35e1214</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>driverplace</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>65a5fcd1-828f-423d-82bc-0fafc8e0576a</id>
+            <name>CLU0E041</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[CLU0E041].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[CLU0E041].description</description>
+            <expressionID>52568384-7dce-4cee-9e4c-f31530a422f3</expressionID>
+        </action>
+        <action>
+            <id>277b67b7-4a4d-428b-bbf1-651397b3893f</id>
+            <name>CLU0FNZW</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[CLU0FNZW].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[CLU0FNZW].description</description>
+            <expressionID>3fe23d09-965a-493e-9fde-a4fe3e4db52b</expressionID>
+        </action>
+        <action>
+            <id>94c51ab0-a4a0-483e-a953-ea8289cb0412</id>
+            <name>Car_driverphone_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Car_driverphone_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Car_driverphone_ActionInfo].description</description>
+            <expressionID>27c98633-98e2-43c9-bbd5-529df6310739</expressionID>
+        </action>
+        <action>
+            <id>23e360c1-02fe-4154-8b1b-e2d0fed4014b</id>
+            <name>Car_driverphone_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Car_driverphone_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Car_driverphone_ActionInfo].description</description>
+            <expressionID>2dec392c-699d-4366-b640-d2f5de92fb6e</expressionID>
+        </action>
+        <action>
+            <id>95ace1d8-dd9b-4b1c-9444-5fd931aac0c0</id>
+            <name>Entry_driverAge_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverAge_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverAge_ActionInfo].description</description>
+            <expressionID>3e365f7d-bb4f-4ec2-a333-33e6c610905d</expressionID>
+        </action>
+        <action>
+            <id>e261de51-02ee-4026-8fcf-78fe6c2a721e</id>
+            <name>Entry_driverID_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverID_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverID_ActionInfo].description</description>
+            <expressionID>8ec3c47a-4cfe-477a-b317-737615972d30</expressionID>
+        </action>
+        <action>
+            <id>d6e53fe1-5303-4c50-89f1-b7fe1bd5aace</id>
+            <name>Entry_driverNative_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverNative_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverNative_ActionInfo].description</description>
+            <expressionID>298c4875-5e2c-49d1-b372-4757158a5492</expressionID>
+        </action>
+    </actions>
+    <rules>
+        <conditionRule>
+            <name>Car_driverphone_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Car_driverphone_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Car_driverphone_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="23e360c1-02fe-4154-8b1b-e2d0fed4014b" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>Entry_driverAge_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverAge_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverAge_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="95ace1d8-dd9b-4b1c-9444-5fd931aac0c0" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>Entry_driverID_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverID_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverID_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="e261de51-02ee-4026-8fcf-78fe6c2a721e" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>Entry_driverNative_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverNative_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverNative_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="d6e53fe1-5303-4c50-89f1-b7fe1bd5aace" />
+                </action>
+            </actions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[CLU0E041].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="带出司机姓名" />
+            <lang locale="zh_HK" value="帶出司機姓名" />
+            <lang locale="zh_TW" value="帶出司機姓名" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[CLU0E041].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[CLU0FNZW].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[CLU0FNZW].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Car_driverphone_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_driverphone" />
+            <lang locale="zh_HK" value="攜帶字段屬性_driverphone" />
+            <lang locale="zh_TW" value="攜帶字段屬性_driverphone" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Car_driverphone_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverAge_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_driverage" />
+            <lang locale="zh_HK" value="攜帶字段屬性_driverage" />
+            <lang locale="zh_TW" value="攜帶字段屬性_driverage" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverAge_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverID_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_drivercardid" />
+            <lang locale="zh_HK" value="攜帶字段屬性_drivercardid" />
+            <lang locale="zh_TW" value="攜帶字段屬性_drivercardid" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverID_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverNative_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_driverplace" />
+            <lang locale="zh_HK" value="攜帶字段屬性_driverplace" />
+            <lang locale="zh_TW" value="攜帶字段屬性_driverplace" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].actions.action[Entry_driverNative_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Car_driverphone_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_driverphone" />
+            <lang locale="zh_HK" value="攜帶字段屬性_driverphone" />
+            <lang locale="zh_TW" value="攜帶字段屬性_driverphone" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Car_driverphone_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Car_driverphone_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="driverID" />
+            <lang locale="zh_CN" value="driverID" />
+            <lang locale="zh_TW" value="driverID" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Car_driverphone_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverAge_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_driverage" />
+            <lang locale="zh_HK" value="攜帶字段屬性_driverage" />
+            <lang locale="zh_TW" value="攜帶字段屬性_driverage" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverAge_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverAge_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="driver" />
+            <lang locale="zh_CN" value="driver" />
+            <lang locale="zh_TW" value="driver" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverAge_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverID_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_drivercardid" />
+            <lang locale="zh_HK" value="攜帶字段屬性_drivercardid" />
+            <lang locale="zh_TW" value="攜帶字段屬性_drivercardid" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverID_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverID_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="driver" />
+            <lang locale="zh_CN" value="driver" />
+            <lang locale="zh_TW" value="driver" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverID_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverNative_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_driverplace" />
+            <lang locale="zh_HK" value="攜帶字段屬性_driverplace" />
+            <lang locale="zh_TW" value="攜帶字段屬性_driverplace" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverNative_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverNative_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="driver" />
+            <lang locale="zh_CN" value="driver" />
+            <lang locale="zh_TW" value="driver" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.feemanager.basedata.app.CarRuleSet].rules.conditionRule[Entry_driverNative_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

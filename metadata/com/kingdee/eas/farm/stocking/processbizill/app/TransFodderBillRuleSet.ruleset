@@ -1,0 +1,1444 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>TransFodderBillRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>9db7f166-6714-41c3-91cb-006245d15005</id>
+            <parentID />
+            <source>BreedEntry.breedDataName=BreedEntry.breedDate.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>67d89e2d-0542-4eec-a10e-56ac02318499</id>
+            <parentID>9db7f166-6714-41c3-91cb-006245d15005</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>9a6afe63-d026-4238-bdce-550d01252027</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9a6afe63-d026-4238-bdce-550d01252027</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtBreedEntry.getCell(rowIndex,"breedDataName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3807c5b3-9c48-445b-88db-bd35a9870981</id>
+            <parentID>9db7f166-6714-41c3-91cb-006245d15005</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>bd33f633-6a66-4b1e-b05a-b0ebbbaff92c</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>16d50363-d71e-4126-87d8-5b2b543a8438</id>
+                        <expressionID>bcd0edef-f9cd-47ae-84be-b78975d6b6fb</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>4202e88e-7aaf-4443-9a79-bd8e14be81b6</id>
+                        <expressionID>2576f475-e90d-491a-937a-ee73f8d31d42</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bd33f633-6a66-4b1e-b05a-b0ebbbaff92c</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bcd0edef-f9cd-47ae-84be-b78975d6b6fb</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>fa701ebe-c964-40c7-9e70-0695aede1e09</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fa701ebe-c964-40c7-9e70-0695aede1e09</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtBreedEntry.getCell(rowIndex,"breedDate")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>2576f475-e90d-491a-937a-ee73f8d31d42</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>f0d69a48-f3f0-4abc-92ee-0f53425ecab4</id>
+            <parentID />
+            <source>entrys.materialName=entrys.material.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>0e05e7ef-4c27-426d-9467-3ea986ac0318</id>
+            <parentID>f0d69a48-f3f0-4abc-92ee-0f53425ecab4</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>b0cee735-fa59-4789-b531-eb4fd5d76e6e</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b0cee735-fa59-4789-b531-eb4fd5d76e6e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"materialName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>abff4fc9-e193-4e8c-b6ee-fd55c976fddf</id>
+            <parentID>f0d69a48-f3f0-4abc-92ee-0f53425ecab4</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>3c96bd8c-ac18-4ff5-9ab3-3f2380971d14</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>7907876c-05cf-44b9-b970-eec224671e9a</id>
+                        <expressionID>bddae08f-96df-4fc1-94c8-552df6aa464c</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>222c1cb4-6607-4470-816a-51599a6aab2c</id>
+                        <expressionID>bc93c8bf-41eb-4c20-86f7-717adf041647</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3c96bd8c-ac18-4ff5-9ab3-3f2380971d14</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bddae08f-96df-4fc1-94c8-552df6aa464c</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>731e2bda-3166-4943-bcc9-207d55e992e1</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>731e2bda-3166-4943-bcc9-207d55e992e1</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bc93c8bf-41eb-4c20-86f7-717adf041647</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>9813fc6b-12e4-4ed2-a2fa-21849a6f5fc4</id>
+            <parentID />
+            <source>entrys.model=entrys.material.model</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>ea27c008-41aa-4e48-83ec-0a699d4d9259</id>
+            <parentID>9813fc6b-12e4-4ed2-a2fa-21849a6f5fc4</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>5cd995ed-70f6-4163-96a6-e3d0f1d1ba9d</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>5cd995ed-70f6-4163-96a6-e3d0f1d1ba9d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"model")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c1bed17f-a0e3-4994-a3ff-2086385734e0</id>
+            <parentID>9813fc6b-12e4-4ed2-a2fa-21849a6f5fc4</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>3f3f7895-73de-4352-9eea-8e27ca0f469f</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>0d3ee0b5-da61-4b65-ae97-d456cf456dd6</id>
+                        <expressionID>8cea67f4-cdaa-4405-8fbe-519e307ba20b</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>0f8981d8-732d-4fed-87e5-3b4375a4b624</id>
+                        <expressionID>77a0fd09-9428-4b00-9093-834921b973f8</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3f3f7895-73de-4352-9eea-8e27ca0f469f</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8cea67f4-cdaa-4405-8fbe-519e307ba20b</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>0ab4dc60-39a2-4564-bf78-4e1208151a71</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0ab4dc60-39a2-4564-bf78-4e1208151a71</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>77a0fd09-9428-4b00-9093-834921b973f8</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>model</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>3d88a06a-5bb2-4f5f-8771-210a70453fbf</id>
+            <parentID />
+            <source>entrys.breedData=entrys.stockingBatch.breedData.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>13853a39-808b-43cb-abc2-2aa80bb11693</id>
+            <parentID>3d88a06a-5bb2-4f5f-8771-210a70453fbf</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>a956947d-2671-4ba6-a1c3-058a6b86cf45</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a956947d-2671-4ba6-a1c3-058a6b86cf45</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"breedData")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>2040a49e-e0c6-46bd-a16d-773e5e6b058a</id>
+            <parentID>3d88a06a-5bb2-4f5f-8771-210a70453fbf</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>74174912-3c7b-494e-8dd8-49b43d161d0b</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>90ba88cb-cd8c-439a-8ece-e6b43d87c399</id>
+                        <expressionID>d0a3fb79-ae4a-446a-9b32-74225ee85485</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>b7aecaf9-d184-47b4-85da-ef08de5aa2f5</id>
+                        <expressionID>ca54a912-f365-4c23-b2b8-36e9d63f9013</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>74174912-3c7b-494e-8dd8-49b43d161d0b</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d0a3fb79-ae4a-446a-9b32-74225ee85485</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>c106349e-b072-4ac4-955f-711ecb07e073</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c106349e-b072-4ac4-955f-711ecb07e073</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"stockingBatch")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ca54a912-f365-4c23-b2b8-36e9d63f9013</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>breedData.name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>c2cae76c-7f59-4046-aa1a-a674d09b7206</id>
+            <parentID />
+            <source>entrys.materialName=entrys.material.name</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>5bc53d3d-9773-468d-8bc7-5574230e93a6</id>
+            <parentID>c2cae76c-7f59-4046-aa1a-a674d09b7206</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>0f580a9a-3ca7-4bd8-8316-c6d3523f4353</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0f580a9a-3ca7-4bd8-8316-c6d3523f4353</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"materialName")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b8235f30-30c9-4c2c-bb6f-e511acde44f9</id>
+            <parentID>c2cae76c-7f59-4046-aa1a-a674d09b7206</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>9b3d0db7-7d68-4d66-83fd-c3e5f042cef5</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>c5e94277-9a17-4116-a804-3a248c9b1655</id>
+                        <expressionID>eff12932-01af-4ca2-88f5-0d7e7701823b</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>7757588a-2289-470c-9e8a-afe4b9615a4c</id>
+                        <expressionID>11c69816-d90a-4b17-92c2-108be0708c9c</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9b3d0db7-7d68-4d66-83fd-c3e5f042cef5</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>eff12932-01af-4ca2-88f5-0d7e7701823b</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>0d4a7825-22a6-484e-ba70-6d8b39fb9938</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>0d4a7825-22a6-484e-ba70-6d8b39fb9938</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>11c69816-d90a-4b17-92c2-108be0708c9c</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>name</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>7a17c3a4-c5f6-4ab7-b91c-7f48377e78a1</id>
+            <parentID />
+            <source>entrys.model=entrys.material.model</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>40cbeba7-6352-40d3-b84b-2b32ba5a84d4</id>
+            <parentID>7a17c3a4-c5f6-4ab7-b91c-7f48377e78a1</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>String</valueType>
+            <value />
+            <property>
+                <ownerID>1f0cc6aa-02f8-416e-b704-81ffed887f09</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>1f0cc6aa-02f8-416e-b704-81ffed887f09</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"model")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c1ec9f9c-919e-46db-8bf7-ac0a503c8b01</id>
+            <parentID>7a17c3a4-c5f6-4ab7-b91c-7f48377e78a1</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>String</valueType>
+            <value />
+            <method>
+                <ownerID>362b4e81-7ebb-4080-97d8-2d9eef5a298d</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>fc7e3f05-20bb-48f6-88ad-402614851265</id>
+                        <expressionID>b1d13861-ade2-46ac-9058-0a009910604c</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>1f2bdf37-0c16-4993-9b9c-0a487582b4cc</id>
+                        <expressionID>b6ab759f-a1f7-45f5-8ab6-6b8c8dcdbea6</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>362b4e81-7ebb-4080-97d8-2d9eef5a298d</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b1d13861-ade2-46ac-9058-0a009910604c</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>32683985-9315-40e7-882d-ac3968d01351</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>32683985-9315-40e7-882d-ac3968d01351</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b6ab759f-a1f7-45f5-8ab6-6b8c8dcdbea6</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>model</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>ac56221d-2a66-4e38-8d5c-1c063b97ffc4</id>
+            <parentID />
+            <source>entrys.unit = entrys.material.baseUnit</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>c6a5ae62-db3b-490f-abaa-9f461a88e7d6</id>
+            <parentID>ac56221d-2a66-4e38-8d5c-1c063b97ffc4</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType />
+            <value />
+            <property>
+                <ownerID>a1387909-755c-4ff0-a331-e87fc87aa1b5</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a1387909-755c-4ff0-a331-e87fc87aa1b5</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"unit")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>c598d2d0-14f3-4fe0-8ec7-cebff318a9c6</id>
+            <parentID>ac56221d-2a66-4e38-8d5c-1c063b97ffc4</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType />
+            <value />
+            <method>
+                <ownerID>33f1ed41-8787-4479-9251-023d76bdece6</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>e8897073-4b7e-4cab-a786-103ae8c021c3</id>
+                        <expressionID>111308be-a886-4fca-8530-b372acc22f44</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>c4715ba7-2c72-4b41-8e23-88e0e7cc0141</id>
+                        <expressionID>9a62ddf7-2641-4531-8eea-29b44471e9ca</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>33f1ed41-8787-4479-9251-023d76bdece6</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>111308be-a886-4fca-8530-b372acc22f44</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>44948f11-292e-4c41-8c1b-02d62bd24adb</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>44948f11-292e-4c41-8c1b-02d62bd24adb</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"material")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>9a62ddf7-2641-4531-8eea-29b44471e9ca</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>baseUnit</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>ba2e292c-1af0-4965-9497-95fd141648e2</id>
+            <parentID />
+            <source>[entrys.amount] = [entrys.transQty] * [entrys.receivePrice]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>cf65a116-c7b7-488b-998c-e3ec69bed532</id>
+            <parentID>ba2e292c-1af0-4965-9497-95fd141648e2</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>272b2606-d344-4b11-b9ed-3a8b38a6b3f8</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>272b2606-d344-4b11-b9ed-3a8b38a6b3f8</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"amount")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>22d05105-d1d9-4a3c-b4d7-2b353529dd3b</id>
+            <parentID>ba2e292c-1af0-4965-9497-95fd141648e2</parentID>
+            <source />
+            <operator>*</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>7b22f562-3101-4cf7-a5df-af634bc0fdfa</id>
+            <parentID>22d05105-d1d9-4a3c-b4d7-2b353529dd3b</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>3b822e8d-f38a-43c5-95fd-c87527c49524</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>3b822e8d-f38a-43c5-95fd-c87527c49524</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"transQty")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>52df08e7-6cff-4f04-88a6-d557c7d6360d</id>
+            <parentID>22d05105-d1d9-4a3c-b4d7-2b353529dd3b</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>912784a5-a717-4b6a-b59f-17e0e3e6c7f3</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>912784a5-a717-4b6a-b59f-17e0e3e6c7f3</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"receivePrice")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>a16fccd2-1a1e-4df8-9482-bdcfba62094e</id>
+            <parentID />
+            <source>[entrys.confirmQty] = [entrys.transQty]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>426b3a08-7841-42d3-9c05-701dbf950e82</id>
+            <parentID>a16fccd2-1a1e-4df8-9482-bdcfba62094e</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>eeaf2df8-5a99-4a19-ae24-5e533ba4f29c</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>eeaf2df8-5a99-4a19-ae24-5e533ba4f29c</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"confirmQty")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ff45967f-6cf6-44a1-b657-cf6052d37e7f</id>
+            <parentID>a16fccd2-1a1e-4df8-9482-bdcfba62094e</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>dbf5bb2f-bbf7-4b6d-9bfb-3bb91fc0b0e3</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>dbf5bb2f-bbf7-4b6d-9bfb-3bb91fc0b0e3</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"transQty")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>81885ab1-64cb-47aa-8104-4880480647ba</id>
+            <parentID />
+            <source>[entrys.orderAmount] = [entrys.orderReceivePrice] * [entrys.confirmQty]</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>c9fec0a5-c013-4fd3-b452-533f8c1c02e7</id>
+            <parentID>81885ab1-64cb-47aa-8104-4880480647ba</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>de376cc5-23c3-4a37-b3e9-fb7b173108ac</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>de376cc5-23c3-4a37-b3e9-fb7b173108ac</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"orderAmount")</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>4a6a1dff-279d-4818-8a34-a47982536af4</id>
+            <parentID>81885ab1-64cb-47aa-8104-4880480647ba</parentID>
+            <source />
+            <operator>*</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>8b9bf4db-d276-47c2-a2be-3da6d8a70e5b</id>
+            <parentID>4a6a1dff-279d-4818-8a34-a47982536af4</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>a71a62af-fa46-487a-a73e-296f7066c68e</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a71a62af-fa46-487a-a73e-296f7066c68e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"orderReceivePrice")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>05e970d2-76f4-4014-aaf8-591536d37c82</id>
+            <parentID>4a6a1dff-279d-4818-8a34-a47982536af4</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>76ae2342-9248-492d-92c7-a9132c969367</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>76ae2342-9248-492d-92c7-a9132c969367</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"confirmQty")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>2225ceed-e818-4df3-afb0-b0496efcc525</id>
+            <parentID />
+            <source />
+            <type />
+            <valueType />
+            <value />
+        </simpleExpression>
+        <simpleExpression>
+            <id>e2b37108-4038-4681-a05d-6c0416a2254c</id>
+            <parentID />
+            <source />
+            <type />
+            <valueType />
+            <value />
+        </simpleExpression>
+        <simpleExpression>
+            <id>8fff8a6e-9345-47a5-9fe1-4e0810dc53e4</id>
+            <parentID />
+            <source />
+            <type />
+            <valueType />
+            <value />
+        </simpleExpression>
+        <simpleExpression>
+            <id>8478d896-30ed-4bb4-849c-a6a7b658df76</id>
+            <parentID />
+            <source />
+            <type />
+            <valueType />
+            <value />
+        </simpleExpression>
+        <groupExpression>
+            <id>72120dfe-4960-47cc-8b39-a3de88f2f600</id>
+            <parentID />
+            <source>[entrys.confirmQty] &lt;=0</source>
+            <operator>&lt;=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>5cea0d65-e647-44e5-8e4e-cce30ea599be</id>
+            <parentID>72120dfe-4960-47cc-8b39-a3de88f2f600</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>BigDecimal</valueType>
+            <value />
+            <property>
+                <ownerID>bcb3ed72-ba15-4291-bec2-abadf4b21eb4</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bcb3ed72-ba15-4291-bec2-abadf4b21eb4</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"confirmQty")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b51e9f92-6097-40b3-8709-9626b03cbfe9</id>
+            <parentID>72120dfe-4960-47cc-8b39-a3de88f2f600</parentID>
+            <source />
+            <type>CONST</type>
+            <valueType>Int</valueType>
+            <value>0</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>9c7c86ad-40ee-46be-af53-412aca37105b</id>
+            <name>BreedEntry_breedDataName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[BreedEntry_breedDataName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[BreedEntry_breedDataName_ActionInfo].description</description>
+            <expressionID>9db7f166-6714-41c3-91cb-006245d15005</expressionID>
+        </action>
+        <action>
+            <id>a8e82f91-65c4-4e01-b18a-556a265318df</id>
+            <name>entrys_materialName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_materialName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_materialName_ActionInfo].description</description>
+            <expressionID>f0d69a48-f3f0-4abc-92ee-0f53425ecab4</expressionID>
+        </action>
+        <action>
+            <id>ba8ce8a0-ae3b-40db-8b56-4ee5dad6e198</id>
+            <name>entrys_model_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_model_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_model_ActionInfo].description</description>
+            <expressionID>9813fc6b-12e4-4ed2-a2fa-21849a6f5fc4</expressionID>
+        </action>
+        <action>
+            <id>75eedec2-8aca-4e6f-97bb-ccc338b97b00</id>
+            <name>entrys_breedData_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_breedData_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_breedData_ActionInfo].description</description>
+            <expressionID>3d88a06a-5bb2-4f5f-8771-210a70453fbf</expressionID>
+        </action>
+        <action>
+            <id>bc0a497d-f83e-4903-8178-ab6f06ee716a</id>
+            <name>entrys_materialName_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_materialName_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_materialName_ActionInfo].description</description>
+            <expressionID>c2cae76c-7f59-4046-aa1a-a674d09b7206</expressionID>
+        </action>
+        <action>
+            <id>c7187695-e8f4-4ef2-93ba-4a59a8cf7d02</id>
+            <name>entrys_model_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_model_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_model_ActionInfo].description</description>
+            <expressionID>7a17c3a4-c5f6-4ab7-b91c-7f48377e78a1</expressionID>
+        </action>
+        <action>
+            <id>10350aa4-b4a5-44ec-ae48-82a3bc418f53</id>
+            <name>CZONGC04</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZONGC04].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZONGC04].description</description>
+            <expressionID>ac56221d-2a66-4e38-8d5c-1c063b97ffc4</expressionID>
+        </action>
+        <action>
+            <id>4c997511-1f41-436b-970a-eac4ca898830</id>
+            <name>CZOO4X7J</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO4X7J].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO4X7J].description</description>
+            <expressionID>ba2e292c-1af0-4965-9497-95fd141648e2</expressionID>
+        </action>
+        <action>
+            <id>d2d7ad57-c642-445f-8be4-cce0ffbb79e2</id>
+            <name>CZOO5CKV</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO5CKV].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO5CKV].description</description>
+            <expressionID>a16fccd2-1a1e-4df8-9482-bdcfba62094e</expressionID>
+        </action>
+        <action>
+            <id>1af1a007-8fb2-4e2d-8d3b-3f52c3080f10</id>
+            <name>CZOO6OJJ</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6OJJ].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6OJJ].description</description>
+            <expressionID>81885ab1-64cb-47aa-8104-4880480647ba</expressionID>
+        </action>
+        <action>
+            <id>a7311982-05a3-4b6a-aa38-8b4cc0b8d777</id>
+            <name>CZOO4X8D</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO4X8D].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO4X8D].description</description>
+            <expressionID>2225ceed-e818-4df3-afb0-b0496efcc525</expressionID>
+        </action>
+        <action>
+            <id>59c1f6f9-9228-4b51-9e77-dc714e9c35cf</id>
+            <name>CZOO6BRH</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6BRH].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6BRH].description</description>
+            <expressionID>e2b37108-4038-4681-a05d-6c0416a2254c</expressionID>
+        </action>
+        <action>
+            <id>2f317f0f-fa65-4c5b-ad98-3d7cfdb9247d</id>
+            <name>CZOO6OKC</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6OKC].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6OKC].description</description>
+            <expressionID>8fff8a6e-9345-47a5-9fe1-4e0810dc53e4</expressionID>
+        </action>
+        <action>
+            <id>bcc6d7bb-72a2-4b1a-b208-8b61b1236979</id>
+            <name>CZOO79HI</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO79HI].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO79HI].description</description>
+            <expressionID>8478d896-30ed-4bb4-849c-a6a7b658df76</expressionID>
+        </action>
+    </actions>
+    <conditions>
+        <baseCondition>
+            <id>a82f9ef6-93eb-4056-848a-4bbfadda2180</id>
+            <name>CZOO6661</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].conditions.baseCondition[CZOO6661].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].conditions.baseCondition[CZOO6661].description</description>
+            <expressionID>72120dfe-4960-47cc-8b39-a3de88f2f600</expressionID>
+        </baseCondition>
+    </conditions>
+    <rules>
+        <conditionRule>
+            <name>entrys_materialName_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_materialName_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_materialName_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="bc0a497d-f83e-4903-8178-ab6f06ee716a" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>entrys_model_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_model_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_model_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="c7187695-e8f4-4ef2-93ba-4a59a8cf7d02" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>CZONGC04</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZONGC04].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZONGC04].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="10350aa4-b4a5-44ec-ae48-82a3bc418f53" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>CZOO5A_2</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO5A_2].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO5A_2].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="4c997511-1f41-436b-970a-eac4ca898830" />
+                </action>
+            </actions>
+            <exceptionActions>
+                <action>
+                    <key name="id" value="a7311982-05a3-4b6a-aa38-8b4cc0b8d777" />
+                </action>
+            </exceptionActions>
+        </conditionRule>
+        <conditionRule>
+            <name>CZOO6661</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6661].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6661].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <condition>
+                <key name="id" value="a82f9ef6-93eb-4056-848a-4bbfadda2180" />
+            </condition>
+            <actions>
+                <action>
+                    <key name="id" value="d2d7ad57-c642-445f-8be4-cce0ffbb79e2" />
+                </action>
+            </actions>
+        </conditionRule>
+        <conditionRule>
+            <name>CZOO6IES</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6IES].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6IES].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>SUBMIT</eventType>
+            <eventName>SUBMIT</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="4c997511-1f41-436b-970a-eac4ca898830" />
+                </action>
+            </actions>
+            <exceptionActions>
+                <action>
+                    <key name="id" value="59c1f6f9-9228-4b51-9e77-dc714e9c35cf" />
+                </action>
+            </exceptionActions>
+        </conditionRule>
+        <conditionRule>
+            <name>CZOO73SR</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO73SR].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO73SR].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="1af1a007-8fb2-4e2d-8d3b-3f52c3080f10" />
+                </action>
+            </actions>
+            <exceptionActions>
+                <action>
+                    <key name="id" value="2f317f0f-fa65-4c5b-ad98-3d7cfdb9247d" />
+                </action>
+            </exceptionActions>
+        </conditionRule>
+        <conditionRule>
+            <name>CZOO7D74</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO7D74].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO7D74].description</description>
+            <ruleType>calculate</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="1af1a007-8fb2-4e2d-8d3b-3f52c3080f10" />
+                </action>
+            </actions>
+            <exceptionActions>
+                <action>
+                    <key name="id" value="bcc6d7bb-72a2-4b1a-b208-8b61b1236979" />
+                </action>
+            </exceptionActions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[BreedEntry_breedDataName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[BreedEntry_breedDataName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZONGC04].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZONGC04].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO4X7J].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="计算转出金额" />
+            <lang locale="zh_HK" value="計算轉出金額" />
+            <lang locale="zh_TW" value="計算轉出金額" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO4X7J].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO4X8D].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO4X8D].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO5CKV].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO5CKV].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6BRH].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6BRH].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6OJJ].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="计算转入金额" />
+            <lang locale="zh_HK" value="計算轉入金額" />
+            <lang locale="zh_TW" value="計算轉入金額" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6OJJ].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6OKC].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO6OKC].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO79HI].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[CZOO79HI].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_breedData_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_breedData" />
+            <lang locale="zh_HK" value="攜帶字段屬性_breedData" />
+            <lang locale="zh_TW" value="攜帶字段屬性_breedData" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_breedData_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_materialName_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_materialName_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_model_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_model" />
+            <lang locale="zh_HK" value="攜帶字段屬性_model" />
+            <lang locale="zh_TW" value="攜帶字段屬性_model" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].actions.action[entrys_model_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].conditions.baseCondition[CZOO6661].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].conditions.baseCondition[CZOO6661].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZONGC04].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="带出计量单位" />
+            <lang locale="zh_HK" value="帶出計量單位" />
+            <lang locale="zh_TW" value="帶出計量單位" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZONGC04].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZONGC04].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO5A_2].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="计算转出金额" />
+            <lang locale="zh_HK" value="計算轉出金額" />
+            <lang locale="zh_TW" value="計算轉出金額" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO5A_2].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO5A_2].extendedProperty.columnName">
+            <lang locale="en_US" value="transQty" />
+            <lang locale="zh_CN" value="transQty" />
+            <lang locale="zh_TW" value="transQty" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6661].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="设置确认数量" />
+            <lang locale="zh_HK" value="設置確認數量" />
+            <lang locale="zh_TW" value="設置確認數量" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6661].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6661].extendedProperty.columnName">
+            <lang locale="en_US" value="transQty" />
+            <lang locale="zh_CN" value="transQty" />
+            <lang locale="zh_TW" value="transQty" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6IES].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="计算转出金额" />
+            <lang locale="zh_HK" value="計算轉出金額" />
+            <lang locale="zh_TW" value="計算轉出金額" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6IES].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO6IES].extendedProperty.columnName">
+            <lang locale="en_US" value="receivePrice" />
+            <lang locale="zh_CN" value="receivePrice" />
+            <lang locale="zh_TW" value="receivePrice" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO73SR].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="计算转入金额" />
+            <lang locale="zh_HK" value="計算轉入金額" />
+            <lang locale="zh_TW" value="計算轉入金額" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO73SR].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO73SR].extendedProperty.columnName">
+            <lang locale="en_US" value="confirmQty" />
+            <lang locale="zh_CN" value="confirmQty" />
+            <lang locale="zh_TW" value="confirmQty" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO7D74].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="计算转入金额" />
+            <lang locale="zh_HK" value="計算轉入金額" />
+            <lang locale="zh_TW" value="計算轉入金額" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO7D74].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[CZOO7D74].extendedProperty.columnName">
+            <lang locale="en_US" value="orderReceivePrice" />
+            <lang locale="zh_CN" value="orderReceivePrice" />
+            <lang locale="zh_TW" value="orderReceivePrice" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_materialName_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_name" />
+            <lang locale="zh_HK" value="攜帶字段屬性_name" />
+            <lang locale="zh_TW" value="攜帶字段屬性_name" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_materialName_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_materialName_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_materialName_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_model_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_model" />
+            <lang locale="zh_HK" value="攜帶字段屬性_model" />
+            <lang locale="zh_TW" value="攜帶字段屬性_model" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_model_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_model_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="material" />
+            <lang locale="zh_CN" value="material" />
+            <lang locale="zh_TW" value="material" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TransFodderBillRuleSet].rules.conditionRule[entrys_model_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

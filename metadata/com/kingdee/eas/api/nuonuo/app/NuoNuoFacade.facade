@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<facade xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.api.nuonuo.app</package>
+    <name>NuoNuoFacade</name>
+    <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].alias</alias>
+    <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].description</description>
+    <userDefined>true</userDefined>
+    <bosType>3C04855C</bosType>
+    <stereoType>false</stereoType>
+    <businessImplName>com.kingdee.eas.api.nuonuo.NuoNuoFacade</businessImplName>
+    <businessControllerName>com.kingdee.eas.api.nuonuo.app.NuoNuoFacadeController</businessControllerName>
+    <accessLevel>public</accessLevel>
+    <subClassingMode>normal</subClassingMode>
+    <methods>
+        <method>
+            <name>requestNewBill</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[requestNewBill].alias</alias>
+            <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[requestNewBill].description</description>
+            <innerID>c4bc9450-d324-4be2-bec6-329528766d4d</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>true</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>billID</name>
+                    <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[requestNewBill].parameters.parameter[billID].alias</alias>
+                    <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[requestNewBill].parameters.parameter[billID].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>true</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>invoiceCancellation</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].alias</alias>
+            <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].description</description>
+            <innerID>7adb2e5a-e111-4cb7-8b11-2f0c251bb874</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>true</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>companyID</name>
+                    <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[companyID].alias</alias>
+                    <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[companyID].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>true</userDefined>
+                </parameter>
+                <parameter>
+                    <name>invoiceId</name>
+                    <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceId].alias</alias>
+                    <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceId].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>true</userDefined>
+                </parameter>
+                <parameter>
+                    <name>invoiceCode</name>
+                    <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceCode].alias</alias>
+                    <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceCode].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>true</userDefined>
+                </parameter>
+                <parameter>
+                    <name>invoiceNo</name>
+                    <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceNo].alias</alias>
+                    <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceNo].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>true</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>getISVToken</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].alias</alias>
+            <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].description</description>
+            <innerID>fcceff26-f485-4b28-b50e-e00696cac1ec</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>true</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>URL</name>
+                    <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].parameters.parameter[URL].alias</alias>
+                    <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].parameters.parameter[URL].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>true</userDefined>
+                </parameter>
+                <parameter>
+                    <name>unitID</name>
+                    <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].parameters.parameter[unitID].alias</alias>
+                    <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].parameters.parameter[unitID].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>true</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+        <method>
+            <name>queryInvoiceResult</name>
+            <isListenerMethod>false</isListenerMethod>
+            <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[queryInvoiceResult].alias</alias>
+            <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[queryInvoiceResult].description</description>
+            <innerID>c71f972e-38ce-4a3e-89b7-da7cf3753609</innerID>
+            <accessLevel>public</accessLevel>
+            <subClassingMode>normal</subClassingMode>
+            <returnValueType>String</returnValueType>
+            <metadataRef />
+            <transactionAttribute>Supports</transactionAttribute>
+            <userDefined>true</userDefined>
+            <userDefinedLogic />
+            <parameters>
+                <parameter>
+                    <name>billID</name>
+                    <alias>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[queryInvoiceResult].parameters.parameter[billID].alias</alias>
+                    <description>facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[queryInvoiceResult].parameters.parameter[billID].description</description>
+                    <direction>in</direction>
+                    <dataType>String</dataType>
+                    <metadataRef />
+                    <userDefined>true</userDefined>
+                </parameter>
+            </parameters>
+            <exceptions>
+                <bizException>
+                    <key name="package" value="com.kingdee.eas.common" />
+                    <key name="name" value="EASBizException" />
+                </bizException>
+            </exceptions>
+            <configured>false</configured>
+        </method>
+    </methods>
+    <resource>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="诺诺功能" />
+            <lang locale="zh_HK" value="諾諾功能" />
+            <lang locale="zh_TW" value="諾諾功能" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].extendedProperty.userDefined">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="根据网址获取Token" />
+            <lang locale="zh_HK" value="根據網址獲取Token" />
+            <lang locale="zh_TW" value="根據網址獲取Token" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].parameters.parameter[URL].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].parameters.parameter[URL].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].parameters.parameter[unitID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[getISVToken].parameters.parameter[unitID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="废弃发票" />
+            <lang locale="zh_HK" value="廢棄發票" />
+            <lang locale="zh_TW" value="廢棄發票" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[companyID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[companyID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceCode].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceCode].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceId].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceId].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceNo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[invoiceCancellation].parameters.parameter[invoiceNo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[queryInvoiceResult].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="查询开票结果" />
+            <lang locale="zh_HK" value="查詢開票結果" />
+            <lang locale="zh_TW" value="查詢開票結果" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[queryInvoiceResult].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[queryInvoiceResult].parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[queryInvoiceResult].parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[requestNewBill].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="新开发票" />
+            <lang locale="zh_HK" value="新開發票" />
+            <lang locale="zh_TW" value="新開發票" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[requestNewBill].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[requestNewBill].parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="facade[com.kingdee.eas.api.nuonuo.app.NuoNuoFacade].methods.method[requestNewBill].parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+    </resource>
+</facade>
+

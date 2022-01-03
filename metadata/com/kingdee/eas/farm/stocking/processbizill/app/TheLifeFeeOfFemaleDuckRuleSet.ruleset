@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleSet xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>TheLifeFeeOfFemaleDuckRuleSet</name>
+    <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].alias</alias>
+    <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].description</description>
+    <userDefined>true</userDefined>
+    <expressions>
+        <groupExpression>
+            <id>2c5a3e86-d78f-4527-ad89-ab7e5ac3731e</id>
+            <parentID />
+            <source>entrys.initDate=entrys.stockingBatch.inDate</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>232c219a-9cf7-4f49-8e0c-c0a05f39ae72</id>
+            <parentID>2c5a3e86-d78f-4527-ad89-ab7e5ac3731e</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Date</valueType>
+            <value />
+            <property>
+                <ownerID>ae31b929-5cde-4773-b15e-5d55f1629180</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>ae31b929-5cde-4773-b15e-5d55f1629180</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"initDate")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>fb1bd109-d3b0-4468-9e04-b797cdcaaccf</id>
+            <parentID>2c5a3e86-d78f-4527-ad89-ab7e5ac3731e</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Date</valueType>
+            <value />
+            <method>
+                <ownerID>a4adb41e-84e7-4fb5-bd3e-b645abeefc4e</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>54c7b93f-2a06-4f23-b0c0-c8957277a7fb</id>
+                        <expressionID>55aae128-b0f6-4c92-a8d4-72bbf2a5a77b</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>6132786c-36c8-4d64-9d3b-91255e42fb9b</id>
+                        <expressionID>d3d7a5ed-1167-4648-a38d-e0ff044a88fc</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>a4adb41e-84e7-4fb5-bd3e-b645abeefc4e</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>55aae128-b0f6-4c92-a8d4-72bbf2a5a77b</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>80940bc0-1a0b-4f57-97df-5eed4da7432a</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>80940bc0-1a0b-4f57-97df-5eed4da7432a</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"stockingBatch")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>d3d7a5ed-1167-4648-a38d-e0ff044a88fc</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>inDate</value>
+        </simpleExpression>
+        <groupExpression>
+            <id>ae9e0a5e-9994-4794-a638-4fb1fc0cadb0</id>
+            <parentID />
+            <source>entrys.initDate=entrys.stockingBatch.inDate</source>
+            <operator>=</operator>
+        </groupExpression>
+        <simpleExpression>
+            <id>f142dd5f-9e77-44b0-b1c1-9af7ec84409d</id>
+            <parentID>ae9e0a5e-9994-4794-a638-4fb1fc0cadb0</parentID>
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Date</valueType>
+            <value />
+            <property>
+                <ownerID>f772fa44-aa51-4d5d-a65e-270f713bceca</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f772fa44-aa51-4d5d-a65e-270f713bceca</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>kdtEntrys.getCell(rowIndex,"initDate")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>f5b926bd-2b95-44b6-8e67-5e9cffa6cacf</id>
+            <parentID>ae9e0a5e-9994-4794-a638-4fb1fc0cadb0</parentID>
+            <source />
+            <type>METHODINVOKE</type>
+            <valueType>Date</valueType>
+            <value />
+            <method>
+                <ownerID>8bfde72a-c4c5-49f6-94d3-bbf12b51744a</ownerID>
+                <name>getProperty</name>
+                <type>Object</type>
+                <parameters>
+                    <parameter>
+                        <id>a485a2eb-c7d1-4bcf-8786-49575634a239</id>
+                        <expressionID>bc5d31a5-6452-4e61-83b3-b9e52dcdd96e</expressionID>
+                    </parameter>
+                    <parameter>
+                        <id>56a41a6b-303a-49f9-8fae-af62fe78b406</id>
+                        <expressionID>e85a668b-4e33-4bda-8746-4ef59e7255b8</expressionID>
+                    </parameter>
+                </parameters>
+            </method>
+        </simpleExpression>
+        <simpleExpression>
+            <id>8bfde72a-c4c5-49f6-94d3-bbf12b51744a</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>com.kingdee.bos.ui.face.UIRuleUtil</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>bc5d31a5-6452-4e61-83b3-b9e52dcdd96e</id>
+            <parentID />
+            <source />
+            <type>PROPERTYACCESS</type>
+            <valueType>Object</valueType>
+            <value />
+            <property>
+                <ownerID>b9888715-59bd-4e99-8dcd-e7181fbcbb73</ownerID>
+                <name>value</name>
+                <type>Object</type>
+            </property>
+        </simpleExpression>
+        <simpleExpression>
+            <id>b9888715-59bd-4e99-8dcd-e7181fbcbb73</id>
+            <parentID />
+            <source />
+            <type>VARIANT</type>
+            <valueType>UNKOWN</valueType>
+            <value>(com.kingdee.bos.dao.IObjectValue)kdtEntrys.getCell(rowIndex,"stockingBatch")</value>
+        </simpleExpression>
+        <simpleExpression>
+            <id>e85a668b-4e33-4bda-8746-4ef59e7255b8</id>
+            <parentID />
+            <source />
+            <type>CONST</type>
+            <valueType>String</valueType>
+            <value>inDate</value>
+        </simpleExpression>
+    </expressions>
+    <actions>
+        <action>
+            <id>b2b2718a-0d43-485a-bd09-fee1d646b6fa</id>
+            <name>entrys_initDate_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].actions.action[entrys_initDate_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].actions.action[entrys_initDate_ActionInfo].description</description>
+            <expressionID>2c5a3e86-d78f-4527-ad89-ab7e5ac3731e</expressionID>
+        </action>
+        <action>
+            <id>b897b3b7-56ee-4dad-9fbc-ff6db0f40ff1</id>
+            <name>entrys_initDate_ActionInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].actions.action[entrys_initDate_ActionInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].actions.action[entrys_initDate_ActionInfo].description</description>
+            <expressionID>ae9e0a5e-9994-4794-a638-4fb1fc0cadb0</expressionID>
+        </action>
+    </actions>
+    <rules>
+        <conditionRule>
+            <name>entrys_initDate_RuleInfo</name>
+            <alias>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].rules.conditionRule[entrys_initDate_RuleInfo].alias</alias>
+            <description>ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].rules.conditionRule[entrys_initDate_RuleInfo].description</description>
+            <ruleType>withproperty</ruleType>
+            <eventObjectName />
+            <eventType>CHANGE</eventType>
+            <eventName>CHANGE</eventName>
+            <actions>
+                <action>
+                    <key name="id" value="b897b3b7-56ee-4dad-9fbc-ff6db0f40ff1" />
+                </action>
+            </actions>
+        </conditionRule>
+    </rules>
+    <resource>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].actions.action[entrys_initDate_ActionInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_inDate" />
+            <lang locale="zh_HK" value="攜帶字段屬性_inDate" />
+            <lang locale="zh_TW" value="攜帶字段屬性_inDate" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].actions.action[entrys_initDate_ActionInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].rules.conditionRule[entrys_initDate_RuleInfo].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="携带字段属性_inDate" />
+            <lang locale="zh_HK" value="攜帶字段屬性_inDate" />
+            <lang locale="zh_TW" value="攜帶字段屬性_inDate" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].rules.conditionRule[entrys_initDate_RuleInfo].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].rules.conditionRule[entrys_initDate_RuleInfo].extendedProperty.columnName">
+            <lang locale="en_US" value="stockingBatch" />
+            <lang locale="zh_CN" value="stockingBatch" />
+            <lang locale="zh_TW" value="stockingBatch" />
+        </rs>
+        <rs key="ruleSet[com.kingdee.eas.farm.stocking.processbizill.app.TheLifeFeeOfFemaleDuckRuleSet].rules.conditionRule[entrys_initDate_RuleInfo].extendedProperty.userDefined">
+            <lang locale="en_US" value="false" />
+            <lang locale="zh_CN" value="false" />
+            <lang locale="zh_TW" value="false" />
+        </rs>
+    </resource>
+</ruleSet>
+

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<functionObject xmlns="com.kingdee.bos.metadata">
+    <package>com.kingdee.eas.farm.stocking.processbizill.app</package>
+    <name>TranOutEditUIFunction</name>
+    <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].alias</alias>
+    <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].description</description>
+    <userDefined>true</userDefined>
+    <isBindSingleBizObject>false</isBindSingleBizObject>
+    <operations>
+        <operation>
+            <name>ActionSubmit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[ActionSubmit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[ActionSubmit].description</description>
+            <reverseOperation />
+            <eventMethod>dfd2c083-00fa-1000-e000-001fc0a813e6</eventMethod>
+            <event>submitEvent</event>
+            <userDefined>true</userDefined>
+            <uiActionRef>
+                <id>50cf5dac-0105-1000-e000-00cac0a813a4uiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>true</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="TranOutEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionSubmit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>true</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="TranOut" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>audit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[audit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[audit].description</description>
+            <reverseOperation />
+            <eventMethod>d620576a-0cc3-41b5-8a2c-942ea4ddbb99</eventMethod>
+            <event>auditEvent</event>
+            <userDefined>true</userDefined>
+            <uiActionRef>
+                <id>861c8034-2a3a-41c8-a405-60568cb1abb2uiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>true</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="TranOutEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>true</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="TranOut" />
+            </entityObjectRef>
+        </operation>
+        <operation>
+            <name>unAudit</name>
+            <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[unAudit].alias</alias>
+            <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[unAudit].description</description>
+            <reverseOperation />
+            <eventMethod>fbdf0a2e-f2b8-4eb4-84c9-40563177eb02</eventMethod>
+            <event>unAuditEvent</event>
+            <userDefined>true</userDefined>
+            <uiActionRef>
+                <id>85f2f222-54b7-4d44-bf79-f40a7e68b2a5uiaf</id>
+                <uiStatus>EDIT</uiStatus>
+                <webUIStatus />
+                <userDefined>true</userDefined>
+                <uiObjectRef>
+                    <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.client" />
+                    <key name="name" value="TranOutEditUI" />
+                </uiObjectRef>
+                <actionRefName>ActionUnAudit</actionRefName>
+                <webActionRefName />
+                <parameters>
+                    <parameter>
+                        <name>billID</name>
+                        <alias>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias</alias>
+                        <description>functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description</description>
+                        <direction>in</direction>
+                        <dataType>BOSUuid</dataType>
+                        <metadataRef />
+                        <userDefined>true</userDefined>
+                    </parameter>
+                </parameters>
+            </uiActionRef>
+            <entityObjectRef>
+                <key name="package" value="com.kingdee.eas.farm.stocking.processbizill.app" />
+                <key name="name" value="TranOut" />
+            </entityObjectRef>
+        </operation>
+    </operations>
+    <resource>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].alias">
+            <lang locale="en_US" value="多分录基础单据编辑界面业务功能" />
+            <lang locale="zh_CN" value="转出单编辑功能" />
+            <lang locale="zh_HK" value="轉出單編輯功能" />
+            <lang locale="zh_TW" value="轉出單編輯功能" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].description">
+            <lang locale="en_US" value="多分录基础单据编辑界面业务功能" />
+            <lang locale="zh_CN" value="多分录基础单据编辑界面业务功能" />
+            <lang locale="zh_HK" value="多分錄基礎單據編輯介面業務功能" />
+            <lang locale="zh_TW" value="多分錄基礎單據編輯介面業務功能" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[ActionSubmit].alias">
+            <lang locale="en_US" value="提交" />
+            <lang locale="zh_CN" value="提交" />
+            <lang locale="zh_HK" value="提交" />
+            <lang locale="zh_TW" value="提交" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[ActionSubmit].description">
+            <lang locale="en_US" value="提交" />
+            <lang locale="zh_CN" value="提交" />
+            <lang locale="zh_HK" value="提交" />
+            <lang locale="zh_TW" value="提交" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[ActionSubmit].extendedProperty.userDefined">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="单据内码" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[ActionSubmit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="单据内码" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[audit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="审核" />
+            <lang locale="zh_HK" value="審核" />
+            <lang locale="zh_TW" value="審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[audit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[audit].extendedProperty.userDefined">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[audit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[unAudit].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="反审核" />
+            <lang locale="zh_HK" value="反審核" />
+            <lang locale="zh_TW" value="反審核" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[unAudit].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="null" />
+            <lang locale="zh_HK" value="null" />
+            <lang locale="zh_TW" value="null" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[unAudit].extendedProperty.userDefined">
+            <lang locale="en_US" value="true" />
+            <lang locale="zh_CN" value="true" />
+            <lang locale="zh_TW" value="true" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].alias">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+        <rs key="functionObject[com.kingdee.eas.farm.stocking.processbizill.app.TranOutEditUIFunction].operations.operation[unAudit].uiActionRef.parameters.parameter[billID].description">
+            <lang locale="en_US" value="null" />
+            <lang locale="zh_CN" value="单据内码" />
+            <lang locale="zh_HK" value="單據內碼" />
+            <lang locale="zh_TW" value="單據內碼" />
+        </rs>
+    </resource>
+</functionObject>
+
